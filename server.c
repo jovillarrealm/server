@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     if (argc == 4)
     {
         if(str_to_uint16(argv[1], &http_port)==-1)
-            error("Error interpretando número de puerto");
+            error("Error interpretando número de puerto\n");
         log_file = fopen(argv[2], "a+"); // a+ (create + append) option will allow appending which is useful in a log file
         doc_root_folder = argv[3];
     }
@@ -100,7 +100,7 @@ int main(int argc, char *argv[])
         Si la conexión se establece correctamente, accept() devuelve un nuevo descriptor de archivo (newsockfd) que se utiliza para enviar y recibir datos en la conexión. */
         newsockfd = accept(sockfd, (struct sockaddr *)&cli_addr, &clilen);
         if (newsockfd <= 0)
-            error("Error on accept");
+            error("Error on accept\n");
 
         printf("Conexión aceptada");
         /*  inicializa todos los elementos del buffer buffer con valor 0 */
@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
         // FIXME HAY QUE MANEJAR PARTIAL SENDS : 7.4 Beej's
         socket_bytes = read(newsockfd, buffer, BUFFER_SIZE);
         if (socket_bytes < 0){
-            error("Error reading from socket");
+            error("Error reading from socket\n");
         }
         else
         {
@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
             socket_bytes = write(newsockfd, "HTTP/1.1 400 Bad Request\r\n\r\n", 74);
 
         if (socket_bytes < 0)
-            error("Error writing to socket");
+            error("Error writing to socket\n");
 
         close(newsockfd);
     }
@@ -288,7 +288,7 @@ int initialize_listening_socket(int http_port)
 
     // si hay un error inicializando el socket
     if (sockfd < 0)
-        error("Error opening socket");
+        error("Error opening socket\n");
 
     // Limpiar y configurar la estructura de direcciones del servidor
 
@@ -302,12 +302,12 @@ int initialize_listening_socket(int http_port)
     // hacer bind del socket
     /* La línea if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) verifica si la función bind() falló, lo que significa que no se pudo asociar el socket a la dirección y puerto especificados. En ese caso, la función error() se llama con un mensaje de error correspondiente. */
     if (bind(sockfd, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0)
-        error("Error on binding");
+        error("Error on binding\n");
 
     // poner el socket a escuchar
     /* La función listen(sockfd, CONNECTION_QUEUE_SIZE); indica que el socket creado en sockfd estará a la escucha de conexiones entrantes, y el número 5 indica el tamaño máximo de la cola de conexiones pendientes que el sistema operativo mantendrá para este socket.*/
     if (listen(sockfd, CONNECTION_QUEUE_SIZE) == -1)
-        error("Error on listening");
+        error("Error on listening\n");
     return sockfd;
 }
 

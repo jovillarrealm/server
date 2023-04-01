@@ -58,7 +58,7 @@ sudo apt install meson ninja-build
 Para iniciar un projecto en el directorio actual
 
 ``` bash
-meson init --name server_side_c --build
+meson init --name server --build
 ```
 
 Para compilar y testeo
@@ -150,7 +150,6 @@ No se va a usar en este trabajo. alternativa a accept.
 ## recv()
 
 Si hay alguna vaina de Keep-Alive se puede hacer uso de esta función para mas de un request por conexión
-
 
 ## send
 
