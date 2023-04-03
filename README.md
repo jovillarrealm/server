@@ -21,15 +21,11 @@ Vamos a estar haciendo cosas.
 
 ## **Inicio**
 
-De momento se planea poder testear local, sabrá dios como, luego tener en una imagen de ubuntu de AWS esto corriendo, o algo, entonces en vez de lidiar con las mierdas de windows de no ser POSIX compliant con freaking sockets no es algo con lo que quiera lidiar.
-
-## **Setup**
-
-1. Prender un [WSL de ubuntu.](https://learn.microsoft.com/es-mx/windows/wsl/install) y [WSL en vscode.](https://code.visualstudio.com/docs/remote/wsl)
-2. Desde wsl se usa con [Meson.](https://mesonbuild.com/SimpleStart.html)
-3.
+De momento se planea poder testear local, sabrá dios como, luego tener en una imagen de ubuntu de AWS esto corriendo, o algo.
 
 ### **Detalles**
+
+Joder con los archivos de tasks.json y launch.jason pareciera que fuera a dejar debuggear al menos un archivo, y el arhivo principal de un projecto de varios archivos.
 
 ******
 
@@ -40,5 +36,3 @@ Se va a tratar de implementar un threadpool para el manejo de cada conexión.
 Se va a tratar de mantener el código modular.
 
 ## **Misc**
-
-Joder con los archivos de tasks.json y launch.jason pareciera que fuera a dejar debuggear al menos un archivo, y el arhivo principal de un projecto de varios archivos.

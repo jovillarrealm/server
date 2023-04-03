@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 
     FILE *log_file = fopen("logs.txt", "a+");
 
-    char *doc_root_folder = ".";
+    char *doc_root_folder = " .";
 
     if (argc == 4)
     {
