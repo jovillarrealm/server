@@ -43,7 +43,7 @@ int parse_request(char *request_string, http_request *request);
 typedef struct http_request
 {
     char method[8];
-    char path[255];
+    char path[256];
     char version[16];
 } http_request;
 
