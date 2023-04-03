@@ -205,19 +205,19 @@ typedef struct http_req_header
 // TODO: Implementar una función que puede lidiar con un HEAD
 int handle_HEAD(http_request *request, char *response)
 {
-    ;
+    return 0;
 }
 
 // TODO: Implementar una función que puede lidiar con un GET
 int handle_GET(http_request *request, char *response)
 {
-    ;
+return 0;
 }
 
 // TODO: Implementar una función que puede lidiar con un POST
 int handle_POST(http_request *request, char *response)
 {
-    ;
+ return 0;
 }
 
 // TODO: Implementar la función para procesar la petición HTTP:

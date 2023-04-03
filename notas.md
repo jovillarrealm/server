@@ -68,11 +68,13 @@ meson compile -C builddir
 meson test -C builddir
 ```
 
-Instalar
+Instalar algo (probablemente no se va a usar)
 
 ``` bash
 DESTDIR=/path/to/staging/root/borrardespues meson install -C builddir
 ```
+
+Lo bueno es que moviendo los task.json y
 
 ******
 
