@@ -173,7 +173,9 @@ void handle_connection(int client_fd, FILE * log_file)
     ssize_t bytes_received = recv(client_fd, request_buffer, MAX_REQUEST_SIZE - 1, 0);
     if (bytes_received < 0)
     {
-        error("Error al recibir la solicitud HTTP");
+        // FIXME El servidor debería tratar de retornar un BAD REQUEST?
+        perror("Error al recibir la solicitud HTTP");
+        return;
     }
     request_buffer[bytes_received] = '\0';
     logger(request_buffer, log_file);
@@ -246,7 +248,6 @@ void *accept_connections(void *server_fd_ptr)
     // cambio para consistencia con logger
     connection_info thread_info = *(connection_info *)server_fd_ptr;
     int server_fd = *(int *)server_fd_ptr;
-    int client_fd = thread_info.client_fd;
     FILE *log_file = thread_info.log_file;
     while (1)
     {
@@ -269,7 +270,6 @@ void *connection_handler(void *arg)
     int client_fd = thread_info.client_fd;
     FILE *log_file = thread_info.log_file;
     handle_connection(client_fd, log_file);
-    close(client_fd);
     return NULL;
 }
 
@@ -314,7 +314,6 @@ int main(int argc, char *argv[])
     int server_fd, client_fd;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
-    char buffer[BUFFER_SIZE] = {0};
 
     // Crea el socket
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
@@ -345,7 +344,7 @@ int main(int argc, char *argv[])
         perror("Error al escuchar en el socket \n");
         exit(EXIT_FAILURE);
     }
-
+    printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
     while (1)
