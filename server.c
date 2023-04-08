@@ -18,7 +18,7 @@
 #define NOT_FOUND 404
 
 // Define la estructura de la petición HTTP:
-typedef struct
+typedef struct http_request
 {
     enum method
     {
@@ -33,6 +33,13 @@ typedef struct
     char version[16];
     int status_code;
 } http_request;
+
+// Define la estructura para pasar a los hilos de cada conexión
+typedef struct connection_info
+{
+    int client_fd;
+    FILE *log_file;
+} connection_info;
 
 // Aux para saber el tiempo exactamente
 char *get_current_time()
@@ -52,7 +59,7 @@ void error(const char *msg)
 }
 
 // Logger
-void logger(const char *message)
+void logger(const char *message, FILE *log_file)
 {
     time_t rawtime;
     struct tm *timeinfo;
@@ -62,15 +69,8 @@ void logger(const char *message)
     timeinfo = localtime(&rawtime);
     strftime(time_str, sizeof(time_str), "%d-%m-%Y %H:%M:%S", timeinfo);
 
-    FILE *log_file = fopen("log.txt", "a");
-    if (log_file == NULL)
-    {
-        error("Error al abrir el archivo de registro");
-    }
-
     fprintf(log_file, "[%s] %s\n\n", time_str, message);
-
-    fclose(log_file);
+    fflush(log_file);
 }
 
 // Analiza la línea de solicitud HTTP para determinar el método, la ruta y el host
@@ -123,17 +123,17 @@ void parse_request_line(char *buffer, http_request *request)
     if (http_version_start[5] == '0')
     {
         strcpy(request->version, "HTTP/1.0");
-        printf("-->HTTP version 1.0 detectado. ");
+        printf("-->HTTP version 1.0 detectado. \n");
     }
     else if (http_version_start[5] == '1')
     {
         strcpy(request->version, "HTTP/1.1 ");
-        printf("-->HTTP version 1.1 detectado. ");
+        printf("-->HTTP version 1.1 detectado. \n");
     }
     else
     {
         request->method = UNSUPPORTED;
-        printf("--> No se puede detectar la version de HTTP o no esta soportado. ");
+        printf("--> No se puede detectar la version de HTTP o no esta soportado. \n");
         return;
     }
     request->version[7] = '\0';
@@ -167,7 +167,7 @@ void parse_request_line(char *buffer, http_request *request)
 }
 
 // Función para manejar una conexión de cliente
-void handle_connection(int client_fd)
+void handle_connection(int client_fd, FILE * log_file)
 {
     char request_buffer[MAX_REQUEST_SIZE];
     ssize_t bytes_received = recv(client_fd, request_buffer, MAX_REQUEST_SIZE - 1, 0);
@@ -176,13 +176,13 @@ void handle_connection(int client_fd)
         error("Error al recibir la solicitud HTTP");
     }
     request_buffer[bytes_received] = '\0';
-    logger(request_buffer);
+    logger(request_buffer, log_file);
     printf("Solicitud HTTP recibida: %s\n", request_buffer);
 
     // Analizar la línea de solicitud HTTP
     http_request request;
     parse_request_line(request_buffer, &request);
-    logger(request.path);
+    logger(request.path, log_file);
 
     // Determinar el estado de la solicitud y generar una respuesta HTTP
     char *response_body = NULL;
@@ -236,14 +236,18 @@ void handle_connection(int client_fd)
     {
         error("Error al enviar la respuesta HTTP");
     }
-    logger(response_buffer);
+    logger(response_buffer, log_file);
     close(client_fd);
 }
 
 // Función para el hilo que acepta conexiones de clientes
 void *accept_connections(void *server_fd_ptr)
 {
+    // cambio para consistencia con logger
+    connection_info thread_info = *(connection_info *)server_fd_ptr;
     int server_fd = *(int *)server_fd_ptr;
+    int client_fd = thread_info.client_fd;
+    FILE *log_file = thread_info.log_file;
     while (1)
     {
         struct sockaddr_in client_addr;
@@ -253,7 +257,7 @@ void *accept_connections(void *server_fd_ptr)
         {
             error("Error al aceptar la conexión del cliente");
         }
-        handle_connection(client_fd);
+        handle_connection(client_fd, log_file);
     }
     return NULL;
 }
@@ -261,8 +265,10 @@ void *accept_connections(void *server_fd_ptr)
 // Funcion para manejar conexiones de varios clientes
 void *connection_handler(void *arg)
 {
-    int client_fd = *(int *)arg;
-    handle_connection(client_fd);
+    connection_info thread_info = *(connection_info *)arg;
+    int client_fd = thread_info.client_fd;
+    FILE *log_file = thread_info.log_file;
+    handle_connection(client_fd, log_file);
     close(client_fd);
     return NULL;
 }
@@ -283,17 +289,26 @@ int str_to_uint16(char *str, uint16_t *res)
 
 int main(int argc, char *argv[])
 {
-    // Mock de llamado de programa
-    u_int16_t port = 8080;
-    FILE *log_file = fopen("log.txt", "a+");
-    char *doc_root_folder = " .";
+    // Del llamado de programa
+    u_int16_t port;
+    FILE *log_file;
+    char *doc_root_folder;
     // Si se llama el programa correctamente, usa esos datos
     if (argc == 4)
     {
         if (str_to_uint16(argv[1], &port) == -1)
-            error("uso: ./server <PORT> <LOG_FILE> <DOC_ROOT_FOLDER>\n");
+        {
+            perror("uso: ./server <PORT> <LOG_FILE> <DOC_ROOT_FOLDER>\n");
+            exit(EXIT_FAILURE);
+        }
         log_file = fopen(argv[2], "a+"); // a+ (create + append) option will allow appending which is useful in a log file
         doc_root_folder = argv[3];
+    }
+    else
+    {
+        port = 8080;
+        log_file = fopen("log.txt", "a+");
+        doc_root_folder = " .";
     }
 
     int server_fd, client_fd;
@@ -313,9 +328,9 @@ int main(int argc, char *argv[])
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(port);
 
-    // Lose the pesky "address already in use" error message
-    int _yes = 1;
-    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &_yes, sizeof(_yes));
+    // Fix de "address already in use" 
+    int _ = 1;
+    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &_, sizeof(_));
 
     // Vincula el socket al puerto y la dirección especificados
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0)
@@ -344,7 +359,8 @@ int main(int argc, char *argv[])
 
         // Crea un nuevo hilo para manejar la conexión entrante
         pthread_t thread_id;
-        if (pthread_create(&thread_id, NULL, connection_handler, (void *)&client_fd) < 0)
+        connection_info thread_info = {.client_fd= client_fd, .log_file=log_file};
+        if (pthread_create(&thread_id, NULL, connection_handler, (void *)&thread_info) < 0)
         {
             perror("Error al crear el hilo \n");
             continue;
@@ -353,6 +369,6 @@ int main(int argc, char *argv[])
         // El hilo manejará la conexión, así que podemos continuar aceptando conexiones entrantes
         pthread_detach(thread_id);
     }
-
+    fclose(log_file); // Unreachable en este momento
     return 0;
 }
