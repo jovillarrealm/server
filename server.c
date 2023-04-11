@@ -308,7 +308,7 @@ int main(int argc, char *argv[])
     {
         port = 8080;
         log_file = fopen("log.txt", "a+");
-        doc_root_folder = " .";
+        doc_root_folder = " ./logs";
     }
 
     int server_fd, client_fd;
