@@ -292,11 +292,7 @@ int main(int argc, char *argv[])
         doc_root_folder = " ./logs";
     }
     
-    size_t host_name_len = 30; // arbitrario
-    char host_name[host_name_len];
-    if (gethostname(host_name, host_name_len) == -1)
-        error("gethostname error");
-    struct addrinfo *possible_list = get_addrinfo_linked_list(host_name, argv[1]);
+
     
     int server_fd, client_fd;
     struct sockaddr_in address;
@@ -334,8 +330,7 @@ int main(int argc, char *argv[])
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-    struct sockaddr_storage their_addr; // connector's address information
-    socklen_t sin_size=sizeof(their_addr);
+
     while (1)
     {
         // Acepta una nueva conexión entrante
