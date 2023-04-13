@@ -167,7 +167,7 @@ void parse_request_line(char *buffer, http_request *request)
 }
 
 // Función para manejar una conexión de cliente
-void handle_connection(int client_fd, FILE * log_file)
+void handle_connection(int client_fd, FILE *log_file)
 {
     char request_buffer[MAX_REQUEST_SIZE];
     ssize_t bytes_received = recv(client_fd, request_buffer, MAX_REQUEST_SIZE - 1, 0);
@@ -242,26 +242,6 @@ void handle_connection(int client_fd, FILE * log_file)
     close(client_fd);
 }
 
-// Función para el hilo que acepta conexiones de clientes
-void *accept_connections(void *server_fd_ptr)
-{
-    // cambio para consistencia con logger
-    connection_info thread_info = *(connection_info *)server_fd_ptr;
-    int server_fd = *(int *)server_fd_ptr;
-    FILE *log_file = thread_info.log_file;
-    while (1)
-    {
-        struct sockaddr_in client_addr;
-        socklen_t client_addr_len = sizeof(client_addr);
-        int client_fd = accept(server_fd, (struct sockaddr *)&client_addr, &client_addr_len);
-        if (client_fd < 0)
-        {
-            error("Error al aceptar la conexión del cliente");
-        }
-        handle_connection(client_fd, log_file);
-    }
-    return NULL;
-}
 
 // Funcion para manejar conexiones de varios clientes
 void *connection_handler(void *arg)
@@ -287,6 +267,7 @@ int str_to_uint16(char *str, uint16_t *res)
     return 0;
 }
 
+
 int main(int argc, char *argv[])
 {
     // Del llamado de programa
@@ -310,7 +291,13 @@ int main(int argc, char *argv[])
         log_file = fopen("log.txt", "a+");
         doc_root_folder = " ./logs";
     }
-
+    
+    size_t host_name_len = 30; // arbitrario
+    char host_name[host_name_len];
+    if (gethostname(host_name, host_name_len) == -1)
+        error("gethostname error");
+    struct addrinfo *possible_list = get_addrinfo_linked_list(host_name, argv[1]);
+    
     int server_fd, client_fd;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
@@ -327,7 +314,7 @@ int main(int argc, char *argv[])
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(port);
 
-    // Fix de "address already in use" 
+    // Fix de "address already in use"
     int _ = 1;
     setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &_, sizeof(_));
 
@@ -347,6 +334,8 @@ int main(int argc, char *argv[])
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
+    struct sockaddr_storage their_addr; // connector's address information
+    socklen_t sin_size=sizeof(their_addr);
     while (1)
     {
         // Acepta una nueva conexión entrante
@@ -358,7 +347,7 @@ int main(int argc, char *argv[])
 
         // Crea un nuevo hilo para manejar la conexión entrante
         pthread_t thread_id;
-        connection_info thread_info = {.client_fd= client_fd, .log_file=log_file};
+        connection_info thread_info = {.client_fd = client_fd, .log_file = log_file};
         if (pthread_create(&thread_id, NULL, connection_handler, (void *)&thread_info) < 0)
         {
             perror("Error al crear el hilo \n");
