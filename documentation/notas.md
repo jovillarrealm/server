@@ -210,3 +210,15 @@ void*addr;
 
     return addrinfo_list;
 }
+
+    size_t host_name_len = 30; // arbitrario
+    char host_name[host_name_len];
+    if (gethostname(host_name, host_name_len) == -1)
+        error("gethostname error");
+
+
+    struct addrinfo *possible_list = get_addrinfo_linked_list(host_name, argv[1]);
+
+
+    struct sockaddr_storage their_addr; // connector's address information
+    socklen_t sin_size=sizeof(their_addr);
