@@ -288,8 +288,8 @@ int main(int argc, char *argv[])
     else
     {
         port = 8080;
-        log_file = fopen("log.txt", "a+");
-        doc_root_folder = " ./logs";
+        log_file = fopen("./logs/log.txt", "a+");
+        doc_root_folder = "./logs";
     }
     
 
