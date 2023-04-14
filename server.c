@@ -243,7 +243,6 @@ void handle_connection(int client_fd, FILE *log_file)
     close(client_fd);
 }
 
-
 // Funcion para manejar conexiones de varios clientes
 void *connection_handler(void *arg)
 {
@@ -268,11 +267,13 @@ int str_to_uint16(char *str, uint16_t *res)
     return 0;
 }
 
-void ensure_good_exit(int ctr_c){
-    print("CTRL+C presionado\nbye\n");
-    exit(1);
+static volatile sig_atomic_t running = 1;
+void ensure_good_exit(int _ctr_c)
+{
+    (void)_ctr_c;
+    printf("Salimos bien\n");
+    running = 0;
 }
-
 int main(int argc, char *argv[])
 {
     // Del llamado de programa
@@ -297,7 +298,8 @@ int main(int argc, char *argv[])
         doc_root_folder = "./assets";
     }
 
-    signal(SIGINT, ensure_good_exit);
+    if (signal(SIGINT, ensure_good_exit) == SIG_ERR)
+    printf("\ncan't catch SIGINT\n");
 
     int server_fd, client_fd;
     struct sockaddr_in address;
@@ -335,9 +337,7 @@ int main(int argc, char *argv[])
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-
-
-    while (1)
+    while (running)
     {
         // Acepta una nueva conexión entrante
         if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)

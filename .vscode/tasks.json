@@ -1,17 +1,17 @@
 {
-	"version": "2.0.0",
-	"tasks": [
+    "version": "2.0.0",
+    "tasks": [
 		{
 			"type": "meson",
 			"mode": "build",
 			"problemMatcher": [
 				"$meson-gcc"
 			],
-			"group": { // when debuugging launch asks for preLaunchTask
+			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
 			"label": "Meson: Build all targets"
-		},
+		}
 	]
 }
