@@ -7,7 +7,7 @@
 			"problemMatcher": [
 				"$meson-gcc"
 			],
-			"group": {
+			"group": { // when debuugging launch asks for preLaunchTask
 				"kind": "build",
 				"isDefault": true
 			},

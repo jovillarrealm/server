@@ -7,6 +7,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+#include <signal.h>
 
 #define PORT 8080
 #define BUFFER_SIZE 1024
@@ -267,6 +268,10 @@ int str_to_uint16(char *str, uint16_t *res)
     return 0;
 }
 
+void ensure_good_exit(int ctr_c){
+    print("CTRL+C presionado\nbye\n");
+    exit(1);
+}
 
 int main(int argc, char *argv[])
 {
@@ -289,11 +294,11 @@ int main(int argc, char *argv[])
     {
         port = 8080;
         log_file = fopen("./logs/log.txt", "a+");
-        doc_root_folder = "./logs";
+        doc_root_folder = "./assets";
     }
-    
 
-    
+    signal(SIGINT, ensure_good_exit);
+
     int server_fd, client_fd;
     struct sockaddr_in address;
     int addrlen = sizeof(address);

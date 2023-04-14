@@ -22,16 +22,16 @@ vamos a estar haciendo cosas.
 
 ## **Inicio**
 
-De momento se planea tener en una imagen de ubuntu de AWS, o algo, entonces en vez de lidiar con las mierdas de windows de no ser POSIX compliant con freaking sockets no es algo con lo que quiera lidiar.
+De momento de escalabilidad tenemos un accept metido en un while con detached threads. epoll() probablemente va tocar.
 
 ### **Setup**
 
 1. Prender un [WSL de ubuntu.](https://learn.microsoft.com/es-mx/windows/wsl/install) y [WSL en vscode.](https://code.visualstudio.com/docs/remote/wsl)
 2. Desde wsl se usa con [Meson.](https://mesonbuild.com/SimpleStart.html)
-3. Sino, CMakeTools.
 
 #### **Detalles**
 
+No hay profiler 😒.
 |Compilador|Build|Debugger|
 |---|---|---|
 |gcc|meson|gdb|
@@ -74,9 +74,9 @@ Instalar algo (probablemente no se va a usar)
 DESTDIR=/path/to/staging/root/borrardespues meson install -C builddir
 ```
 
-Mover los json con la extension de mesonbuild para vscode es ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥,
+Mover los json con la extension de mesonbuild para vscode es ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥, corre cada vez que se abre el workspace para preguntar si quieres configurar (incluso si ya está).
 
-Lo bueno es que moviendo los task.json y
+Lo bueno es que moviendo los task.json eso queda bonito.
 
 ******
 
@@ -168,6 +168,7 @@ netstat
 
 Puertos: DNS 53, SSH 22, HTTP 80.
 
+``` C
 # define _POSIX_C_SOURCE 200809
 # include <netdb.h>
 
@@ -222,3 +223,4 @@ void*addr;
 
     struct sockaddr_storage their_addr; // connector's address information
     socklen_t sin_size=sizeof(their_addr);
+```
