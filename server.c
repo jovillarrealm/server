@@ -8,7 +8,7 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
-#define PORT 8080
+
 #define BUFFER_SIZE 1024
 #define MAX_CONNECTIONS 15
 #define MAX_REQUEST_SIZE 4096
