@@ -7,9 +7,10 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <pthread.h>
-#include <signal.h>
+#include <sys/epoll.h>
+#include <fcntl.h>
+#include <errno.h>
 
-#define PORT 8080
 #define BUFFER_SIZE 1024
 #define MAX_CONNECTIONS 15
 #define MAX_REQUEST_SIZE 4096
@@ -17,6 +18,10 @@
 #define OK 200
 #define BAD_REQUEST 400
 #define NOT_FOUND 404
+// Evil
+#define MAX_EVENTS 128
+#define MAX_THREADS 4
+#define QUEUE_SIZE 256
 
 // Define la estructura de la petición HTTP:
 typedef struct http_request
@@ -42,7 +47,24 @@ typedef struct connection_info
     FILE *log_file;
 } connection_info;
 
+// Para el manejo del estado del servidor
+typedef struct ServerState
+{
+    int epoll_fd;
+    int listen_fd;
+    int *queue;
+    int queue_front;
+    int queue_rear;
+    pthread_mutex_t *mutex;
+    pthread_cond_t *cond;
+} ServerState;
 // Aux para saber el tiempo exactamente
+void set_nonblocking(int fd)
+{
+    int flags = fcntl(fd, F_GETFL, 0);
+    fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+}
+
 char *get_current_time()
 {
     time_t t = time(NULL);
@@ -257,7 +279,7 @@ void *connection_handler(void *arg)
 int str_to_uint16(char *str, uint16_t *res)
 {
     char *end;
-    int errno = 0;
+    // si errno da problemas eliminarlo aquí
     long val = strtol(str, &end, 10);
     if (errno || end == str || *end != '\0' || val < 0 || val >= 0x10000)
     {
@@ -267,45 +289,10 @@ int str_to_uint16(char *str, uint16_t *res)
     return 0;
 }
 
-static volatile sig_atomic_t running = 1;
-void ensure_good_exit(int _ctr_c)
+int listening_socket(u_int16_t port, struct sockaddr_in address)
 {
-    (void)_ctr_c;
-    printf("Salimos bien\n");
-    running = 0;
-}
-int main(int argc, char *argv[])
-{
-    // Del llamado de programa
-    u_int16_t port;
-    FILE *log_file;
-    char *doc_root_folder;
-    // Si se llama el programa correctamente, usa esos datos
-    if (argc == 4)
-    {
-        if (str_to_uint16(argv[1], &port) == -1)
-        {
-            perror("uso: ./server <PORT> <LOG_FILE> <DOC_ROOT_FOLDER>\n");
-            exit(EXIT_FAILURE);
-        }
-        log_file = fopen(argv[2], "a+"); // a+ (create + append) option will allow appending which is useful in a log file
-        doc_root_folder = argv[3];
-    }
-    else
-    {
-        port = 8080;
-        log_file = fopen("./logs/log.txt", "a+");
-        doc_root_folder = "./assets";
-    }
-
-    if (signal(SIGINT, ensure_good_exit) == SIG_ERR)
-    printf("\ncan't catch SIGINT\n");
-
-    int server_fd, client_fd;
-    struct sockaddr_in address;
-    int addrlen = sizeof(address);
-
     // Crea el socket
+    int server_fd;
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
     {
         perror("Error al crear el socket \n");
@@ -328,36 +315,245 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
+    // set the socket to non-blocking mode
+    set_nonblocking(server_fd);
+
     // Escucha las conexiones entrantes
     if (listen(server_fd, MAX_CONNECTIONS) < 0)
     {
         perror("Error al escuchar en el socket \n");
         exit(EXIT_FAILURE);
     }
+    return server_fd;
+}
+
+// EVIL
+void *worker_thread(void *arg)
+{
+    ServerState *state = (ServerState *)arg;
+
+    while (1)
+    {
+        pthread_mutex_lock(&state->mutex);
+
+        while (state->queue_front == state->queue_rear)
+        {
+            pthread_cond_wait(&state->cond, &state->mutex);
+        }
+
+        int client_fd = state->queue[state->queue_front];
+        state->queue_front = (state->queue_front + 1) % QUEUE_SIZE;
+
+        pthread_mutex_unlock(&state->mutex);
+
+        /* handle the client connection */
+        char buffer[1024];
+        ssize_t n = read(client_fd, buffer, sizeof(buffer));
+        if (n <= 0)
+        {
+            close(client_fd);
+            continue;
+        }
+        write(client_fd, buffer, n);
+
+        close(client_fd);
+    }
+
+    return NULL;
+}
+
+int main(int argc, char *argv[])
+{
+    // Del llamado de programa
+
+    // Puerto que va a escuchar el servidor
+    u_int16_t port;
+    // FILE * en modo a+ para solo tener append en el log file
+    FILE *log_file;
+    //
+    char *doc_root_folder;
+    // Si no se da el uso de la rúbrica al programa, usa unos datos por defecto
+    if (argc == 4)
+    {
+        printf("uso: ./server <PORT> <LOG_FILE> <DOC_ROOT_FOLDER>\n");
+        if (str_to_uint16(argv[1], &port) == -1)
+        {
+            exit(EXIT_FAILURE);
+        }
+
+        log_file = fopen(argv[2], "a+");
+        doc_root_folder = argv[3];
+    }
+    else
+    {
+        port = 8080;
+        log_file = fopen("./logs/log.txt", "a+");
+        doc_root_folder = "./assets";
+    }
+    int client_fd;
+    struct sockaddr_in address;
+    int addrlen = sizeof(address);
+    int server_fd = listening_socket(port, address);
+
+    // Se instancia un epoll para el manejo óptimo de conexiones
+
+    // fd de epoll
+    int epoll_fd;
+    if ((epoll_fd = epoll_create1(0)) == -1)
+    {
+        perror("epoll_create1");
+        exit(EXIT_FAILURE);
+    }
+
+    // Se configura el epoll y se inicializa el estado del servidor
+
+    // Evento asociado al fd del server
+    struct epoll_event event = {
+        .events = EPOLLIN,
+        .data.fd = server_fd,
+    };
+    if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, server_fd, &event) == -1)
+    {
+        perror("epoll_ctl");
+        exit(EXIT_FAILURE);
+    }
+
+    ServerState state = {
+        .epoll_fd = epoll_fd,
+        .listen_fd = server_fd,
+        .queue_front = 0,
+        .queue_rear = 0,
+        .mutex = PTHREAD_MUTEX_INITIALIZER,
+        .cond = PTHREAD_COND_INITIALIZER,
+    };
+
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-    while (running)
+    // pthread_t para el manejo de cada conexión se le pasará el estado del servidor
+    pthread_t client_threads[MAX_THREADS];
+    for (int i = 0; i < MAX_THREADS; i++)
     {
-        // Acepta una nueva conexión entrante
-        if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
+        if (pthread_create(&client_threads[i], NULL, worker_thread, &state) != 0)
         {
-            perror("Error al aceptar la conexión entrante \n");
-            continue;
+            perror("pthread_create");
+            exit(EXIT_FAILURE);
         }
-
-        // Crea un nuevo hilo para manejar la conexión entrante
-        pthread_t thread_id;
-        connection_info thread_info = {.client_fd = client_fd, .log_file = log_file};
-        if (pthread_create(&thread_id, NULL, connection_handler, (void *)&thread_info) < 0)
-        {
-            perror("Error al crear el hilo \n");
-            continue;
-        }
-
-        // El hilo manejará la conexión, así que podemos continuar aceptando conexiones entrantes
-        pthread_detach(thread_id);
     }
+
+    // Las conexiones una vez más se inician
+    struct epoll_event events[MAX_EVENTS];
+    while (1)
+    {
+        int n = epoll_wait(epoll_fd, events, MAX_EVENTS, -1);
+        if (n == -1)
+        {
+            if (errno == EINTR)
+            {
+                continue;
+            }
+            else
+            {
+                perror("epoll_wait");
+                exit(EXIT_FAILURE);
+            }
+        }
+        for (int i = 0; i < n; i++)
+        {
+            if (events[i].data.fd == server_fd)
+            {
+                /* accept the incoming connection */
+                while (1)
+                {
+                    // FIXME: posiblemente error si  if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
+                    if ((client_fd = accept(server_fd, NULL, NULL))  <0)
+                    {
+                        if (errno == EAGAIN || errno == EWOULDBLOCK)
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            perror("accept");
+                            exit(EXIT_FAILURE);
+                        }
+                    }
+
+                    // Para agregar el cliente a epoll, lo reconfidura
+                    set_nonblocking(client_fd);
+                    struct epoll_event client_event = {
+                        .events = EPOLLIN | EPOLLET,
+                        .data.fd = client_fd,
+                    };
+                    if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, client_fd, &client_event) == -1)
+                    {
+                        perror("epoll_ctl");
+                        exit(EXIT_FAILURE);
+                    }
+                    
+                    // Encola al cliente para ser manejado por uno de los pthread_t
+                    pthread_mutex_lock(&state.mutex);
+
+                    while ((state.queue_rear + 1) % QUEUE_SIZE == state.queue_front)
+                    {
+                        pthread_cond_wait(&state.cond, &state.mutex);
+                    }
+
+                    state.queue[state.queue_rear] = client_fd;
+                    state.queue_rear = (state.queue_rear + 1) % QUEUE_SIZE;
+
+                    pthread_mutex_unlock(&state.mutex);
+                    pthread_cond_signal(&state.cond);
+                }
+            }
+            else
+            {
+                /* handle a client request in a worker thread */
+                pthread_mutex_lock(&state.mutex);
+
+                while ((state.queue_rear + 1) % QUEUE_SIZE == state.queue_front)
+                {
+                    pthread_cond_wait(&state.cond, &state.mutex);
+                }
+
+                state.queue[state.queue_rear] = events[i].data.fd;
+                state.queue_rear = (state.queue_rear + 1) % QUEUE_SIZE;
+
+                pthread_mutex_unlock(&state.mutex);
+                pthread_cond_signal(&state.cond);
+            }
+        }
+    }
+
+    return 0;
+}
+
+int old_main(FILE *log_file)
+{
+    /*
+        while (1)
+        {
+            // Acepta una nueva conexión entrante
+            if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
+            {
+                perror("Error al aceptar la conexión entrante \n");
+                continue;
+            }
+
+            // Crea un nuevo hilo para manejar la conexión entrante
+            pthread_t thread_id;
+            connection_info thread_info = {.client_fd = client_fd, .log_file = log_file};
+            if (pthread_create(&thread_id, NULL, connection_handler, (void *)&thread_info) < 0)
+            {
+                perror("Error al crear el hilo \n");
+                continue;
+            }
+
+            // El hilo manejará la conexión, así que podemos continuar aceptando conexiones entrantes
+            pthread_detach(thread_id);
+        }
+    */
+
     fclose(log_file); // Unreachable en este momento
     return 0;
 }

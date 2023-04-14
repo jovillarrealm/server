@@ -1,3 +1,6 @@
 .DS_Store
 /build
 meson.build
+/builddir
+/.vscode
+logs/log.txt
