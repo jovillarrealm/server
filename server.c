@@ -52,19 +52,21 @@ typedef struct ServerState
 {
     int epoll_fd;
     int listen_fd;
-    int *queue;
+    int queue[QUEUE_SIZE];
     int queue_front;
     int queue_rear;
-    pthread_mutex_t *mutex;
-    pthread_cond_t *cond;
+    pthread_mutex_t mutex;
+    pthread_cond_t cond;
+    FILE * log;
 } ServerState;
-// Aux para saber el tiempo exactamente
+
 void set_nonblocking(int fd)
 {
     int flags = fcntl(fd, F_GETFL, 0);
     fcntl(fd, F_SETFL, flags | O_NONBLOCK);
 }
 
+// Aux para saber el tiempo exactamente
 char *get_current_time()
 {
     time_t t = time(NULL);
@@ -327,26 +329,34 @@ int listening_socket(u_int16_t port, struct sockaddr_in address)
     return server_fd;
 }
 
-// EVIL
+// EVIL bitchcraft Do nOt eaT
 void *worker_thread(void *arg)
 {
     ServerState *state = (ServerState *)arg;
 
+    //
     while (1)
     {
+        // Espera disponibilidad
         pthread_mutex_lock(&state->mutex);
 
         while (state->queue_front == state->queue_rear)
         {
             pthread_cond_wait(&state->cond, &state->mutex);
         }
-
+        
+        // Se agrega a la cola del estado y actualiza
         int client_fd = state->queue[state->queue_front];
-        state->queue_front = (state->queue_front + 1) % QUEUE_SIZE;
+        state->queue_front = (state->queue_front + 1) % QUEUE_SIZE; // esto es lo que revisa el main thread
+
 
         pthread_mutex_unlock(&state->mutex);
 
-        /* handle the client connection */
+        // Ahora se maneja la conexion
+        
+        handle_connection(client_fd,state->log);
+        /*
+        //Chat GPTeado
         char buffer[1024];
         ssize_t n = read(client_fd, buffer, sizeof(buffer));
         if (n <= 0)
@@ -357,6 +367,7 @@ void *worker_thread(void *arg)
         write(client_fd, buffer, n);
 
         close(client_fd);
+        */
     }
 
     return NULL;
@@ -367,10 +378,14 @@ int main(int argc, char *argv[])
     // Del llamado de programa
 
     // Puerto que va a escuchar el servidor
+    // Rúbrica: HTTP PORT es el puerto de la máquina en la cual está corriendo su servidor web TWS
     u_int16_t port;
+
     // FILE * en modo a+ para solo tener append en el log file
+    // LogFile es el archivo de log que se va a generar con toda la información concerniente a peticiones, errores, info, etc.
     FILE *log_file;
-    //
+
+    // DocumentRootFolder es la carpeta donde se alojarán los diferentes recursos web
     char *doc_root_folder;
     // Si no se da el uso de la rúbrica al programa, usa unos datos por defecto
     if (argc == 4)
@@ -390,9 +405,11 @@ int main(int argc, char *argv[])
         log_file = fopen("./logs/log.txt", "a+");
         doc_root_folder = "./assets";
     }
-    int client_fd;
+    
+    // FIXME: Si accept no tiene problemas, esto se borra. 
     struct sockaddr_in address;
-    int addrlen = sizeof(address);
+    //int addrlen = sizeof(address);
+
     int server_fd = listening_socket(port, address);
 
     // Se instancia un epoll para el manejo óptimo de conexiones
@@ -405,7 +422,7 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
-    // Se configura el epoll y se inicializa el estado del servidor
+    // Se configura el epoll
 
     // Evento asociado al fd del server
     struct epoll_event event = {
@@ -418,6 +435,7 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
+    // El estado del servidor, para evitar el uso de globales
     ServerState state = {
         .epoll_fd = epoll_fd,
         .listen_fd = server_fd,
@@ -425,28 +443,31 @@ int main(int argc, char *argv[])
         .queue_rear = 0,
         .mutex = PTHREAD_MUTEX_INITIALIZER,
         .cond = PTHREAD_COND_INITIALIZER,
+        .log = log_file,
     };
 
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-    // pthread_t para el manejo de cada conexión se le pasará el estado del servidor
+    // pthread_t para el manejo de cada conexión. A cada hilo se le va a pasar el estado del servidor
+    // Threadpool Deadpool para I/O Multiplex multiflex, cool.
     pthread_t client_threads[MAX_THREADS];
-    for (int i = 0; i < MAX_THREADS; i++)
+    for (int thread_id = 0; thread_id < MAX_THREADS; thread_id++)
     {
-        if (pthread_create(&client_threads[i], NULL, worker_thread, &state) != 0)
+        if (pthread_create(&client_threads[thread_id], NULL, worker_thread, &state) != 0)
         {
             perror("pthread_create");
             exit(EXIT_FAILURE);
         }
     }
 
-    // Las conexiones una vez más se inician
+    // while loop donde se reciben y lidian conexiones
     struct epoll_event events[MAX_EVENTS];
     while (1)
     {
-        int n = epoll_wait(epoll_fd, events, MAX_EVENTS, -1);
-        if (n == -1)
+        // Numero de eventos que buscan
+        int triggered_event_number = epoll_wait(epoll_fd, events, MAX_EVENTS, -1);
+        if (triggered_event_number == -1)
         {
             if (errno == EINTR)
             {
@@ -458,19 +479,24 @@ int main(int argc, char *argv[])
                 exit(EXIT_FAILURE);
             }
         }
-        for (int i = 0; i < n; i++)
+
+        // Por cada evento que haya pasado, se le acepta conexión y se agrega al estado del servidor
+
+        for (int event_i = 0; event_i < triggered_event_number; event_i++)
         {
-            if (events[i].data.fd == server_fd)
+            if (events[event_i].data.fd == server_fd)
             {
-                /* accept the incoming connection */
+                // accept() con más error handling
+                // FIXME: posiblemente error de accept si era  if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
                 while (1)
                 {
-                    // FIXME: posiblemente error si  if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
-                    if ((client_fd = accept(server_fd, NULL, NULL))  <0)
+                    //Se acepta conexion
+                    int client_fd = 0;
+                    if ((client_fd = accept(server_fd, NULL, NULL)) < 0)
                     {
                         if (errno == EAGAIN || errno == EWOULDBLOCK)
                         {
-                            continue;
+                            break;
                         }
                         else
                         {
@@ -479,8 +505,12 @@ int main(int argc, char *argv[])
                         }
                     }
 
-                    // Para agregar el cliente a epoll, lo reconfidura
+                    // Para agregar la conexion al estado, la debe meter primero a epoll
+
+                    // Para meterla, la conexion se configura el fd como no block-eante 
                     set_nonblocking(client_fd);
+                    
+                    // ...y se reconfigura epoll a través de un evento asociado a la conexion
                     struct epoll_event client_event = {
                         .events = EPOLLIN | EPOLLET,
                         .data.fd = client_fd,
@@ -490,10 +520,13 @@ int main(int argc, char *argv[])
                         perror("epoll_ctl");
                         exit(EXIT_FAILURE);
                     }
-                    
-                    // Encola al cliente para ser manejado por uno de los pthread_t
-                    pthread_mutex_lock(&state.mutex);
 
+                    // Encola al cliente para ser manejado por uno de los pthread_t
+                    // FIXME: Este código exacto está repetido más abajo, aún está por determinar por qué
+                    // de pronto esto solo ocurre la primera vez pero no se alteran los events[i].data.fd
+
+                    pthread_mutex_lock(&state.mutex);
+                    // Mientras los hilos están ocupados, main thread espera
                     while ((state.queue_rear + 1) % QUEUE_SIZE == state.queue_front)
                     {
                         pthread_cond_wait(&state.cond, &state.mutex);
@@ -508,7 +541,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                /* handle a client request in a worker thread */
+                // Encola al cliente para ser manejado por uno de los pthread_t
                 pthread_mutex_lock(&state.mutex);
 
                 while ((state.queue_rear + 1) % QUEUE_SIZE == state.queue_front)
@@ -516,7 +549,7 @@ int main(int argc, char *argv[])
                     pthread_cond_wait(&state.cond, &state.mutex);
                 }
 
-                state.queue[state.queue_rear] = events[i].data.fd;
+                state.queue[state.queue_rear] = events[event_i].data.fd;
                 state.queue_rear = (state.queue_rear + 1) % QUEUE_SIZE;
 
                 pthread_mutex_unlock(&state.mutex);
