@@ -72,6 +72,13 @@ cd ..
 meson compile -C builddir
 ```
 
+Para compilar con clang
+
+``` bash
+meson build-gcc
+CC=clang CXX=clang++ meson build-clang
+```
+
 Si hay errores de pronto ```# define _POSIX_C_SOURCE 200809L``` ayuda
 
 Instalar algo (probablemente no se va a usar)

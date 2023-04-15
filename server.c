@@ -22,7 +22,7 @@
 #define NOT_FOUND 404
 // Evil
 #define MAX_EVENTS 128
-#define MAX_THREADS 10
+#define MAX_THREADS 2
 #define QUEUE_SIZE 256
 
 // Define la estructura de la petición HTTP:
@@ -208,10 +208,10 @@ void handle_connection(int client_fd, FILE *log_file)
     logger(request.path, log_file);
 
     // Determinar el estado de la solicitud y generar una respuesta HTTP
-    char *response_body = NULL;
-    size_t response_length;
+    char *response_body = "<html><body><h1>Solicitud HTTP no válida, ayudame cristooo</h1></body></html>";
+    size_t response_length = strlen(response_body);
     int response_code;
-    char *status_text = NULL;
+    char *status_text = "Bad Request";
 
     switch (request.method)
     {
@@ -260,7 +260,7 @@ int str_to_uint16(char *str, uint16_t *res)
     return 0;
 }
 
-int listening_socket(u_int16_t port, struct sockaddr_in address)
+int listening_socket(u_int16_t port)
 {
     // Crea el socket
     int server_fd;
@@ -271,6 +271,7 @@ int listening_socket(u_int16_t port, struct sockaddr_in address)
     }
 
     // Configura la dirección y el puerto para el socket
+    struct sockaddr_in address;
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(port);
@@ -299,7 +300,7 @@ int listening_socket(u_int16_t port, struct sockaddr_in address)
     return server_fd;
 }
 
-// EVIL bitchcraft Do nOt eaT
+// Hilo que lockea
 void *worker_thread(void *arg)
 {
     ServerState *state = (ServerState *)arg;
@@ -362,10 +363,10 @@ int main(int argc, char *argv[])
     }
 
     // FIXME: Si accept no tiene problemas, esto se borra.
-    struct sockaddr_in address;
+    
     // int addrlen = sizeof(address);
 
-    int server_fd = listening_socket(port, address);
+    int server_fd = listening_socket(port);
 
     // Se instancia un epoll para el manejo óptimo de conexiones
 
