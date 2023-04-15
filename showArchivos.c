@@ -1,15 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <unistd.h>
-#include <time.h>
+
+#include "showArchivos.h"
 
 
 
-
-char *get_time(){
+char *get_time(void){
     time_t t = time(NULL);
     struct tm tm = *gmtime(&t);
     char *time_str = malloc(30 * sizeof(char));
@@ -31,6 +25,7 @@ int showFile(int client, char *ruta) {
     file = fopen(ruta, "rb");
     if (!file) {
         perror("File error");
+        free(http_mime);
         return EXIT_FAILURE;
     }
 
@@ -77,6 +72,8 @@ int showFile(int client, char *ruta) {
         strcpy(http_mime, "application/vnd.ms-powerpoint");
     } else {
         printf("Unsupported file type!\n");
+        free(http_mime);
+        fclose(file);
         return 1;
     }
 
@@ -93,6 +90,7 @@ int showFile(int client, char *ruta) {
     buffer = (char *)malloc(fileLen);
     if (!buffer) {
         perror("Memory error");
+        free(http_mime);
         fclose(file);
         return EXIT_FAILURE;
     }
@@ -103,6 +101,7 @@ int showFile(int client, char *ruta) {
 
 
     char header[1024];
+    char *now = get_time();
     sprintf(header,
             "HTTP/1.1 200 OK\r\n"
             "Date: %s\r\n"
@@ -113,7 +112,8 @@ int showFile(int client, char *ruta) {
             "Connection: keep-alive\r\n"
             "Keep-Alive: timeout=5, max=100\r\n"
             "\r\n",
-            get_time(), http_mime, fileLen);
+            now, http_mime, fileLen);
+        free(now);
 
     // Send HTTP response header
     int sent = send(client, header, strlen(header), 0);
@@ -128,7 +128,7 @@ int showFile(int client, char *ruta) {
         while (bytes_sent < fileLen) {
             int remaining = fileLen - bytes_sent;
             int send_size = remaining > chunk_size ? chunk_size : remaining;
-            int sent = send(client, buffer + bytes_sent, send_size, 0);
+            sent = send(client, buffer + bytes_sent, send_size, 0);
             if (sent == -1) {
                 perror("Send error");
                 break;

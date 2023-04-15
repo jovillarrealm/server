@@ -44,32 +44,41 @@ pip3 install meson
 Para iniciar un projecto en el directorio actual(cli, la extensión de vscode hace más)
 
 ``` bash
-meson init --name {server} --build
+meson init --name server --build
 ```
 
 Para compilar y testeo
 
 ``` bash
-meson compile -C builddir
-meson test -C builddir
+meson compile -C build
+meson test -C build
 ```
 
-Para setear nivel de warnings
+Para setear nivel de warnings, y
 
 ``` bash
-cd builddir
+cd build
 meson configure --warnlevel=everything
 cd ..
-meson compile -C builddir
+meson compile -C build
 ```
 
 Para setear estandar
 
 ``` bash
-cd builddir
+cd build
 meson configure -Dc_std=none
 cd ..
-meson compile -C builddir
+meson compile -C build
+```
+
+Para setear estandar
+
+``` bash
+cd build
+meson configure -Dbuildtype=release
+cd ..
+meson compile -C build
 ```
 
 Para compilar con clang
@@ -84,7 +93,7 @@ Si hay errores de pronto ```# define _POSIX_C_SOURCE 200809L``` ayuda
 Instalar algo (probablemente no se va a usar)
 
 ``` bash
-DESTDIR=/path/to/staging/root/borrardespues meson install -C builddir
+DESTDIR=/path/to/staging/root/borrardespues meson install -C build
 ```
 
 Mover los json con la extension de mesonbuild para vscode es ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥, corre cada vez que se abre el workspace para preguntar si quieres configurar (incluso si ya está).
