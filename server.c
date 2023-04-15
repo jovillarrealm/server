@@ -58,10 +58,8 @@ typedef struct ServerState
     int queue_rear;
     pthread_mutex_t mutex;
     pthread_cond_t cond;
-    FILE * log;
+    FILE *log;
 } ServerState;
-
-
 
 // Aux para saber el tiempo exactamente
 char *get_current_time()
@@ -332,7 +330,6 @@ void *worker_thread(void *arg)
 {
     ServerState *state = (ServerState *)arg;
 
-    
     while (1)
     {
         // Espera disponibilidad
@@ -342,18 +339,16 @@ void *worker_thread(void *arg)
         {
             pthread_cond_wait(&state->cond, &state->mutex);
         }
-        
+
         // Se agrega a la cola del estado y actualiza
         int client_fd = state->queue[state->queue_front];
         state->queue_front = (state->queue_front + 1) % QUEUE_SIZE; // esto es lo que revisa el main thread
 
-
         pthread_mutex_unlock(&state->mutex);
 
         // Ahora se maneja la conexion
-        
-        handle_connection(client_fd,state->log);
-        
+
+        handle_connection(client_fd, state->log);
     }
 
     return NULL;
@@ -391,10 +386,10 @@ int main(int argc, char *argv[])
         log_file = fopen("./logs/log.txt", "a+");
         doc_root_folder = "./docs";
     }
-    
-    // FIXME: Si accept no tiene problemas, esto se borra. 
+
+    // FIXME: Si accept no tiene problemas, esto se borra.
     struct sockaddr_in address;
-    //int addrlen = sizeof(address);
+    // int addrlen = sizeof(address);
 
     int server_fd = listening_socket(port, address);
 
@@ -477,7 +472,7 @@ int main(int argc, char *argv[])
                 // FIXME: posiblemente error de accept si era  if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
                 while (1)
                 {
-                    //Se acepta conexion
+                    // Se acepta conexion
                     int client_fd = 0;
                     if ((client_fd = accept(server_fd, NULL, NULL)) < 0)
                     {
@@ -497,7 +492,7 @@ int main(int argc, char *argv[])
                     // Para meterla, la conexion se configura el fd como no block-eante
                     int flags = fcntl(client_fd, F_GETFL, 0);
                     fcntl(client_fd, F_SETFL, flags | O_NONBLOCK);
-                    
+
                     // ...y se reconfigura epoll a través de un evento asociado a la conexion
                     struct epoll_event client_event = {
                         .events = EPOLLIN | EPOLLET,
