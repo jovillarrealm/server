@@ -8,21 +8,17 @@ Aquí es donde:
 - Sara
 - Jorge
 
-vamos a estar haciendo cosas.
-
 ******
 
 ## **Tabla de contenido**
 
 1. [Inicio](#inicio)
-2. [Teoría](#teoría)
+2. [Troubleshooting](#troubleshooting)
 3. [Miscelánea](#misc)
 
 ******
 
 ## **Inicio**
-
-De momento de escalabilidad tenemos un accept metido en un while con detached threads. epoll() probablemente va tocar.
 
 ### **Setup**
 
@@ -80,9 +76,24 @@ Lo bueno es que moviendo los task.json eso queda bonito.
 
 ******
 
-## **Teoría**
+## **Troubleshooting**
 
-### Sockets
+``` rust
+"The knowledge I needed was scattered around the lands – in the hushed whispers of the compiler devs; in the hastily scrawled comments in the issue tracker; in the strange angles and contortions of the code.
+
+That which I sought after existed only as folklore.
+
+These traditions and practices spoke of success, but echoed something else. The ancient rituals and ceremonies worked, but their very existence suggested that which didn’t. I saw well-trodden paths that strangely curved around nothing, testaments to unspoken horrors that once took place there.
+I sought the shadows cast by the folklore – the forbidden acts that could bring doom, that had brought doom, and would bring doom again.
+
+I sought the folklore of failure.
+
+I sought the faultlore."
+
+Aria Beingessner
+```
+
+### Faultlore #1: Sockets
 
 ["a way to speak to other programs using standard Unix file descriptors"](https://man7.org/linux/man-pages/man2/socket.2.html)
 
@@ -127,9 +138,9 @@ Primero, aquí se usa el File Descriptor que haya devuelto ```socket```.
 
 Segundo, se pide un ```sockaddr```. Basicamente, esto existe porque hay muchas diferencias entre las diferentes familias de protocolos, y sus tamaños, por tantp, para solucionar lidiar con esas diferencias, solo se pide que desde un struct que defina la informacion de un protocolo como ```sockaddr_in``` o ```sockaddr_in6``` simplemente se hace un cast a algo genérico. ```sockaddr``` es ese algo genérico.
 
-Entender la diferencia entre estos tipos además requiere algo de miseria con estandares de POSIX, C y sus compiladores, linux, y más networking.[Rabbit hole](https://stackoverflow.com/questions/18609397/whats-the-difference-between-sockaddr-sockaddr-in-and-sockaddr-in6) [hole](https://stackoverflow.com/questions/48328708/c-create-a-sockaddr-struct) si quiere. Basicamente hay que hacer uso de los structs de diferentes familias, que deben ser casteables a este tipo, para tener algo más o menos general.
+Entender la diferencia entre estos tipos además requiere algo de miseria con estandares de C y sus compiladores (implementación también importa en esto), POSIX, linux, y más networking.[Rabbit](https://stackoverflow.com/questions/18609397/whats-the-difference-between-sockaddr-sockaddr-in-and-sockaddr-in6) [hole](https://stackoverflow.com/questions/48328708/c-create-a-sockaddr-struct) si quiere. Basicamente hay que hacer uso de los structs de diferentes familias, que deben ser casteables a este tipo, para tener algo más o menos general.
 
-para bindear con puertos <1024 hay que correr el programa con sudo, porque solo ```root``` tiene acceso a esos puertos.
+para bindear con puertos <1024 hay que correr el programa con sudo, solo ```root``` tiene acceso a esos puertos.
 
 #### listen
 
@@ -153,12 +164,24 @@ No se va a usar en este trabajo. alternativa a accept.
 
 #### recv()
 
-Si hay alguna vaina de Keep-Alive se puede hacer uso de esta función para mas de un request por conexión
+Si hay alguna vaina de Keep-Alive se puede hacer uso de esta función para mas de un request por conexión. Lee bytes y retorna cuantos leyó
 
 #### send
 
 De momento se hace uso de write() que es equivalente salvo el uso de flags.
 Si hay una razón de cambio, estaría relacionada con el uso del MSG_MORE, en send y TCP_CORK en socket para enviar varios paquetes en una misma conexión.
+
+Manda los bytes que le digan.
+
+### Faultlore #2: epoll
+
+#### [epoll](https://man7.org/linux/man-pages/man7/epoll.7.html)
+
+Revisa si hay cambios en file descriptors, for performance reasons^TM^ es una estructura de datos que vive en el kernel y por eso es tan rara y rápida.
+
+##### create1
+
+##### c
 
 ## Misc
 

@@ -20,7 +20,8 @@
 #define NOT_FOUND 404
 // Evil
 #define MAX_EVENTS 128
-#define MAX_THREADS 4
+#define MAX_THREADS 10
+// 10000?!??!?!?!
 #define QUEUE_SIZE 256
 
 // Define la estructura de la petición HTTP:
@@ -60,11 +61,7 @@ typedef struct ServerState
     FILE * log;
 } ServerState;
 
-void set_nonblocking(int fd)
-{
-    int flags = fcntl(fd, F_GETFL, 0);
-    fcntl(fd, F_SETFL, flags | O_NONBLOCK);
-}
+
 
 // Aux para saber el tiempo exactamente
 char *get_current_time()
@@ -187,7 +184,7 @@ void parse_request_line(char *buffer, http_request *request)
         request->path = strdup(uri);
     }
     printf("->> Host: %s\n", request->host);
-    printf("->> Ruta: %s\n", request->path);
+    printf("->> Ruta: %s\n\n", request->path);
     free(uri);
 }
 
@@ -307,8 +304,8 @@ int listening_socket(u_int16_t port, struct sockaddr_in address)
     address.sin_port = htons(port);
 
     // Fix de "address already in use"
-    int _ = 1;
-    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &_, sizeof(_));
+    int reuse = 1;
+    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse));
 
     // Vincula el socket al puerto y la dirección especificados
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0)
@@ -318,7 +315,8 @@ int listening_socket(u_int16_t port, struct sockaddr_in address)
     }
 
     // set the socket to non-blocking mode
-    set_nonblocking(server_fd);
+    int flags = fcntl(server_fd, F_GETFL, 0);
+    fcntl(server_fd, F_SETFL, flags | O_NONBLOCK);
 
     // Escucha las conexiones entrantes
     if (listen(server_fd, MAX_CONNECTIONS) < 0)
@@ -334,7 +332,7 @@ void *worker_thread(void *arg)
 {
     ServerState *state = (ServerState *)arg;
 
-    //
+    
     while (1)
     {
         // Espera disponibilidad
@@ -355,19 +353,7 @@ void *worker_thread(void *arg)
         // Ahora se maneja la conexion
         
         handle_connection(client_fd,state->log);
-        /*
-        //Chat GPTeado
-        char buffer[1024];
-        ssize_t n = read(client_fd, buffer, sizeof(buffer));
-        if (n <= 0)
-        {
-            close(client_fd);
-            continue;
-        }
-        write(client_fd, buffer, n);
-
-        close(client_fd);
-        */
+        
     }
 
     return NULL;
@@ -403,7 +389,7 @@ int main(int argc, char *argv[])
     {
         port = 8080;
         log_file = fopen("./logs/log.txt", "a+");
-        doc_root_folder = "./assets";
+        doc_root_folder = "./docs";
     }
     
     // FIXME: Si accept no tiene problemas, esto se borra. 
@@ -425,6 +411,7 @@ int main(int argc, char *argv[])
     // Se configura el epoll
 
     // Evento asociado al fd del server
+    // No se va a definir EPOLLET por lo que estaremos trabajando en Level-
     struct epoll_event event = {
         .events = EPOLLIN,
         .data.fd = server_fd,
@@ -449,7 +436,7 @@ int main(int argc, char *argv[])
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-    // pthread_t para el manejo de cada conexión. A cada hilo se le va a pasar el estado del servidor
+    // pthread_t[] para el manejo de cada conexión. A cada hilo se le va a pasar el estado del servidor
     // Threadpool Deadpool para I/O Multiplex multiflex, cool.
     pthread_t client_threads[MAX_THREADS];
     for (int thread_id = 0; thread_id < MAX_THREADS; thread_id++)
@@ -507,8 +494,9 @@ int main(int argc, char *argv[])
 
                     // Para agregar la conexion al estado, la debe meter primero a epoll
 
-                    // Para meterla, la conexion se configura el fd como no block-eante 
-                    set_nonblocking(client_fd);
+                    // Para meterla, la conexion se configura el fd como no block-eante
+                    int flags = fcntl(client_fd, F_GETFL, 0);
+                    fcntl(client_fd, F_SETFL, flags | O_NONBLOCK);
                     
                     // ...y se reconfigura epoll a través de un evento asociado a la conexion
                     struct epoll_event client_event = {

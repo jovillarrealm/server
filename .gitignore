@@ -3,5 +3,5 @@
 meson.build
 /builddir
 /.vscode
-logs/log.txt
+/logs/log.txt
 server.c

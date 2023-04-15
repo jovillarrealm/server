@@ -25,9 +25,8 @@ Una rama de momento envía archivos individualmente si hay configuración otra c
 De momento se planea poder testear local, sabrá dios como, luego tener en una imagen de ubuntu de AWS esto corriendo, o algo.
 
 ******
+
 ## **Desarrollo**
-
-
 
 ******
 
@@ -38,5 +37,3 @@ Se va a tratar de implementar un threadpool para el manejo de cada conexión.
 Se va a tratar de mantener el código modular.
 
 ## **Referencias**
-
-
