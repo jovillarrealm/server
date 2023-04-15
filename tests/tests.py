@@ -10,6 +10,7 @@ def send_stress(url):
     for letter in url:
         response = requests.get(url)
         print(response.status_code)
+        count +=1
     print(f"Done: {count}")
     
 urls = ['http://localhost:8080'] * 10
@@ -17,4 +18,4 @@ urls = ['http://localhost:8080'] * 10
 with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
     executor.map(send_request, urls)
     #print("And now a stress test")
-    #executor.map(send_request)
+    #executor.map(send_stress, urls)
