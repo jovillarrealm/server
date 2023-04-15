@@ -10,6 +10,8 @@
 #include <sys/epoll.h>
 #include <fcntl.h>
 #include <errno.h>
+#include "showArchivos.h"
+
 
 #define BUFFER_SIZE 1024
 #define MAX_CONNECTIONS 15
@@ -196,7 +198,6 @@ void handle_connection(int client_fd, FILE *log_file)
         perror("Error al recibir la solicitud HTTP");
         return;
     }
-    printf("%zu Rb vs %d max vs %zu\n", bytes_received, MAX_REQUEST_SIZE, strlen(request_buffer));
     request_buffer[bytes_received] = '\0';
     logger(request_buffer, log_file);
     printf("Solicitud HTTP recibida: %s\n", request_buffer);
@@ -208,17 +209,15 @@ void handle_connection(int client_fd, FILE *log_file)
 
     // Determinar el estado de la solicitud y generar una respuesta HTTP
     char *response_body = NULL;
-    size_t response_length = 0;
-    int response_code = 0;
+    size_t response_length;
+    int response_code;
     char *status_text = NULL;
 
     switch (request.method)
     {
     case GET:
-        response_code = 200;
-        status_text = "OK";
-        response_body = "<html><body><h1>¡Hola, mundo! Si, Funciono</h1></body></html>";
-        response_length = strlen(response_body);
+        memmove(request.path, request.path + 1, strlen(request.path));
+        showFile(client_fd, request.path);
         break;
     case POST:
         response_code = 200;
@@ -234,33 +233,6 @@ void handle_connection(int client_fd, FILE *log_file)
         break;
     }
 
-    // Generar la respuesta HTTP
-    char * now = get_current_time();
-    char response_buffer[MAX_RESPONSE_SIZE];
-    snprintf(response_buffer, MAX_RESPONSE_SIZE,
-             "%s %d %s\r\n"
-             "Content-Type: text/html\r\n"
-             "Content-Length: %zu\r\n"
-             "Host: localhost\r\n"
-             "Date: %s\r\n"
-             "Connection: close\r\n"
-             "\r\n"
-             "%s",
-             (strcmp(request.version, "HTTP/1.1") == 0) ? "HTTP/1.1" : "HTTP/1.0", response_code, status_text, response_length, now, response_body);
-    int response_length_written = snprintf(response_buffer, MAX_RESPONSE_SIZE, "%s %d %s\r\nContent-Length: %lu\r\nContent-Type: text/html\r\n\r\n%s", request.version, response_code, status_text, response_length, response_body);
-    free(now);
-    if (response_length_written >= MAX_RESPONSE_SIZE)
-    {
-        error("Respuesta HTTP demasiado larga para el búfer");
-    }
-
-    // Enviar la respuesta HTTP al cliente
-    ssize_t bytes_sent = send(client_fd, response_buffer, strlen(response_buffer), 0);
-    if (bytes_sent < 0)
-    {
-        error("Error al enviar la respuesta HTTP");
-    }
-    logger(response_buffer, log_file);
     close(client_fd);
 }
 
