@@ -28,33 +28,23 @@ Aquí es donde:
 #### **Detalles**
 
 No hay profiler 😒.
-|Compilador|Build|Debugger|
-|---|---|---|
-|gcc|meson|gdb|
+|Compilador|Build|Debugger|Linter(s)
+|---|---|---|---|
+|gcc|meson|gdb|cppcheck / clang-tidy|
 
-Debian, Ubuntu and derivatives:
+##### Instalaciones
 
-``` bash
-sudo apt install build-essential gdb
-sudo apt install meson ninja-build
-```
-
-Para instalar gcc y gdb
+gcc, gdb, meson, ninja
 
 ``` bash
 sudo apt install build-essential gdb
+pip3 install meson
 ```
 
-Para instalar meson y ninja
+Para iniciar un projecto en el directorio actual(cli, la extensión de vscode hace más)
 
 ``` bash
-sudo apt install meson ninja-build
-```
-
-Para iniciar un projecto en el directorio actual
-
-``` bash
-meson init --name server --build
+meson init --name {server} --build
 ```
 
 Para compilar y testeo
@@ -63,6 +53,26 @@ Para compilar y testeo
 meson compile -C builddir
 meson test -C builddir
 ```
+
+Para setear nivel de warnings
+
+``` bash
+cd builddir
+meson configure --warnlevel=everything
+cd ..
+meson compile -C builddir
+```
+
+Para setear estandar
+
+``` bash
+cd builddir
+meson configure -Dc_std=none
+cd ..
+meson compile -C builddir
+```
+
+Si hay errores de pronto ```# define _POSIX_C_SOURCE 200809L``` ayuda
 
 Instalar algo (probablemente no se va a usar)
 
@@ -180,6 +190,16 @@ Manda los bytes que le digan.
 Revisa si hay cambios en file descriptors, for performance reasons^TM^ es una estructura de datos que vive en el kernel y por eso es tan rara y rápida.
 
 ##### create1
+
+Crea la instancia de epoll en el kernel. fds que sean non blokcking o no estamos haciendo nada.
+
+##### ctl
+
+Va a permitir registrar un nuevo evento
+
+##### wait
+
+Revisa en las listas de interest y ready del epoll y devuelve cuantos fds tienen actividad lista para hacerse. Le toca uno ir a buscarlos tho.
 
 ##### c
 

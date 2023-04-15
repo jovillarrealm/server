@@ -20,8 +20,7 @@
 #define NOT_FOUND 404
 // Evil
 #define MAX_EVENTS 128
-#define MAX_THREADS 10
-// 10000?!??!?!?!
+#define MAX_THREADS 4
 #define QUEUE_SIZE 256
 
 // Define la estructura de la petición HTTP:
@@ -197,6 +196,7 @@ void handle_connection(int client_fd, FILE *log_file)
         perror("Error al recibir la solicitud HTTP");
         return;
     }
+    printf("%zu Rb vs %d max vs %zu\n", bytes_received, MAX_REQUEST_SIZE, strlen(request_buffer));
     request_buffer[bytes_received] = '\0';
     logger(request_buffer, log_file);
     printf("Solicitud HTTP recibida: %s\n", request_buffer);
@@ -235,6 +235,7 @@ void handle_connection(int client_fd, FILE *log_file)
     }
 
     // Generar la respuesta HTTP
+    char * now = get_current_time();
     char response_buffer[MAX_RESPONSE_SIZE];
     snprintf(response_buffer, MAX_RESPONSE_SIZE,
              "%s %d %s\r\n"
@@ -245,8 +246,9 @@ void handle_connection(int client_fd, FILE *log_file)
              "Connection: close\r\n"
              "\r\n"
              "%s",
-             (strcmp(request.version, "HTTP/1.1") == 0) ? "HTTP/1.1" : "HTTP/1.0", response_code, status_text, response_length, get_current_time(), response_body);
+             (strcmp(request.version, "HTTP/1.1") == 0) ? "HTTP/1.1" : "HTTP/1.0", response_code, status_text, response_length, now, response_body);
     int response_length_written = snprintf(response_buffer, MAX_RESPONSE_SIZE, "%s %d %s\r\nContent-Length: %lu\r\nContent-Type: text/html\r\n\r\n%s", request.version, response_code, status_text, response_length, response_body);
+    free(now);
     if (response_length_written >= MAX_RESPONSE_SIZE)
     {
         error("Respuesta HTTP demasiado larga para el búfer");
@@ -470,6 +472,7 @@ int main(int argc, char *argv[])
             {
                 // accept() con más error handling
                 // FIXME: posiblemente error de accept si era  if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
+                // FIXME: posiblemente error de accept si era  if ((client_fd = accept(server_fd, NULL, NULL)) < 0)
                 while (1)
                 {
                     // Se acepta conexion
