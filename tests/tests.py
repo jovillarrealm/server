@@ -16,5 +16,5 @@ urls = ['http://localhost:8080'] * 10
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
     executor.map(send_request, urls)
-    print("And now a stress test")
-    executor.map(send_request)
+    #print("And now a stress test")
+    #executor.map(send_request)
