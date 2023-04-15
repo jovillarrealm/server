@@ -22,7 +22,7 @@
 #define NOT_FOUND 404
 // Evil
 #define MAX_EVENTS 128
-#define MAX_THREADS 4
+#define MAX_THREADS 10
 #define QUEUE_SIZE 256
 
 // Define la estructura de la petición HTTP:
