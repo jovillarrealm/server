@@ -14,6 +14,7 @@ def send_stress(url):
         if response.status_code == 200:
             count +=1
     print(f"Done: {count}")
+
 port = 8080
 urls = ['http://localhost:{port}'] * 10
 
@@ -21,3 +22,4 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
     executor.map(send_request, urls)
     print("And now a stress test")
     executor.map(send_stress, urls)
+    
