@@ -1,5 +1,5 @@
 
-# **Notas de ./server**
+# **server_side_c**
 
 El punto es hacer un servidor en C con HTTP/1.1
 Aquí es donde:
@@ -20,17 +20,17 @@ vamos a estar haciendo cosas.
 
 ******
 
-## **Inicio**
+# **Inicio**
 
 De momento se planea tener en una imagen de ubuntu de AWS, o algo, entonces en vez de lidiar con las mierdas de windows de no ser POSIX compliant con freaking sockets no es algo con lo que quiera lidiar.
 
-### **Setup**
+## **Setup**
 
 1. Prender un [WSL de ubuntu.](https://learn.microsoft.com/es-mx/windows/wsl/install) y [WSL en vscode.](https://code.visualstudio.com/docs/remote/wsl)
 2. Desde wsl se usa con [Meson.](https://mesonbuild.com/SimpleStart.html)
 3. Sino, CMakeTools.
 
-#### **Detalles**
+### **Detalles**
 
 |Compilador|Build|Debugger|
 |---|---|---|
@@ -74,15 +74,13 @@ Instalar algo (probablemente no se va a usar)
 DESTDIR=/path/to/staging/root/borrardespues meson install -C builddir
 ```
 
-Mover los json con la extension de mesonbuild para vscode es ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥,
-
 Lo bueno es que moviendo los task.json y
 
 ******
 
-## **Teoría**
+# **Teoría**
 
-### Sockets
+## Sockets
 
 ["a way to speak to other programs using standard Unix file descriptors"](https://man7.org/linux/man-pages/man2/socket.2.html)
 
@@ -112,7 +110,7 @@ int socket(int domain, int type, int protocol);
 
 ```protocol : 0``` sirve para lo que sea, ```IPPROTO_TCP``` para ```TCP```, ```IPPROTO_UDP``` para ```UDP```.
 
-#### bind
+## bind
 
 algo se supone que facil, asociar socket con puerto.
 Y casi lo es: pero hay que justificar un cast extraño:
@@ -131,7 +129,7 @@ Entender la diferencia entre estos tipos además requiere algo de miseria con es
 
 para bindear con puertos <1024 hay que correr el programa con sudo, porque solo ```root``` tiene acceso a esos puertos.
 
-#### listen
+## listen
 
 Este fue muy fácil, literal fue pasarle el socket, y el numero máximo de conecciones permitidas. A cada una se le asigna un pthread entonces el paralelismo de la máquina debe estar por ahí.
 
@@ -139,7 +137,7 @@ Este fue muy fácil, literal fue pasarle el socket, y el numero máximo de conec
 listen(tcp_socket, MAX_CONNECTIONS)
 ```
 
-#### accept
+## accept
 
 ``` C
 client_socket = accept(tcp_socket_in, (struct sockaddr *)&client_addr_in, (socklen_t*)sizeof(client_addr_in));
@@ -147,20 +145,20 @@ client_socket = accept(tcp_socket_in, (struct sockaddr *)&client_addr_in, (sockl
 
 retorna un fd de un socket al que se le puede hacer send y recv()
 
-#### connect()
+## connect()
 
 No se va a usar en este trabajo. alternativa a accept.
 
-#### recv()
+## recv()
 
 Si hay alguna vaina de Keep-Alive se puede hacer uso de esta función para mas de un request por conexión
 
-#### send
+## send
 
 De momento se hace uso de write() que es equivalente salvo el uso de flags.
 Si hay una razón de cambio, estaría relacionada con el uso del MSG_MORE, en send y TCP_CORK en socket para enviar varios paquetes en una misma conexión.
 
-## Misc
+# Misc
 
 ``` bash
 netstat
@@ -168,57 +166,16 @@ netstat
 
 Puertos: DNS 53, SSH 22, HTTP 80.
 
-# define _POSIX_C_SOURCE 200809
-# include <netdb.h>
+# FIXME
 
-// Para imprimir y retornar la lista de IPs asociadas a la dirección provista.
-// Esta función va a permitir imprimir lista de direcciones, y usará la primera en el servidor
-// Esto para posible debugging futuro
-// De: <https://beej.us/guide/bgnet/html/split/system-calls-or-bust.html>
-struct addrinfo *get_addrinfo_linked_list(char*some_IP, char *port)
-{
-    printf("De host: %s\n", some_IP);
-    struct addrinfo addr_hints = {.ai_family = AF_UNSPEC, .ai_socktype = SOCK_STREAM};
-struct addrinfo*addrinfo_list;
-    if (getaddrinfo(some_IP, port, &addr_hints, &addrinfo_list) != 0)
-        error("getaddrinfo error");
-    char ipstr[INET6_ADDRSTRLEN];
-    for (struct addrinfo *p = addrinfo_list; p != NULL; p = p->ai_next)
-    {
-void*addr;
-        char *ipver;
+Vamos a necesitar implementar connection Keep alive, hacer uso de timers if so
 
-        // get the pointer to the address itself,
-        // different fields in IPv4 and IPv6:
-        if (p->ai_family == AF_INET)
-        { // IPv4
-            struct sockaddr_in *ipv4 = (struct sockaddr_in *)p->ai_addr;
-            addr = &(ipv4->sin_addr);
-            ipver = "IPv4";
-        }
-        else
-        { // IPv6
-            struct sockaddr_in6 *ipv6 = (struct sockaddr_in6 *)p->ai_addr;
-            addr = &(ipv6->sin6_addr);
-            ipver = "IPv6";
-        }
+# Three way Handshake
 
-        // convert the IP to a string and print it:
-        inet_ntop(p->ai_family, addr, ipstr, sizeof ipstr);
-        printf("  %s: %s\n", ipver, ipstr);
-    }
+C ->syn=1                    S
 
-    return addrinfo_list;
-}
+C <-ack=1; syn=1             S
 
-    size_t host_name_len = 30; // arbitrario
-    char host_name[host_name_len];
-    if (gethostname(host_name, host_name_len) == -1)
-        error("gethostname error");
+C ->ack=1                    S
 
-
-    struct addrinfo *possible_list = get_addrinfo_linked_list(host_name, argv[1]);
-
-
-    struct sockaddr_storage their_addr; // connector's address information
-    socklen_t sin_size=sizeof(their_addr);
+Connection: Keep alive ; que no sean conecciones shortlived, que se puedan hacer varios requests ahi.

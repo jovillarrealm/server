@@ -7,8 +7,10 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+#include "showArchivos.c"
+#include "showArchivos.h"
 
-
+#define PORT 8080
 #define BUFFER_SIZE 1024
 #define MAX_CONNECTIONS 15
 #define MAX_REQUEST_SIZE 4096
@@ -167,7 +169,7 @@ void parse_request_line(char *buffer, http_request *request)
 }
 
 // Función para manejar una conexión de cliente
-void handle_connection(int client_fd, FILE *log_file)
+void handle_connection(int client_fd, FILE * log_file)
 {
     char request_buffer[MAX_REQUEST_SIZE];
     ssize_t bytes_received = recv(client_fd, request_buffer, MAX_REQUEST_SIZE - 1, 0);
@@ -195,10 +197,8 @@ void handle_connection(int client_fd, FILE *log_file)
     switch (request.method)
     {
     case GET:
-        response_code = 200;
-        status_text = "OK";
-        response_body = "<html><body><h1>¡Hola, mundo! Si, Funciono</h1></body></html>";
-        response_length = strlen(response_body);
+        char *path = memmove(request.path, request.path+1, strlen(request.path));
+        showFile(PORT, client_fd, path);
         break;
     case POST:
         response_code = 200;
@@ -214,34 +214,29 @@ void handle_connection(int client_fd, FILE *log_file)
         break;
     }
 
-    // Generar la respuesta HTTP
-    char response_buffer[MAX_RESPONSE_SIZE];
-    snprintf(response_buffer, MAX_RESPONSE_SIZE,
-             "%s %d %s\r\n"
-             "Content-Type: text/html\r\n"
-             "Content-Length: %zu\r\n"
-             "Host: localhost\r\n"
-             "Date: %s\r\n"
-             "Connection: close\r\n"
-             "\r\n"
-             "%s",
-             (strcmp(request.version, "HTTP/1.1") == 0) ? "HTTP/1.1" : "HTTP/1.0", response_code, status_text, response_length, get_current_time(), response_body);
-    int response_length_written = snprintf(response_buffer, MAX_RESPONSE_SIZE, "%s %d %s\r\nContent-Length: %lu\r\nContent-Type: text/html\r\n\r\n%s", request.version, response_code, status_text, response_length, response_body);
-    if (response_length_written >= MAX_RESPONSE_SIZE)
-    {
-        error("Respuesta HTTP demasiado larga para el búfer");
-    }
-
-    // Enviar la respuesta HTTP al cliente
-    ssize_t bytes_sent = send(client_fd, response_buffer, strlen(response_buffer), 0);
-    if (bytes_sent < 0)
-    {
-        error("Error al enviar la respuesta HTTP");
-    }
-    logger(response_buffer, log_file);
     close(client_fd);
 }
 
+// Función para el hilo que acepta conexiones de clientes
+void *accept_connections(void *server_fd_ptr)
+{
+    // cambio para consistencia con logger
+    connection_info thread_info = *(connection_info *)server_fd_ptr;
+    int server_fd = *(int *)server_fd_ptr;
+    FILE *log_file = thread_info.log_file;
+    while (1)
+    {
+        struct sockaddr_in client_addr;
+        socklen_t client_addr_len = sizeof(client_addr);
+        int client_fd = accept(server_fd, (struct sockaddr *)&client_addr, &client_addr_len);
+        if (client_fd < 0)
+        {
+            error("Error al aceptar la conexión del cliente");
+        }
+        handle_connection(client_fd, log_file);
+    }
+    return NULL;
+}
 
 // Funcion para manejar conexiones de varios clientes
 void *connection_handler(void *arg)
@@ -267,7 +262,6 @@ int str_to_uint16(char *str, uint16_t *res)
     return 0;
 }
 
-
 int main(int argc, char *argv[])
 {
     // Del llamado de programa
@@ -288,12 +282,10 @@ int main(int argc, char *argv[])
     else
     {
         port = 8080;
-        log_file = fopen("./logs/log.txt", "a+");
-        doc_root_folder = "./logs";
+        log_file = fopen("log.txt", "a+");
+        doc_root_folder = " ./logs";
     }
-    
 
-    
     int server_fd, client_fd;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
@@ -310,7 +302,7 @@ int main(int argc, char *argv[])
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(port);
 
-    // Fix de "address already in use"
+    // Fix de "address already in use" 
     int _ = 1;
     setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &_, sizeof(_));
 
@@ -330,8 +322,6 @@ int main(int argc, char *argv[])
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-
-
     while (1)
     {
         // Acepta una nueva conexión entrante
@@ -343,7 +333,7 @@ int main(int argc, char *argv[])
 
         // Crea un nuevo hilo para manejar la conexión entrante
         pthread_t thread_id;
-        connection_info thread_info = {.client_fd = client_fd, .log_file = log_file};
+        connection_info thread_info = {.client_fd= client_fd, .log_file=log_file};
         if (pthread_create(&thread_id, NULL, connection_handler, (void *)&thread_info) < 0)
         {
             perror("Error al crear el hilo \n");
