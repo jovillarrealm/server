@@ -9,6 +9,8 @@
 #include <pthread.h>
 #include "showArchivos.c"
 #include "showArchivos.h"
+#include "saveArchivos.h"
+#include "saveArchivos.c"
 
 #define PORT 8080
 #define BUFFER_SIZE 1024
@@ -201,18 +203,7 @@ void handle_connection(int client_fd, FILE * log_file)
     case POST:
         printf("lets do a post! \n");
 
-        // Abrir el archivo en modo de escritura
-        FILE *fp = fopen("./post_files/postLog.txt", "w");
-        if (fp == NULL) {
-            printf("Error opening file\n");
-            return;
-        }
-
-        // Escribir el cuerpo del mensaje en el archivo
-        fprintf(fp, "%s", request.body);
-
-        // Cerrar el archivo
-        fclose(fp);
+        saveFile(&request);
 
         response_code = 200;
         status_text = "OK";
