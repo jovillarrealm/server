@@ -16,7 +16,7 @@ int showFile(int client, char *ruta) {
     char *buffer;
     char *file_type;
     char *http_mime = (char *)malloc(50 * sizeof(char));
-    int fileLen;
+    int fileLen=0;
 
 
     
@@ -46,7 +46,7 @@ int showFile(int client, char *ruta) {
         strcpy(http_mime, "application/xml");
     } else if(strcmp(file_type, ".pdf") == 0) {
         strcpy(http_mime, "application/pdf");
-    } else if(strcmp(file_type, ".jpg") == 0 || strcmp(file_type, "jpeg") == 0) {
+    } else if(strcmp(file_type, ".jpg") == 0 || strcmp(file_type, ".jpeg") == 0) {
         strcpy(http_mime, "image/jpeg");
     } else if(strcmp(file_type, ".png") == 0) {
         strcpy(http_mime, "image/png");
@@ -117,7 +117,7 @@ int showFile(int client, char *ruta) {
 
     // Send HTTP response header
     int sent = send(client, header, strlen(header), 0);
-    if (sent != (int) strlen(header))
+    if ((size_t)sent !=  strlen(header))
     {
         perror("Send error");
         }
@@ -130,7 +130,7 @@ int showFile(int client, char *ruta) {
             int send_size = remaining > chunk_size ? chunk_size : remaining;
             sent = send(client, buffer + bytes_sent, send_size, 0);
             if (sent == -1) {
-                perror("Send error");
+                perror("Send error in chunk");
                 break;
             }
             bytes_sent += sent;

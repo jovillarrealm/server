@@ -60,6 +60,7 @@ typedef struct ServerState
     pthread_mutex_t mutex;
     pthread_cond_t cond;
     FILE *log;
+    char *doc_root_folder;
 } ServerState;
 
 // Aux para saber el tiempo exactamente
@@ -226,10 +227,10 @@ void handle_connection(int client_fd, FILE *log_file)
         response_length = strlen(response_body);
         break;
     default:
-        response_code = 400;
-        status_text = "Bad Request";
-        response_body = "<html><body><h1>Solicitud HTTP no válida, ayudame cristooo</h1></body></html>";
-        response_length = strlen(response_body);
+        response_code = BAD_REQUEST;
+        //status_text = "Bad Request";
+        //response_body = "<html><body><h1>Solicitud HTTP no válida, ayudame cristooo</h1></body></html>";
+        //response_length = strlen(response_body);
         break;
     }
 
