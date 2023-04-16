@@ -19,23 +19,7 @@
 #define BAD_REQUEST 400
 #define NOT_FOUND 404
 
-// Define la estructura de la petición HTTP:
-typedef struct http_request
-{
-    enum method
-    {
-        GET,
-        POST,
-        PUT,
-        DELETE,
-        UNSUPPORTED
-    } method;
-    char *host;
-    char *path;
-    char *body;
-    char version[16];
-    int status_code;
-} http_request;
+#include "http_request.h"
 
 // Define la estructura para pasar a los hilos de cada conexión
 typedef struct connection_info
@@ -210,16 +194,33 @@ void handle_connection(int client_fd, FILE * log_file)
     switch (request.method)
     {
     case GET:
-        //char *path = memmove(request.path, request.path+1, strlen(request.path));
-        //showFile(PORT, client_fd, path);
+        printf("lets do a get! \n");
+        char *path = memmove(request.path, request.path+1, strlen(request.path));
+        showFile(PORT, client_fd, path);
         break;
     case POST:
+        printf("lets do a post! \n");
+
+        // Abrir el archivo en modo de escritura
+        FILE *fp = fopen("./post_files/postLog.txt", "w");
+        if (fp == NULL) {
+            printf("Error opening file\n");
+            return;
+        }
+
+        // Escribir el cuerpo del mensaje en el archivo
+        fprintf(fp, "%s", request.body);
+
+        // Cerrar el archivo
+        fclose(fp);
+
         response_code = 200;
         status_text = "OK";
         response_body = "<html><body><h1>¡Gracias por enviar datos, jeje!</h1></body></html>";
         response_length = strlen(response_body);
         break;
     default:
+        printf("Oh no, bad request! \n");
         response_code = 400;
         status_text = "Bad Request";
         response_body = "<html><body><h1>Solicitud HTTP no válida, ayudame cristooo</h1></body></html>";
