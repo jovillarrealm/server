@@ -32,6 +32,7 @@ typedef struct http_request
     } method;
     char *host;
     char *path;
+    char *body;
     char version[16];
     int status_code;
 } http_request;
@@ -166,6 +167,18 @@ void parse_request_line(char *buffer, http_request *request)
     printf("->> Host: %s\n", request->host);
     printf("->> Ruta: %s\n", request->path);
     free(uri);
+
+    if (request->method == POST) {
+        char *body_start = strstr(buffer, "\r\n\r\n");
+        if (body_start != NULL) {
+            body_start += 4; // saltar los caracteres de separación
+            size_t body_len = strlen(body_start);
+            request->body = (char*) malloc(body_len + 1);
+            memcpy(request->body, body_start, body_len);
+            request->body[body_len] = '\0';
+        }
+        printf("->> Body: %s\n", request->body);
+    }
 }
 
 // Función para manejar una conexión de cliente
@@ -197,8 +210,8 @@ void handle_connection(int client_fd, FILE * log_file)
     switch (request.method)
     {
     case GET:
-        char *path = memmove(request.path, request.path+1, strlen(request.path));
-        showFile(PORT, client_fd, path);
+        //char *path = memmove(request.path, request.path+1, strlen(request.path));
+        //showFile(PORT, client_fd, path);
         break;
     case POST:
         response_code = 200;
