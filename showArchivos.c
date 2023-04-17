@@ -142,7 +142,7 @@ int showFile(int client, char *ruta)
     fclose(file);
 
     char header[1024];
-    char *now = get_time;
+    char *now = get_time();
     sprintf(header,
             "HTTP/1.1 200 OK\r\n"
             "Date: %s\r\n"
