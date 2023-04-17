@@ -4,6 +4,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include "sendArchivos.h"
 
 int sendFile() {
     FILE *file;

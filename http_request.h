@@ -1,6 +1,9 @@
 #ifndef HTTP_REQUEST_H
 #define HTTP_REQUEST_H
 
+#include <stdio.h>
+#include <time.h>
+
 typedef struct http_request
 {
     enum method
@@ -17,24 +20,21 @@ typedef struct http_request
     char version[16];
     int status_code;
     int content_len;
-    char * content_type;
+    char *content_type;
 } http_request;
 
-// FIXME modularizar
-void prequest(http_request req){
-    if (req.method)
-        printf("Method: %d\n", req.method);
-    if (req.host != NULL)
-        printf("Host: %s\n", req.host);
-    if (req.path != NULL)
-        printf("Path: %s\n", req.path);
-    if (req.body != NULL)
-        printf("Body: %s\n", req.body);
-    if (req.status_code != 200)
-        printf("Status Code: %d\n", req.status_code);
-    if (req.content_len != 0)
-        printf("Content Length: %d\n", req.content_len);
-    if (req.content_type != 0)
-        printf("Content Type: %s\n", req.content_type);
-}
+// Define la estructura para pasar a los hilos de cada conexión
+typedef struct connection_info
+{
+    int client_fd;
+    FILE *log_file;
+} connection_info;
+
+void prequest(http_request *req);
+
+// Aux para saber el tiempo exactamente
+char *get_current_time(void);
+
+// Muestra un mensaje de error y sale del programa
+void error(const char *msg);
 #endif

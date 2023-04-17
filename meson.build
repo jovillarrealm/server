@@ -3,5 +3,9 @@ project('server', 'c',
   default_options : ['warning_level=3'])
 
 executable('server',
+           'saveArchivos.c',
+           'showArchivos.c',
+           'sendArchivos.c',
+           'http_request.c',
            'server.c',
            install : true)
