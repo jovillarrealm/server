@@ -18,7 +18,7 @@ int showFile(int PORT, int client, char *ruta) {
     char *buffer;
     char *file_type;
     char *http_mime = (char *)malloc(50 * sizeof(char));
-    int fileLen = 0;
+    int fileLen=0;
 
 
     
@@ -33,48 +33,65 @@ int showFile(int PORT, int client, char *ruta) {
 
     file_type = strrchr(ruta, '.'); //Checks file extension
 
-     if(strcmp(file_type, ".html") == 0) {
-        strcpy(http_mime, "text/html");
-    } else if(strcmp(file_type, ".txt") == 0) {
-        strcpy(http_mime, "text/plain");
-    } else if(strcmp(file_type, ".css") == 0) {
-        strcpy(http_mime, "text/css");
-    } else if(strcmp(file_type, ".js") == 0) {
-        strcpy(http_mime, "application/javascript");
-    } else if(strcmp(file_type, ".json") == 0) {
-        strcpy(http_mime, "application/json");
-    } else if(strcmp(file_type, ".xml") == 0) {
-        strcpy(http_mime, "application/xml");
-    } else if(strcmp(file_type, ".pdf") == 0) {
-        strcpy(http_mime, "application/pdf");
-    } else if(strcmp(file_type, ".jpg") == 0 || strcmp(file_type, ".jpeg") == 0) {
-        strcpy(http_mime, "image/jpeg");
-    } else if(strcmp(file_type, ".png") == 0) {
-        strcpy(http_mime, "image/png");
-    } else if(strcmp(file_type, ".gif") == 0) {
-        strcpy(http_mime, "image/gif");
-    } else if(strcmp(file_type, ".svg") == 0) {
-        strcpy(http_mime, "image/svg+xml");
-    } else if(strcmp(file_type, ".ico") == 0) {
-        strcpy(http_mime, "image/x-icon");
-    } else if(strcmp(file_type, ".mp3") == 0) {
-        strcpy(http_mime, "audio/mpeg");
-    } else if(strcmp(file_type, ".wav") == 0) {
-        strcpy(http_mime, "audio/wav");
-    } else if(strcmp(file_type, ".mp4") == 0) {
-        strcpy(http_mime, "video/mp4");
-    } else if(strcmp(file_type, ".avi") == 0) {
-        strcpy(http_mime, "video/x-msvideo");
-    } else if(strcmp(file_type, ".doc") == 0) {
-        strcpy(http_mime, "application/msword");
-    } else if(strcmp(file_type, ".xls") == 0) {
-        strcpy(http_mime, "application/vnd.ms-excel");
-    } else if(strcmp(file_type, ".ppt") == 0) {
-        strcpy(http_mime, "application/vnd.ms-powerpoint");
-    } else {
-        printf("Unsupported file type!\n");
-        return 1;
-    }
+if(strcmp(file_type, ".html") == 0) {
+strcpy(http_mime, "text/html");
+} else if(strcmp(file_type, ".txt") == 0) {
+    strcpy(http_mime, "text/plain");
+} else if(strcmp(file_type, ".css") == 0) {
+    strcpy(http_mime, "text/css");
+} else if(strcmp(file_type, ".js") == 0) {
+    strcpy(http_mime, "application/javascript");
+} else if(strcmp(file_type, ".json") == 0) {
+    strcpy(http_mime, "application/json");
+} else if(strcmp(file_type, ".xml") == 0) {
+    strcpy(http_mime, "application/xml");
+} else if(strcmp(file_type, ".pdf") == 0) {
+    strcpy(http_mime, "application/pdf");
+} else if(strcmp(file_type, ".jpg") == 0 || strcmp(file_type, ".jpeg") == 0) {
+    strcpy(http_mime, "image/jpeg");
+} else if(strcmp(file_type, ".png") == 0) {
+    strcpy(http_mime, "image/png");
+} else if(strcmp(file_type, ".gif") == 0) {
+    strcpy(http_mime, "image/gif");
+} else if(strcmp(file_type, ".svg") == 0) {
+    strcpy(http_mime, "image/svg+xml");
+} else if(strcmp(file_type, ".ico") == 0) {
+    strcpy(http_mime, "image/x-icon");
+} else if(strcmp(file_type, ".mp3") == 0) {
+    strcpy(http_mime, "audio/mpeg");
+} else if(strcmp(file_type, ".wav") == 0) {
+    strcpy(http_mime, "audio/wav");
+} else if(strcmp(file_type, ".mp4") == 0) {
+    strcpy(http_mime, "video/mp4");
+} else if(strcmp(file_type, ".avi") == 0) {
+    strcpy(http_mime, "video/x-msvideo");
+} else if(strcmp(file_type, ".doc") == 0) {
+    strcpy(http_mime, "application/msword");
+} else if(strcmp(file_type, ".xls") == 0) {
+    strcpy(http_mime, "application/vnd.ms-excel");
+} else if(strcmp(file_type, ".ppt") == 0) {
+    strcpy(http_mime, "application/vnd.ms-powerpoint");
+} else if(strcmp(file_type, ".ttf") == 0) {
+    strcpy(http_mime, "font/ttf");
+} else if(strcmp(file_type, ".otf") == 0) {
+    strcpy(http_mime, "font/otf");
+} else if(strcmp(file_type, ".woff") == 0) {
+    strcpy(http_mime, "font/woff");
+} else if(strcmp(file_type, ".woff2") == 0) {
+    strcpy(http_mime, "font/woff2");
+} else if(strcmp(file_type, ".eot") == 0) {
+    strcpy(http_mime, "application/vnd.ms-fontobject");
+} else if(strcmp(file_type, ".zip") == 0) {
+    strcpy(http_mime, "application/zip");
+} else if(strcmp(file_type, ".rar") == 0) {
+    strcpy(http_mime, "application/x-rar-compressed");
+} else {
+    printf("Unsupported file type!\n");
+    return 1;
+}
+
+
+
 
 
 
@@ -103,7 +120,6 @@ int showFile(int PORT, int client, char *ruta) {
         "Server: SaranaiServer/1.0\r\n"
         "Content-Type: %s\r\n"
         "Content-Length: %d\r\n"
-        "Accept-Ranges: bytes\r\n"
         "Connection: keep-alive\r\n"
         "Keep-Alive: timeout=5, max=100\r\n"
         "\r\n",
@@ -130,10 +146,7 @@ int showFile(int PORT, int client, char *ruta) {
             bytes_sent += sent;
         }
 
-    // Receive and discard incoming data until the connection is closed
-    while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0) {}
-
-
+        while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0) {}
 
 
     free(buffer);
