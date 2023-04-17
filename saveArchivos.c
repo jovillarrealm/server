@@ -17,6 +17,8 @@ void saveFile(http_request *request, int client_fd)
     char timestamp[64];
     strftime(timestamp, sizeof(timestamp), "%c", tm);
     FILE * fp;
+
+    
     if (request->content_type == "binary")
     {
         fp = fopen(request->path, "wb");

@@ -5946,3 +5946,31 @@ Sec-Fetch-Site: same-origin
 
 [17-04-2023 16:38:40] assets/travel/img/favicon.ico
 
+[17-04-2023 17:14:28] POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: c47562f1-a249-4414-ad43-c0704d63c3d4
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+
+field1=value1&field2=value2%0A
+
+[17-04-2023 17:14:28] assets/
+
+[17-04-2023 17:16:45] POST /mk HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: a1178834-8400-41df-8482-d5a86d11e37f
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 41953
+Content-Type: image/jpeg
+
+ÿØÿà
+
+[17-04-2023 17:16:45] assets/mk
+
