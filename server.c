@@ -40,6 +40,7 @@ void logger(const char *message, FILE *log_file)
     fflush(log_file);
 }
 
+
 // Analiza la línea de solicitud HTTP para determinar el método, la ruta y el host
 void parse_request_line(char *buffer, http_request *request, char* doc_root_folder)
 {
