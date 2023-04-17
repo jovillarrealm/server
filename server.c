@@ -234,10 +234,14 @@ void handle_connection(int client_fd, FILE *log_file)
         printf("lets do a get! \n");
         char *path = memmove(request.path, request.path + 1, strlen(request.path));
         showFile(PORT, client_fd, path);
+
+        response_code = 200;
+        status_text = "OK";
+        response_body = "<html><body><h1>¡Gracias por enviar datos, jeje!</h1></body></html>";
+        response_length = strlen(response_body);
         break;
     case POST:
         printf("lets do a post! \n");
-
         saveFile(&request);
 
         response_code = 200;
