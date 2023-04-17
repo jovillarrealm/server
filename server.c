@@ -233,7 +233,7 @@ void handle_connection(int client_fd, FILE *log_file, char* doc_root)
         break;
     case POST:
         printf("lets do a post! \n");
-        saveFile(&request);
+        saveFile(&request, client_fd);
 
         response_code = 200;
         status_text = "OK";
