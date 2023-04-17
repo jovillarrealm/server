@@ -114,19 +114,23 @@ Comando para iniciar la aplicación
 ```
 
 
-gdb build/server
 ## **Glosario y Terminología**
 
 En esta sección se describirá la terminología util para la realización del proyecto.
 
 ### Three way Handshake
-C ->syn=1                    S
-C <-ack=1; syn=1             S
-C ->ack=1                    S
+
+Es un proceso de tres pasos que se realiza al comienzo de una conexión TCP, para asegurar que ambos dispositivos estén sincronizados y listos para la transmisión de datos.
+
+- C ->syn=1                    S
+- C <-ack=1; syn=1             S
+- C ->ack=1                    S
 
 ### Estado de la conexión
 
 Connection: Keep alive ; Se prioriza que no sean conecciones shortlived, que se puedan hacer varios requests de manera conjunta.
+
+El servidor web y el cliente negocian si desean mantener la conexión abierta mediante el uso de la cabecera "Connection" en las solicitudes HTTP y las respuestas correspondientes. 
 
 ### - bind
 La función bind en programación de redes en C se utiliza para asociar una dirección IP y un número de puerto a un socket. Es una llamada al sistema que asigna una dirección local a un socket identificado por su descriptor de archivo.
