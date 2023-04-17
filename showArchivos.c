@@ -16,7 +16,7 @@ char *get_time()
     return time_str;
 }
 
-int showFile(int client, char *ruta, char *doc_root)
+int showFile(int client, char *ruta)
 {
     FILE *file;
     char *buffer;

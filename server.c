@@ -224,8 +224,7 @@ void handle_connection(int client_fd, FILE *log_file, char* doc_root)
     {
     case GET:
         printf("lets do a get! \n");
-        char *path = memmove(request.path, request.path + 1, strlen(request.path));
-        showFile(client_fd, path, doc_root);
+        showFile(client_fd, request.path);
 
         response_code = 200;
         status_text = "OK";
@@ -311,7 +310,7 @@ int main(int argc, char *argv[])
     {
         port = 8080;
         log_file = fopen("log.txt", "a+");
-        doc_root_folder = "./assets";
+        doc_root_folder = "assets";
     }
 
     int server_fd, client_fd;

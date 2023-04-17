@@ -10,7 +10,7 @@
 // Functions
 
 //GET
-int showFile(int client, char * ruta, char* doc_root);
+int showFile(int client, char * ruta);
 
 // End of header file
 #endif
