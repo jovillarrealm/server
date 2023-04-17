@@ -79,7 +79,6 @@ sudo apt install meson ninja-build
 ```
 Para instalar meson y ninja
 ```
-Para instalar meson y ninja
 
 ``` bash
 sudo apt install meson ninja-build
