@@ -16,6 +16,25 @@ typedef struct http_request
     char *body;
     char version[16];
     int status_code;
+    int content_len;
+    char * content_type;
 } http_request;
 
+// FIXME modularizar
+void prequest(http_request req){
+    if (req.method)
+        printf("Method: %d\n", req.method);
+    if (req.host != NULL)
+        printf("Host: %s\n", req.host);
+    if (req.path != NULL)
+        printf("Path: %s\n", req.path);
+    if (req.body != NULL)
+        printf("Body: %s\n", req.body);
+    if (req.status_code != 200)
+        printf("Status Code: %d\n", req.status_code);
+    if (req.content_len != 0)
+        printf("Content Length: %d\n", req.content_len);
+    if (req.content_type != 0)
+        printf("Content Type: %s\n", req.content_type);
+}
 #endif

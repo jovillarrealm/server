@@ -18714,3 +18714,93 @@ inside the body of the request 5
 
 [16-04-2023 17:51:29] /
 
+[16-04-2023 22:21:36] POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.31.3
+Accept: */*
+Postman-Token: a897a207-5585-437e-b7fa-28adb131c4d2
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+
+field1=value1&field2=value2%0A
+
+[16-04-2023 22:21:37] /
+
+[16-04-2023 22:21:40] POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.31.3
+Accept: */*
+Postman-Token: 2dad5758-42e6-4ecf-98c1-320fe3c12968
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=--------------------------480398155701269711312520
+Content-Length: 174
+
+----------------------------480398155701269711312520
+Content-Disposition: form-data; name="form_data_key"
+
+value1
+----------------------------480398155701269711312520--
+
+
+[16-04-2023 22:21:40] /
+
+[16-04-2023 22:21:42] GET /post_files/postLog.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.31.3
+Accept: */*
+Postman-Token: 16b92e1f-0a0d-4762-ae74-bf54938a0c12
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+[16-04-2023 22:21:42] /post_files/postLog.txt
+
+[16-04-2023 22:22:52] POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.31.3
+Accept: */*
+Postman-Token: e6cc752a-8913-4941-9e11-0472b37dcc32
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+
+field1=value1&field2=value2%0A
+
+[16-04-2023 22:22:52] /
+
+[16-04-2023 22:22:55] POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.31.3
+Accept: */*
+Postman-Token: 60eba746-251c-42c5-9911-8ad119cd8e51
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=--------------------------598443958938932491982169
+Content-Length: 174
+
+----------------------------598443958938932491982169
+Content-Disposition: form-data; name="form_data_key"
+
+value1
+----------------------------598443958938932491982169--
+
+
+[16-04-2023 22:22:55] /
+
+[16-04-2023 22:22:58] GET /post_files/postLog.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.31.3
+Accept: */*
+Postman-Token: dd02aa1c-947d-4fdc-8136-7be21bcf640c
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+[16-04-2023 22:22:58] /post_files/postLog.txt
+
