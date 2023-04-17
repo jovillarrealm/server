@@ -35015,3 +35015,31 @@ Accept-Language: es-ES,es;q=0.9
 
 [16-04-2023 19:51:53] /favicon.ico
 
+[17-04-2023 13:57:48] POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 1deef64b-5062-42f3-8438-87e1bb0042ad
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 957978
+Content-Type: image/gif
+
+GIF89a}
+
+[17-04-2023 13:57:48] /
+
+[17-04-2023 13:57:58] GET /news/index.html HTTP/1.1
+Content-Type: text/plain
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 7ea663c8-133e-488f-95cb-84628377dd26
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 4
+
+miau
+
+[17-04-2023 13:57:58] /news/index.html
+

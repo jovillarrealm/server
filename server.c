@@ -155,6 +155,26 @@ void parse_request_line(char *buffer, http_request *request)
     free(uri);
 
     if (request->method == POST) {
+
+        char *content_type_start = strstr(method_end, "Content-Type: ");
+        if (content_type_start!=NULL)
+        {
+            content_type_start += 14;
+            char *content_type_end = strstr(content_type_start, "\r\n");
+            size_t content_type_len = content_type_end - content_type_start;
+            request->content_type = strndup(content_type_start, content_type_len);
+        }
+
+        char *content_length_start = strstr(method_end, "Content-Length: ");
+
+        if (content_length_start != NULL)
+        {
+            content_length_start += 17;
+            char *content_length_end = strstr(content_length_start, "\r\n");
+            size_t content_length_len = content_type_start - content_type_start;
+            request->content_len = atoi(strndup(content_length_start,content_length_len));
+        }
+
         char *body_start = strstr(buffer, "\r\n\r\n");
         if (body_start != NULL) {
             body_start += 4; // saltar los caracteres de separación
