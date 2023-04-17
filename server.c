@@ -283,14 +283,6 @@ void *accept_connections(void *server_fd_ptr)
 }
 
 // Funcion para manejar conexiones de varios clientes
-void *connection_handler(void *arg)
-{
-    connection_info thread_info = *(connection_info *)arg;
-    int client_fd = thread_info.client_fd;
-    FILE *log_file = thread_info.log_file;
-    handle_connection(client_fd, log_file);
-    return NULL;
-}
 
 // De: https://stackoverflow.com/questions/20019786/safe-and-portable-way-to-convert-a-char-to-uint16-t
 int str_to_uint16(char *str, uint16_t *res)
@@ -366,7 +358,7 @@ int main(int argc, char *argv[])
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-    while (1)
+        while (1)
     {
         // Acepta una nueva conexión entrante
         if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
@@ -374,18 +366,7 @@ int main(int argc, char *argv[])
             perror("Error al aceptar la conexión entrante \n");
             continue;
         }
-
-        // Crea un nuevo hilo para manejar la conexión entrante
-        pthread_t thread_id;
-        connection_info thread_info = {.client_fd = client_fd, .log_file = log_file};
-        if (pthread_create(&thread_id, NULL, connection_handler, (void *)&thread_info) < 0)
-        {
-            perror("Error al crear el hilo \n");
-            continue;
-        }
-
-        // El hilo manejará la conexión, así que podemos continuar aceptando conexiones entrantes
-        pthread_detach(thread_id);
+        handle_connection(client_fd, log_file);
     }
     fclose(log_file); // Unreachable en este momento
     return 0;
