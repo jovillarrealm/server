@@ -330,7 +330,6 @@ int main(int argc, char *argv[])
             continue;
         }
         handle_connection(client_fd, log_file);
-        handle_connection(client_fd, log_file);
     }
     fclose(log_file); // Unreachable en este momento
     return 0;
