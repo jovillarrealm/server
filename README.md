@@ -12,9 +12,9 @@ servidor web.
 
 Integrantes del equipo de trabajo:
 
-- Daniel Gonzalez
-- Sara Rodriguez Velasquez
-- Jorge Alfredo Villareal
+- Daniel González
+- Sara Rodríguez Velásquez
+- Jorge Alfredo Villarreal
 
 ******
 
@@ -61,23 +61,24 @@ El servidor tiene un registro (logger) que se guarda en un archivo que se especi
 
 ### **Detalles**
 
+En el proyecto se usan principalmente 3 herramientas:
+
 |Compilador|Build|Debugger|
 |---|---|---|
 |gcc|meson|gdb|
 
-Debian, Ubuntu and derivatives:
+#### Proceso de verificación e instalación:
 
-``` bash
-sudo apt install build-essential gdb
-sudo apt install meson ninja-build
-```
+Debian, Ubuntu y derivativos:
 
 Para instalar gcc y gdb
 
 ``` bash
 sudo apt install build-essential gdb
+sudo apt install meson ninja-build
 ```
-
+Para instalar meson y ninja
+```
 Para instalar meson y ninja
 
 ``` bash
@@ -90,12 +91,30 @@ Para iniciar un projecto en el directorio actual
 meson init --name server --build
 ```
 
-Para compilar y testeo
+Para compilar y probar
 
 ``` bash
 meson compile -C builddir
 meson test -C builddir
 ```
+
+Debuggear
+
+``` bash
+gdb build/server
+```
+
+Algunos comandos útiles de GDB incluyen break, run, next, step, print, backtrace, finish, continue, watch, entre otros.
+
+Comando para iniciar la aplicación
+
+``` bash
+./build/server
+./build/server PORT LOGFILE DOCROOT
+```
+
+
+gdb build/server
 ## **Glosario y Terminología**
 
 En esta sección se describirá la terminología util para la realización del proyecto.
