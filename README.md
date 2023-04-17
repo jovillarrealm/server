@@ -49,9 +49,9 @@ Telematics Web Server – (TWS)) que soporte la versión HTTP/1.1
 
 Actualmente se tiene un códifo de servidor web en C que acepta solicitudes HTTP. Recibe solicitudes HTTP de clientes y devuelve una respuesta HTTP en función de la solicitud. El servidor es un programa de consola que se ejecuta en un bucle infinito y espera nuevas conexiones de clientes. Se utiliza el protocolo de socket para establecer conexiones entre el cliente y el servidor. Se utiliza la biblioteca pthread.h para crear un hilo para cada conexión cliente. El servidor es capaz de manejar hasta un máximo de 15 conexiones simultáneas.
 
-La solicitud HTTP se analiza utilizando la función parse_request_line que analiza la línea de solicitud HTTP para determinar el método, la ruta y el host. El servidor solo admite los métodos GET, POST, PUT y DELETE. Si se recibe una solicitud con un método diferente, se devuelve un código de respuesta HTTP 400 Bad Request.
+La solicitud HTTP se analiza utilizando la función parse_request_line que analiza la línea de solicitud HTTP para determinar el método, la ruta y el host. El servidor solo admite los métodos GET, POST, HEAD. Si se recibe una solicitud con un método diferente, se devuelve un código de respuesta HTTP 400 Bad Request.
 
-El servidor tiene un registro (logger) que se guarda en un archivo que se especifica en el argumento de línea de comando. La función logger registra cada solicitud y respuesta HTTP en el archivo de registro con la marca de tiempo.
+El servidor tiene un registro (logger) que se guarda en un archivo que se especifica en el argumento de línea de comando. La función logger registra cada solicitud, posteo y respuesta HTTP en el archivo de registro con la marca de tiempo.
 
 ## **Setup**
 
@@ -79,7 +79,6 @@ sudo apt install meson ninja-build
 ```
 Para instalar meson y ninja
 ```
-Para instalar meson y ninja
 
 ``` bash
 sudo apt install meson ninja-build
