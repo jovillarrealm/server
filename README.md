@@ -1,7 +1,8 @@
-# **Web Server In C**
-## Telemática - 2023-I
+# **Web Server In C.**
+# Telemática. 
+## EAFIT - Medellin, Antiquia, 2023-I.
 
-# **Descripción del Proyecto**
+# **Descripción del Proyecto:**
 En este proyecto se explora la aplicación de la capa de aplicación de la arquitectura
 TCP/IP. Al respecto, se abordará desde el estudio del protocolo HTTP desde una
 perspectiva de programación en red. Para esto se desarrollará e implementará un
@@ -95,11 +96,11 @@ Para compilar y testeo
 meson compile -C builddir
 meson test -C builddir
 ```
-### **Glosario y Terminología**
+## **Glosario y Terminología**
 
 En esta sección se describirá la terminología util para la realización del proyecto.
 
-# Three way Handshake
+### Three way Handshake
 
 C ->syn=1                    S
 
@@ -107,7 +108,7 @@ C <-ack=1; syn=1             S
 
 C ->ack=1                    S
 
-# Estado de la conexión
+### Estado de la conexión
 
 Connection: Keep alive ; Se prioriza que no sean conecciones shortlived, que se puedan hacer varios requests de manera conjunta.
 
