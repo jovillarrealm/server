@@ -101,16 +101,37 @@ meson test -C builddir
 En esta sección se describirá la terminología util para la realización del proyecto.
 
 ### Three way Handshake
-
 C ->syn=1                    S
-
 C <-ack=1; syn=1             S
-
 C ->ack=1                    S
 
 ### Estado de la conexión
 
 Connection: Keep alive ; Se prioriza que no sean conecciones shortlived, que se puedan hacer varios requests de manera conjunta.
+
+### - bind
+La función bind en programación de redes en C se utiliza para asociar una dirección IP y un número de puerto a un socket. Es una llamada al sistema que asigna una dirección local a un socket identificado por su descriptor de archivo.
+
+### - listen
+La función listen en programación de redes en C se utiliza para indicar al sistema operativo que el socket está listo para aceptar conexiones entrantes. Esta llamada al sistema especifica el número máximo de conexiones pendientes que se pueden encolar para el socket.
+
+### - accept
+La función accept en programación de redes en C se utiliza para aceptar una conexión entrante en un socket previamente configurado para escuchar. Esta llamada al sistema devuelve un nuevo descriptor de archivo que representa la conexión aceptada.
+
+### - connect()
+La función connect() en programación de redes en C se utiliza para establecer una conexión con otro host a través de una red. Esta llamada al sistema se utiliza en el lado del cliente para conectar un socket de cliente a un socket de servidor.
+
+### - recv()
+La función recv() en programación de redes en C se utiliza para recibir datos a través de un socket. Esta llamada al sistema recibe los datos enviados por el otro extremo de la conexión y los almacena en un búfer especificado.
+
+### - sockaddr_in
+sockaddr_in es una estructura de datos en programación de redes en C que se utiliza para representar una dirección IP y un número de puerto en el protocolo IPv4. Esta estructura se utiliza con otras funciones de socket para asignar direcciones y puertos a los sockets.
+
+### - strstr
+La función strstr en programación de C se utiliza para encontrar la primera aparición de una subcadena en una cadena. Esta función devuelve un puntero al primer carácter de la subcadena encontrada o NULL si la subcadena no se encuentra en la cadena.
+
+### - memcpy
+La función memcpy en programación de C se utiliza para copiar un bloque de memoria de un lugar a otro. Esta función toma dos punteros como argumentos, el primer puntero es el destino donde se copiará el bloque de memoria y el segundo puntero es el origen del bloque de memoria que se copiará.
 
 
 ******
