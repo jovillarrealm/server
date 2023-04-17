@@ -32,6 +32,7 @@ int showFile(int client, char *ruta)
     if (!file)
     {
         perror("File error");
+        free(http_mime);
         return EXIT_FAILURE;
     }
 
@@ -116,6 +117,8 @@ int showFile(int client, char *ruta)
     else
     {
         printf("Unsupported file type!\n");
+        free(http_mime);
+        fclose(file);
         return 1;
     }
 
@@ -129,6 +132,7 @@ int showFile(int client, char *ruta)
     if (!buffer)
     {
         perror("Memory error");
+        free(http_mime);
         fclose(file);
         return EXIT_FAILURE;
     }
@@ -138,6 +142,7 @@ int showFile(int client, char *ruta)
     fclose(file);
 
     char header[1024];
+    char *now = get_time;
     sprintf(header,
             "HTTP/1.1 200 OK\r\n"
             "Date: %s\r\n"
@@ -148,7 +153,8 @@ int showFile(int client, char *ruta)
             "Connection: keep-alive\r\n"
             "Keep-Alive: timeout=5, max=100\r\n"
             "\r\n",
-            get_time(), http_mime, fileLen);
+            now, http_mime, fileLen);
+    free(now);
 
     // Send HTTP response header
     int sent = send(client, header, strlen(header), 0);
@@ -177,7 +183,7 @@ int showFile(int client, char *ruta)
     while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0)
     {
     }
-
+    free(http_mime);
     free(buffer);
     close(client);
 }
