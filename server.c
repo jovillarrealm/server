@@ -9,6 +9,8 @@
 #include <pthread.h>
 #include "showArchivos.c"
 #include "showArchivos.h"
+#include "saveArchivos.h"
+#include "saveArchivos.c"
 
 #define PORT 8080
 #define BUFFER_SIZE 1024
@@ -19,22 +21,7 @@
 #define BAD_REQUEST 400
 #define NOT_FOUND 404
 
-// Define la estructura de la petición HTTP:
-typedef struct http_request
-{
-    enum method
-    {
-        GET,
-        POST,
-        PUT,
-        DELETE,
-        UNSUPPORTED
-    } method;
-    char *host;
-    char *path;
-    char version[16];
-    int status_code;
-} http_request;
+#include "http_request.h"
 
 // Define la estructura para pasar a los hilos de cada conexión
 typedef struct connection_info
@@ -166,6 +153,18 @@ void parse_request_line(char *buffer, http_request *request)
     printf("->> Host: %s\n", request->host);
     printf("->> Ruta: %s\n", request->path);
     free(uri);
+
+    if (request->method == POST) {
+        char *body_start = strstr(buffer, "\r\n\r\n");
+        if (body_start != NULL) {
+            body_start += 4; // saltar los caracteres de separación
+            size_t body_len = strlen(body_start);
+            request->body = (char*) malloc(body_len + 1);
+            memcpy(request->body, body_start, body_len);
+            request->body[body_len] = '\0';
+        }
+        printf("->> Body: %s\n", request->body);
+    }
 }
 
 // Función para manejar una conexión de cliente
@@ -197,15 +196,26 @@ void handle_connection(int client_fd, FILE * log_file)
     switch (request.method)
     {
     case GET:
+        printf("lets do a get! \n");
         char *path = memmove(request.path, request.path+1, strlen(request.path));
         showFile(PORT, client_fd, path);
+
+        response_code = 200;
+        status_text = "OK";
+        response_body = "<html><body><h1>¡Gracias por enviar datos, jeje!</h1></body></html>";
+        response_length = strlen(response_body);
+        break;
     case POST:
+        printf("lets do a post! \n");
+        saveFile(&request);
+
         response_code = 200;
         status_text = "OK";
         response_body = "<html><body><h1>¡Gracias por enviar datos, jeje!</h1></body></html>";
         response_length = strlen(response_body);
         break;
     default:
+        printf("Oh no, bad request! \n");
         response_code = 400;
         status_text = "Bad Request";
         response_body = "<html><body><h1>Solicitud HTTP no válida, ayudame cristooo</h1></body></html>";
@@ -311,7 +321,7 @@ int main(int argc, char *argv[])
     printf("Usando assets de %s\n", doc_root_folder);
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-    while (1)
+        while (1)
     {
         // Acepta una nueva conexión entrante
         if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
@@ -319,6 +329,7 @@ int main(int argc, char *argv[])
             perror("Error al aceptar la conexión entrante \n");
             continue;
         }
+        handle_connection(client_fd, log_file);
         handle_connection(client_fd, log_file);
     }
     fclose(log_file); // Unreachable en este momento
