@@ -34,6 +34,8 @@ void logger(const char *message, FILE *log_file)
 // Analiza la línea de solicitud HTTP para determinar el método, la ruta y el host
 void parse_request_line(char *buffer, http_request *request, char* doc_root_folder)
 {
+    //Innit request
+
     char *method_end = strchr(buffer, ' ');
     if (method_end == NULL)
     {
@@ -337,7 +339,6 @@ int main(int argc, char *argv[])
     printf("Servidor iniciado en el puerto %d...\n", port);
 
         while (1)
-        while (1)
     {
         // Acepta una nueva conexión entrante
         if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
@@ -345,7 +346,7 @@ int main(int argc, char *argv[])
             perror("Error al aceptar la conexión entrante \n");
             continue;
         }
-        handle_connection(client_fd, log_file);
+        handle_connection(client_fd, log_file, doc_root_folder);
     }
     fclose(log_file); // Unreachable en este momento
     return 0;

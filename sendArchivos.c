@@ -85,7 +85,7 @@ int sendFile() {
 
         // Send HTTP response header
         int sent = send(client, header, strlen(header), 0);
-        if (sent != strlen(header)) {
+        if ((size_t)sent != strlen(header)) {
             perror("Send error");
         }
 
