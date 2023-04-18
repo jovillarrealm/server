@@ -83,7 +83,7 @@ void showHeaders(int client, char *ruta)
     int bytes_sent = 0;
     int chunk_size = 1024;
 
-        while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0) {}
+    while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0) {}
 
     free(http_mime);
     free(buffer);

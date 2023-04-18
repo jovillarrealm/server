@@ -10,6 +10,7 @@
 #include "showArchivos.h"
 
 
+
 void showFile(int client, char *ruta)
 {
     FILE *file;

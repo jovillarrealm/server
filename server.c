@@ -54,9 +54,9 @@ void parse_request_line(char *buffer, http_request *request, char* doc_root_fold
     {
         request->method = POST;
     }
-    else if (strncmp(buffer, "PUT", method_len) == 0)
+    else if (strncmp(buffer, "HEAD", method_len) == 0)
     {
-        request->method = PUT;
+        request->method = HEAD;
     }
     else if (strncmp(buffer, "DELETE", method_len) == 0)
     {
