@@ -21,6 +21,7 @@ typedef struct http_request
         POST,
         PUT,
         DELETE,
+        HEAD,
         UNSUPPORTED
     } method;
     char *host;

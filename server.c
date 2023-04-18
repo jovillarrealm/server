@@ -10,6 +10,8 @@
 #include "http_request.h"
 #include "showArchivos.h"
 #include "saveArchivos.h"
+#include "showHeaders.h"
+#include "showHeaders.c"
 
 
 
@@ -213,12 +215,16 @@ void handle_connection(int client_fd, FILE *log_file, char* doc_root)
     switch (request.method)
     {
     case GET:
-        printf("lets do a get! \n");
+        printf("lets do a GET! \n");
         showFile(client_fd, request.path);
         break;
     case POST:
-        printf("lets do a post! \n");
+        printf("lets do a POST! \n");
         saveFile(&request, client_fd);
+        break;
+    case HEAD:
+        printf("lets return a HEAD! \n");
+        showHeaders(client_fd, request.path);
         break;
     default:
         printf("Oh no, bad request! \n");
