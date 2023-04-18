@@ -150,40 +150,83 @@ void parse_request_line(char *buffer, http_request *request)
         request->host = strdup("");
         request->path = strdup(uri);
     }
-    printf("->> Host: %s\n", request->host);
-    printf("->> Ruta: %s\n", request->path);
     free(uri);
 
-    if (request->method == POST) {
-
+    if (request->method == POST) 
+    {
         char *content_type_start = strstr(method_end, "Content-Type: ");
-        if (content_type_start!=NULL)
+        if (content_type_start != NULL)
         {
-            content_type_start += 14;
-            char *content_type_end = strstr(content_type_start, "\r\n");
-            size_t content_type_len = content_type_end - content_type_start;
-            request->content_type = strndup(content_type_start, content_type_len);
+        content_type_start += 14;
+        char *content_type_end = strstr(content_type_start, "\r\n");
+        size_t content_type_len = content_type_end - content_type_start;
+        request->content_type = strndup(content_type_start, content_type_len);
         }
+        printf("->> Content Type: %s\n", request->content_type);
 
         char *content_length_start = strstr(method_end, "Content-Length: ");
-
         if (content_length_start != NULL)
         {
-            content_length_start += 17;
+            content_length_start += 16;
             char *content_length_end = strstr(content_length_start, "\r\n");
-            size_t content_length_len = content_type_start - content_type_start;
-            request->content_len = atoi(strndup(content_length_start,content_length_len));
+            size_t content_length_len = content_length_end - content_length_start;
+            request->content_len = atoi(strndup(content_length_start, content_length_len));
         }
 
+        printf("->> Content length: %d\n", request->content_len);
+
         char *body_start = strstr(buffer, "\r\n\r\n");
-        if (body_start != NULL) {
+        printf("body_start: \n", body_start);
+        if (body_start != NULL) 
+        {
             body_start += 4; // saltar los caracteres de separación
-            size_t body_len = strlen(body_start);
-            request->body = (char*) malloc(body_len + 1);
-            memcpy(request->body, body_start, body_len);
-            request->body[body_len] = '\0';
+            printf("body_start +4: \n", body_start);
+
+            if (request->content_type != NULL && strcmp(request->content_type, "text/plain") == 0) 
+            {
+                printf("Contenido es texto: \n",request->content_type);
+                // El contenido es de texto, por lo que se guarda como una cadena (string)
+                size_t body_len = strlen(body_start);
+                request->body = (char*) malloc(body_len + 1);
+                if (request->body != NULL) {
+                    memcpy(request->body, body_start, body_len);
+                    request->body[body_len] = '\0';
+                } else {
+                    // Error: no se pudo asignar memoria para el cuerpo
+                    printf("Error: no se pudo asignar memoria para el cuerpo\n");
+                }
+            } else {
+                // El contenido es binario, por lo que se guarda como un arreglo de bytes
+                printf("contenido es binario: \n", request->content_type);
+                printf("request->binary_body: \n", request->binary_body);
+
+                //void *ptr = realloc(request->binary_body, request->content_len);
+                void *ptr = malloc(request->content_len);
+
+                if (ptr != NULL) 
+                {
+                    printf("Asignando memoria para el recurso\n");
+                    request->binary_body = ptr;
+                    printf("ACABA DE REALIZAR: request->binary_body = ptr;\n");
+                    printf("binary_body: \n", request->binary_body);
+                    printf("body_start: \n", body_start);
+                    printf("request->content_len + 100: \n", request->content_len + 100);
+                    memcpy(request->binary_body, body_start, request->content_len + 100);
+                    printf("ACABA DE REALIZAR: memcpy(request->binary_body, body_start, request->content_len)\n");
+                } else {
+                    // Error: no se pudo asignar memoria para el cuerpo binario
+                    printf("Error: no se pudo asignar memoria para el cuerpo binario\n");
+                }
+            }
         }
-        printf("->> Body: %s\n", request->body);
+    
+        if (request->body != NULL) {
+            printf("->> Body: %s\n", request->body);
+        }
+
+        if (request->binary_body != NULL) {
+            printf("->> Binary_Body: %s\n", request->binary_body);
+        }
     }
 }
 
@@ -204,6 +247,8 @@ void handle_connection(int client_fd, FILE * log_file)
 
     // Analizar la línea de solicitud HTTP
     http_request request;
+
+
     parse_request_line(request_buffer, &request);
     logger(request.path, log_file);
 
