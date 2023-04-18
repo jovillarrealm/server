@@ -7,6 +7,9 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+
 #include "showArchivos.c"
 #include "showArchivos.h"
 #include "saveArchivos.h"
@@ -101,8 +104,8 @@ void parse_request_line(char *buffer, http_request *request)
         request->method = UNSUPPORTED;
         return;
     }
-    size_t uri_len = uri_end - uri_start;
     char *http_version_start = uri_end + 1;
+    size_t uri_len = http_version_start - uri_start - 1;
     if (http_version_start[0] != 'H' || http_version_start[1] != 'T' || http_version_start[2] != 'T' || http_version_start[3] != 'P' || http_version_start[4] != '/')
     {
         request->method = UNSUPPORTED;
@@ -154,36 +157,78 @@ void parse_request_line(char *buffer, http_request *request)
     printf("->> Ruta: %s\n", request->path);
     free(uri);
 
-    if (request->method == POST) {
-
+    if (request->method == POST) 
+    {
         char *content_type_start = strstr(method_end, "Content-Type: ");
-        if (content_type_start!=NULL)
+        if (content_type_start != NULL)
         {
             content_type_start += 14;
             char *content_type_end = strstr(content_type_start, "\r\n");
             size_t content_type_len = content_type_end - content_type_start;
             request->content_type = strndup(content_type_start, content_type_len);
+
+            // Detectar el tipo de archivo y asignar la extensión correspondiente
+            if (strncmp(request->content_type, "text/plain", 10) == 0) {
+                request->file_ext = strdup(".txt");
+            } else if (strncmp(request->content_type, "image/png", 9) == 0) {
+                request->file_ext = strdup(".png");
+            } else if (strncmp(request->content_type, "image/jpeg", 9) == 0) {
+                request->file_ext = strdup(".jpeg");
+            } else if (strncmp(request->content_type, "image/gif", 15) == 0) {
+                request->file_ext = strdup(".gif");
+            } else if (strncmp(request->content_type, "application/pdf", 15) == 0) {
+                request->file_ext = strdup(".pdf");
+            } else if (strncmp(request->content_type, "application/octet-stream", 24) == 0) {
+                request->file_ext = strdup(".exe");
+            } else {
+                request->file_ext = strdup(".dat");
+            }
         }
 
-        char *content_length_start = strstr(method_end, "Content-Length: ");
+        printf("!! Content type: \n",request->content_type);
 
+        char *content_length_start = strstr(method_end, "Content-Length: ");
         if (content_length_start != NULL)
         {
             content_length_start += 17;
             char *content_length_end = strstr(content_length_start, "\r\n");
-            size_t content_length_len = content_type_start - content_type_start;
+            size_t content_length_len = content_length_end - content_length_start;
             request->content_len = atoi(strndup(content_length_start,content_length_len));
         }
 
+        printf("!! Content length: \n",request->content_len);
+
+        time_t t = time(NULL);
+        struct tm tm = *localtime(&t);
+        char filename[50];
+        strftime(filename, sizeof(filename), "%Y-%m-%d_%H-%M-%S", &tm);
+        request->filename = strdup(filename);
+
         char *body_start = strstr(buffer, "\r\n\r\n");
-        if (body_start != NULL) {
+        if (body_start != NULL) 
+        {
             body_start += 4; // saltar los caracteres de separación
-            size_t body_len = strlen(body_start);
-            request->body = (char*) malloc(body_len + 1);
+            size_t buffer_len = strlen(buffer);
+            size_t body_len = buffer + buffer_len - body_start - 4;
+            request->body = (char*) malloc(body_len + 1); // incluir espacio adicional para NULL
             memcpy(request->body, body_start, body_len);
-            request->body[body_len] = '\0';
+            request->body[body_len] = '\0'; // agregar byte NULL
+
+            // Generar el nombre del archivo a partir de la fecha y hora
+            time_t t = time(NULL);
+            struct tm tm = *localtime(&t);
+            char filename[100];
+            sprintf(filename, "%04d-%02d-%02d_%02d-%02d-%02d%s", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, request->file_ext);
+
+
+           // Guardar el archivo en disco
+            int fd = open(filename, O_CREAT | O_WRONLY, S_IRUSR | S_IWUSR);
+            write(fd, request->body, request->content_len);
+            close(fd);
         }
-        printf("->> Body: %s\n", request->body);
+        printf("!->>Body: %s\n", request->body);
+        printf("!->>Buffer: %s\n", buffer);
+        printf("!->>Content-Length: %zu\n", request->content_len);
     }
 }
 
