@@ -4,19 +4,16 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <time.h>
+#include <string.h>
+#include "http_request.h"
+#include "showArchivos.h"
 
 
-char *get_time(){
-    time_t t = time(NULL);
-    struct tm tm = *gmtime(&t);
-    char *time_str = malloc(30 * sizeof(char));
-    strftime(time_str, 30, "%a, %d %b %Y %H:%M:%S GMT", &tm);
-    return time_str;}
-
-int showFile(int PORT, int client, char *ruta) {
+void showFile(int client, char *ruta)
+{
     FILE *file;
     char *buffer;
-    char *file_type;
     char *http_mime = (char *)malloc(50 * sizeof(char));
     int fileLen=0;
 
@@ -25,9 +22,12 @@ int showFile(int PORT, int client, char *ruta) {
 
     // Open file
     file = fopen(ruta, "rb");
-    if (!file) {
-        perror("File error");
-        return EXIT_FAILURE;
+    if (!file)
+    {
+        perror("File could not be opened");
+        free(http_mime);
+
+        return ;
     }
 
 
@@ -102,18 +102,20 @@ strcpy(http_mime, "text/html");
 
     // Allocate memory
     buffer = (char *)malloc(fileLen);
-    if (!buffer) {
+    if (!buffer)
+    {
         perror("Memory error");
+        free(http_mime);
         fclose(file);
-        return EXIT_FAILURE;
+        return ;
     }
 
     // Read file contents into buffer
     fread(buffer, fileLen, 1, file);
     fclose(file);
 
-
     char header[1024];
+    char *now = get_current_time();
     sprintf(header,
         "HTTP/1.1 200 OK\r\n"
         "Date: %s\r\n"
@@ -126,30 +128,32 @@ strcpy(http_mime, "text/html");
         get_time(), http_mime, fileLen);
 
 
-        // Send HTTP response header
-        int sent = send(client, header, strlen(header), 0);
-        if (sent != strlen(header)) {
-            perror("Send error");
-        }
+    // Send HTTP response header
+    ssize_t sent = send(client, header, strlen(header), 0);
+    if (sent != (ssize_t) strlen(header))
+    {
+        perror("Send error");
+    }
 
-        // Send file data in chunks until the entire file is sent
-        int bytes_sent = 0;
-        int chunk_size = 1024;
-        while (bytes_sent < fileLen) {
-            int remaining = fileLen - bytes_sent;
-            int send_size = remaining > chunk_size ? chunk_size : remaining;
-            int sent = send(client, buffer + bytes_sent, send_size, 0);
-            if (sent == -1) {
-                perror("Send error");
-                break;
-            }
-            bytes_sent += sent;
+    // Send file data in chunks until the entire file is sent
+    int bytes_sent = 0;
+    int chunk_size = 1024;
+    while (bytes_sent < fileLen)
+    {
+        int remaining = fileLen - bytes_sent;
+        int send_size = remaining > chunk_size ? chunk_size : remaining;
+        int sent = send(client, buffer + bytes_sent, send_size, 0);
+        if (sent == -1)
+        {
+            perror("Send error");
+            break;
         }
+        bytes_sent += sent;
+    }
 
         while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0) {}
 
 
     free(buffer);
     close(client);
-
 }

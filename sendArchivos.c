@@ -4,11 +4,12 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include "sendArchivos.h"
 
 int sendFile() {
     FILE *file;
     char *buffer;
-    int fileLen;
+    long fileLen;
 
     // Open file
     file = fopen("opm.mp4", "rb");
@@ -43,7 +44,7 @@ int sendFile() {
         "ETag: \"56d-9989200-1132c580\"\r\n"
         "Content-Type: application/octet-stream\n"
         "Content-Disposition: attachment; filename=\"opm.mp4\"\r\n"
-        "Content-Length: %d\r\n"
+        "Content-Length: %ld\r\n"
         "Accept-Ranges: bytes\r\n"
         "Connection: keep-alive\r\n"
         "Keep-Alive: timeout=5, max=100\r\n"
