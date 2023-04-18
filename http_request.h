@@ -14,6 +14,7 @@ typedef struct http_request
     char *host;
     char *path;
     char *body;
+    char *body_binary; 
     char *file_ext;
     char version[16];
     int status_code;
@@ -25,7 +26,7 @@ void prequest(http_request req)
 {
 
     printf("--Method: %d\n", req.method);
-    if (req.host != NULL);
+    if (req.host != NULL)
         printf("--Host: %s\n", req.host);
     if (req.path!=NULL)
         printf("--Path: %s\n", req.path);

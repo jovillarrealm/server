@@ -167,12 +167,11 @@ void parse_request_line(char *buffer, http_request *request)
         }
         request->path = strdup(uri);
     }
-    printf("->> Host: %s\n", request->host);
-    printf("->> Ruta: %s\n", request->path);
     free(uri);
 
     if (request->method == POST)
     {
+        // encontramos el tipo de contenido, se guarda en char *content_type;
         char *content_type_start = strstr(method_end, "Content-Type: ");
         if (content_type_start != NULL)
         {
@@ -182,6 +181,7 @@ void parse_request_line(char *buffer, http_request *request)
             request->content_type = strndup(content_type_start, content_type_len);
 
             // Detectar el tipo de archivo y asignar la extensión correspondiente
+            // la extension se guarda en char *file_ext;
             if (strncmp(request->content_type, "text/plain", 10) == 0) {
                 request->file_ext = strdup(".txt");
             } else if (strncmp(request->content_type, "image/png", 9) == 0) {
@@ -199,6 +199,8 @@ void parse_request_line(char *buffer, http_request *request)
             }
         }
 
+        // Consigo el content length
+        // Guardado como int content_len;
         char *content_length_start = strstr(method_end, "Content-Length: ");
         if (content_length_start != NULL)
         {
@@ -210,11 +212,28 @@ void parse_request_line(char *buffer, http_request *request)
             content_length_str[content_length_len] = '\0';
             request->content_len = strtol(content_length_str, NULL, 10);
         }
-        
 
+        printf("!! content_len: %d\n", request->content_len );
+        
+        // proceso el contenido neto del request POST
         char *body_start = strstr(buffer, "\r\n\r\n");
         if (body_start != NULL) 
         {
+            // proceso el body_binary para guardarlo como su propio file con 
+            // variables: char *body_binary; 
+            size_t binary_len = strlen(request->body);
+            request->body_binary = malloc(request->content_len);
+
+            // pinchi copiado de datos en el body_binary
+            //memcpy(request->body_binary, body_start, request->content_len);
+            //memcpy(request->body_binary, request->body, binary_len);
+            //memcpy(request->body_binary, request->body, request->content_len);
+            
+            //request->content_len = binary_len;
+
+
+            // proceso el body para guardarlo como texto en el log
+            // variables: char *body;
             body_start += 4; // saltar los caracteres de separación
             size_t buffer_len = strlen(buffer);
             size_t body_len = buffer + buffer_len - body_start - 4;
@@ -222,20 +241,26 @@ void parse_request_line(char *buffer, http_request *request)
             memcpy(request->body, body_start, body_len);
             request->body[body_len] = '\0'; // agregar byte NULL
 
+
             // Generar el nombre del archivo a partir de la fecha y hora
             time_t t = time(NULL);
             struct tm tm = *localtime(&t);
             char filename[100];
             sprintf(filename, "%04d-%02d-%02d_%02d-%02d-%02d%s", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, request->file_ext);
 
-
-           // Guardar el archivo en disco
-            int fd = open(filename, O_CREAT | O_WRONLY, S_IRUSR | S_IWUSR);
-            //write(fd, request->body, request->content_len);
-            write(fd, request->body, body_len);
-            close(fd);
+            // guardar el archivo nuevo con el binario que guardé
+            FILE *file = fopen(filename, "wb");
+            if (file == NULL) 
+            {
+                fprintf(stderr, "Error opening file %s\n", filename);
+                return;
+            }
+            fwrite(request->body_binary, request->content_len, 1, file);
+            fclose(file);
         }
         printf("->> Body: %s\n", request->body);
+        printf("->> Binary body: %s\n", request->body_binary);
+        printf("->> THE ENTIRE BUFFER: %s\n", buffer);
     }
 }
 
