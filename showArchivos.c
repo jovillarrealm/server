@@ -5,22 +5,15 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <time.h>
+#include <string.h>
+#include "http_request.h"
 #include "showArchivos.h"
 
-char *get_time()
-{
-    time_t t = time(NULL);
-    struct tm tm = *gmtime(&t);
-    char *time_str = malloc(30 * sizeof(char));
-    strftime(time_str, 30, "%a, %d %b %Y %H:%M:%S GMT", &tm);
-    return time_str;
-}
 
-int showFile(int client, char *ruta)
+void showFile(int client, char *ruta)
 {
     FILE *file;
     char *buffer;
-    char *file_type;
     char *http_mime = (char *)malloc(50 * sizeof(char));
     int fileLen = 0;
 
@@ -31,95 +24,18 @@ int showFile(int client, char *ruta)
     file = fopen(ruta, "rb");
     if (!file)
     {
-        perror("File error");
+        perror("File could not be opened");
         free(http_mime);
-        return EXIT_FAILURE;
-    }
 
-    file_type = strrchr(ruta, '.'); // Checks file extension
-
-    if (strcmp(file_type, ".html") == 0)
-    {
-        strcpy(http_mime, "text/html");
+        return ;
     }
-    else if (strcmp(file_type, ".txt") == 0)
-    {
-        strcpy(http_mime, "text/plain");
-    }
-    else if (strcmp(file_type, ".css") == 0)
-    {
-        strcpy(http_mime, "text/css");
-    }
-    else if (strcmp(file_type, ".js") == 0)
-    {
-        strcpy(http_mime, "application/javascript");
-    }
-    else if (strcmp(file_type, ".json") == 0)
-    {
-        strcpy(http_mime, "application/json");
-    }
-    else if (strcmp(file_type, ".xml") == 0)
-    {
-        strcpy(http_mime, "application/xml");
-    }
-    else if (strcmp(file_type, ".pdf") == 0)
-    {
-        strcpy(http_mime, "application/pdf");
-    }
-    else if (strcmp(file_type, ".jpg") == 0 || strcmp(file_type, ".jpeg") == 0)
-    {
-        strcpy(http_mime, "image/jpeg");
-    }
-    else if (strcmp(file_type, ".png") == 0)
-    {
-        strcpy(http_mime, "image/png");
-    }
-    else if (strcmp(file_type, ".gif") == 0)
-    {
-        strcpy(http_mime, "image/gif");
-    }
-    else if (strcmp(file_type, ".svg") == 0)
-    {
-        strcpy(http_mime, "image/svg+xml");
-    }
-    else if (strcmp(file_type, ".ico") == 0)
-    {
-        strcpy(http_mime, "image/x-icon");
-    }
-    else if (strcmp(file_type, ".mp3") == 0)
-    {
-        strcpy(http_mime, "audio/mpeg");
-    }
-    else if (strcmp(file_type, ".wav") == 0)
-    {
-        strcpy(http_mime, "audio/wav");
-    }
-    else if (strcmp(file_type, ".mp4") == 0)
-    {
-        strcpy(http_mime, "video/mp4");
-    }
-    else if (strcmp(file_type, ".avi") == 0)
-    {
-        strcpy(http_mime, "video/x-msvideo");
-    }
-    else if (strcmp(file_type, ".doc") == 0)
-    {
-        strcpy(http_mime, "application/msword");
-    }
-    else if (strcmp(file_type, ".xls") == 0)
-    {
-        strcpy(http_mime, "application/vnd.ms-excel");
-    }
-    else if (strcmp(file_type, ".ppt") == 0)
-    {
-        strcpy(http_mime, "application/vnd.ms-powerpoint");
-    }
-    else
+    
+    if (get_mime_from_path(ruta,http_mime)!=0)
     {
         printf("Unsupported file type!\n");
         free(http_mime);
         fclose(file);
-        return 1;
+        return ;
     }
 
     // Get file length
@@ -134,7 +50,7 @@ int showFile(int client, char *ruta)
         perror("Memory error");
         free(http_mime);
         fclose(file);
-        return EXIT_FAILURE;
+        return ;
     }
 
     // Read file contents into buffer
@@ -142,7 +58,7 @@ int showFile(int client, char *ruta)
     fclose(file);
 
     char header[1024];
-    char *now = get_time();
+    char *now = get_current_time();
     sprintf(header,
             "HTTP/1.1 200 OK\r\n"
             "Date: %s\r\n"
@@ -157,8 +73,8 @@ int showFile(int client, char *ruta)
     free(now);
 
     // Send HTTP response header
-    int sent = send(client, header, strlen(header), 0);
-    if (sent != strlen(header))
+    ssize_t sent = send(client, header, strlen(header), 0);
+    if (sent != (ssize_t) strlen(header))
     {
         perror("Send error");
     }

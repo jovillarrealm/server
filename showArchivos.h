@@ -7,10 +7,12 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include "http_request.h"
+
 // Functions
 
 //GET
-int showFile(int client, char * ruta);
+void showFile(int client, char * ruta);
 
 // End of header file
 #endif

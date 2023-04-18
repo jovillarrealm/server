@@ -5,6 +5,14 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define BUFFER_SIZE 1024
+#define MAX_CONNECTIONS 15
+#define MAX_REQUEST_SIZE 4096
+#define MAX_RESPONSE_SIZE 4096
+#define OK 200
+#define BAD_REQUEST 400
+#define NOT_FOUND 404
+
 typedef struct http_request
 {
     enum method
@@ -38,4 +46,7 @@ char *get_current_time(void);
 
 // Muestra un mensaje de error y sale del programa
 void error(const char *msg);
+
+int get_mime_from_path(char *ruta, char *http_mime);
+
 #endif

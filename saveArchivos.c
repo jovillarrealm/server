@@ -19,7 +19,7 @@ void saveFile(http_request *request, int client_fd)
     FILE * fp;
 
     
-    if (request->content_type == "binary")
+    if (request->content_type!=NULL)
     {
         fp = fopen(request->path, "wb");
         if (fp == NULL)

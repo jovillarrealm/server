@@ -38,7 +38,7 @@ void error(const char *msg)
 }
 
 // requiere un path y un http_mime que ya tenga memoria malloc-eada
-char *get_mime_from_path(char *ruta, char *http_mime)
+int get_mime_from_path(char *ruta, char *http_mime)
 {
     char *file_type;
     file_type = strrchr(ruta, '.'); // Checks file extension
@@ -122,8 +122,9 @@ char *get_mime_from_path(char *ruta, char *http_mime)
     else
     {
         printf("Unsupported file type!\n");
-        free(http_mime);
+        //free(http_mime);
         // fclose(file);
-        return 1;
+        return -1;
     }
+    return 0;
 }

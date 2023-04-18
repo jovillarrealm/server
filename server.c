@@ -11,18 +11,8 @@
 #include "showArchivos.h"
 #include "saveArchivos.h"
 
-#define BUFFER_SIZE 1024
-#define MAX_CONNECTIONS 15
-#define MAX_REQUEST_SIZE 4096
-#define MAX_RESPONSE_SIZE 4096
-#define OK 200
-#define BAD_REQUEST 400
-#define NOT_FOUND 404
 
-
-
-
-
+// git clone --branch testPost3 --single-branch https://github.com/jovillarrealm/server.git
 
 
 
@@ -227,7 +217,6 @@ void handle_connection(int client_fd, FILE *log_file, char* doc_root)
         printf("lets do a get! \n");
         showFile(client_fd, request.path);
 
-        response_code = 200;
         status_text = "OK";
         response_body = "<html><body><h1>¡Gracias por enviar datos, jeje!</h1></body></html>";
         response_length = strlen(response_body);
