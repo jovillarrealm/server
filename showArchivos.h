@@ -7,7 +7,10 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <time.h>
+#include <string.h>
 #include "http_request.h"
+#include "showArchivos.h"
 
 // Functions
 

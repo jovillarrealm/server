@@ -19,8 +19,11 @@ void saveFile(http_request *request, int client_fd)
     FILE * fp;
 
     
-    if (request->content_type!=NULL)
+    if (request->content_type!=NULL &&request->path!=NULL)
     {
+        // POST FILE
+        if (strstr(request->content_type, "application")!=NULL) //
+        {
         fp = fopen(request->path, "wb");
         if (fp == NULL)
         {
@@ -29,6 +32,9 @@ void saveFile(http_request *request, int client_fd)
         }
         char buf[request->content_len];
         read(client_fd,buf,request->content_len);
+
+        //fwrite(re)
+        }
     }
     else
     {

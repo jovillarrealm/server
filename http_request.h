@@ -50,4 +50,5 @@ void error(const char *msg);
 
 int get_mime_from_path(char *ruta, char *http_mime);
 
+
 #endif
