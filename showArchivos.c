@@ -34,7 +34,7 @@ void showFile(int client, char *ruta)
     
 
 
-
+    get_mime_from_path(ruta, http_mime);
 
 
 

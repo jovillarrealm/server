@@ -161,7 +161,7 @@ void parse_request_line(char *buffer, http_request *request, char* doc_root_fold
         {
             content_length_start += 17;
             char *content_length_end = strstr(content_length_start, "\r\n");
-            size_t content_length_len = content_type_start - content_type_start;
+            size_t content_length_len = content_length_end - content_length_start;
             request->content_len = atoi(strndup(content_length_start, content_length_len));
         }
 
@@ -202,42 +202,25 @@ void handle_connection(int client_fd, FILE *log_file, char* doc_root)
     // printf("Solicitud HTTP recibida: %s\n", request_buffer);
 
     // Analizar la línea de solicitud HTTP
-    http_request request;
+    http_request request = {.method=0, .body="", .content_len=0,.content_type="",.host="",.path="",.status_code=200,.version=""};
     parse_request_line(request_buffer, &request, doc_root);
     prequest(&request);
     logger(request.path, log_file);
 
     // Determinar el estado de la solicitud y generar una respuesta HTTP
-    char *response_body = NULL;
-    size_t response_length = 0;
-    int response_code = 0;
-    char *status_text = NULL;
 
     switch (request.method)
     {
     case GET:
         printf("lets do a get! \n");
         showFile(client_fd, request.path);
-
-        status_text = "OK";
-        response_body = "<html><body><h1>¡Gracias por enviar datos, jeje!</h1></body></html>";
-        response_length = strlen(response_body);
         break;
     case POST:
         printf("lets do a post! \n");
         saveFile(&request, client_fd);
-
-        response_code = 200;
-        status_text = "OK";
-        response_body = "<html><body><h1>¡Gracias por enviar datos, jeje!</h1></body></html>";
-        response_length = strlen(response_body);
         break;
     default:
         printf("Oh no, bad request! \n");
-        response_code = 400;
-        status_text = "Bad Request";
-        response_body = "<html><body><h1>Solicitud HTTP no válida, ayudame cristooo</h1></body></html>";
-        response_length = strlen(response_body);
         break;
     }
 }
