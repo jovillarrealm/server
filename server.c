@@ -219,23 +219,12 @@ void parse_request_line(char *buffer, http_request *request)
         char *body_start = method_end + 4; // el cuerpo comienza después de "\r\n\r\n"
         if (body_start != NULL) 
         {
-            // proceso el body_binary para guardarlo como su propio file con 
-            // variables: char *body_binary; 
-            size_t binary_len = request->content_len;
-            //request->body_binary = malloc(request->content_len);
-
-            printf("body_binary: %p\n", request->body_binary);
-            printf("body_start: %p\n", body_start);
-            printf("content_len: %p\n", request->content_len);
-
-            // pinchi copiado de datos en el body_binary
-            memcpy(request->body_binary, body_start, request->content_len);
-    
-            printf("just allocated memory for body_binary \n");
-            if (request->body_binary != NULL) {
-                printf("->> Binary body: %.*s\n", (int)request->content_len, request->body_binary);
+            if (request->content_len > sizeof(request->body_binary)) {
+                printf("El cuerpo del mensaje es demasiado grande para almacenarlo en body_binary\n");
             } else {
-                printf("->> Binary body is NULL\n");
+                memcpy(request->body_binary, body_start, request->content_len);
+                request->body_binary[request->content_len] = '\0'; // asegúrate de agregar un terminador nulo al final
+                printf("Cuerpo del mensaje copiado a body_binary:\n%s\n", request->body_binary);
             }
  
 
