@@ -35703,3 +35703,15 @@ Content-Type: image/gif
 
 GIF89a<
 
+[19-04-2023 15:09:27] POST /test2 HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: a01b1c63-6757-4e17-b41a-dcd2042d65dc
+Host: 127.0.0.1:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 88476
+Content-Type: image/gif
+
+GIF89a<
+

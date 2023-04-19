@@ -204,7 +204,7 @@ void parse_request_line(char *buffer, http_request *request)
         char *content_length_start = strstr(method_end, "Content-Length: ");
         if (content_length_start != NULL)
         {
-            content_length_start += 16; // saltar los caracteres de "Content-Length:"
+            content_length_start += 16;
             char *content_length_end = strstr(content_length_start, "\r\n");
             size_t content_length_len = content_length_end - content_length_start;
             char content_length_str[content_length_len + 1];
@@ -216,21 +216,33 @@ void parse_request_line(char *buffer, http_request *request)
         printf("!! content_len: %d\n", request->content_len );
         
         // proceso el contenido neto del request POST
-        char *body_start = strstr(buffer, "\r\n\r\n");
+        char *body_start = method_end + 4; // el cuerpo comienza después de "\r\n\r\n"
         if (body_start != NULL) 
         {
             // proceso el body_binary para guardarlo como su propio file con 
             // variables: char *body_binary; 
-            size_t binary_len = strlen(request->body);
+            size_t binary_len = request->content_len;
             request->body_binary = malloc(request->content_len);
 
             // pinchi copiado de datos en el body_binary
             //memcpy(request->body_binary, body_start, request->content_len);
             //memcpy(request->body_binary, request->body, binary_len);
             //memcpy(request->body_binary, request->body, request->content_len);
-            
-            //request->content_len = binary_len;
+            //memcpy(request->body_binary, body_start, request->content_len);
 
+            printf("body_start address: %p\n", body_start);
+            
+            request->body_binary = malloc(request->content_len);
+            printf("just allocated memory for body_binary \n");
+            
+            if (request->body_binary != NULL) {
+                printf("->> Binary body: %.*s\n", (int)request->content_len, request->body_binary);
+            } else {
+                printf("->> Binary body is NULL\n");
+            }
+
+            memcpy(request->body_binary, body_start, request->content_len);
+ 
 
             // proceso el body para guardarlo como texto en el log
             // variables: char *body;
@@ -259,7 +271,7 @@ void parse_request_line(char *buffer, http_request *request)
             fclose(file);
         }
         printf("->> Body: %s\n", request->body);
-        printf("->> Binary body: %s\n", request->body_binary);
+        printf("->> Binary body: %.*s\n", (int)request->content_len, request->body_binary);
         printf("->> THE ENTIRE BUFFER: %s\n", buffer);
     }
 }
