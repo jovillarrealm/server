@@ -16,7 +16,7 @@
 // Functions
 
 //GET
-void showFile(int client, char * ruta);
+int showFile(int client, char * ruta);
 
 // End of header file
 #endif

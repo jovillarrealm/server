@@ -4,6 +4,7 @@
 #include <string.h>
 #include "http_request.h"
 
+
 void prequest(http_request *req)
 {
     if (req->method)
@@ -123,10 +124,7 @@ int get_mime_from_path(char *ruta, char *http_mime)
     }
     else
     {
-        printf("Unsupported file type!\n");
-        //free(http_mime);
-        // fclose(file);
-        return -1;
+        strcpy(http_mime, "na");
     }
     return 0;
 }
