@@ -13,7 +13,7 @@ void prequest(http_request *req)
     if (req->path != NULL)
         printf("Path: %s\n", req->path);
     if (req->body != NULL)
-        printf("Body: %s\n", req->body);
+        printf("Body: yes\n");
     if (req->status_code != 200)
         printf("Status Code: %d\n", req->status_code);
     if (req->content_len != 0)

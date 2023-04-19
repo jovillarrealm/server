@@ -8,16 +8,15 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #include "http_request.h"
+#include "http_request.c"
 #include "showArchivos.h"
+#include "showArchivos.c"
 #include "saveArchivos.h"
+#include "saveArchivos.c"
 #include "showHeaders.h"
 #include "showHeaders.c"
 
-
-
 // git clone --branch testPost3 --single-branch https://github.com/jovillarrealm/server.git
-
-
 
 // Logger
 void logger(const char *message, FILE *log_file)
@@ -33,11 +32,10 @@ void logger(const char *message, FILE *log_file)
     fflush(log_file);
 }
 
-
 // Analiza la línea de solicitud HTTP para determinar el método, la ruta y el host
-void parse_request_line(char *buffer, http_request *request, char* doc_root_folder)
+void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
 {
-    //Innit request
+    // Innit request
 
     char *method_end = strchr(buffer, ' ');
     if (method_end == NULL)
@@ -136,11 +134,10 @@ void parse_request_line(char *buffer, http_request *request, char* doc_root_fold
             request->host = strdup("");
         }
         size_t pathlen = strlen(doc_root_folder) + uri_len;
-        
-        char path[pathlen];
-        sprintf(path, "%s%s",doc_root_folder,uri );
 
-        
+        char path[pathlen];
+        sprintf(path, "%s%s", doc_root_folder, uri);
+
         request->path = strdup(path);
     }
     printf("->> Host: %s\n", request->host);
@@ -167,48 +164,51 @@ void parse_request_line(char *buffer, http_request *request, char* doc_root_fold
             size_t content_length_len = content_length_end - content_length_start;
             request->content_len = atoi(strndup(content_length_start, content_length_len));
         }
-
-        char *body_start = strstr(buffer, "\r\n\r\n");
-        if (body_start != NULL)
-        {
-            body_start += 4; // saltar los caracteres de separación
-            size_t body_len = strlen(body_start);
-            request->body = (char *)malloc(body_len + 1);
-            memcpy(request->body, body_start, body_len);
-            request->body[body_len] = '\0';
-            printf("->> Body: %s\n", request->body);
-        }
-    } else{
-    if (request->body!=NULL)
-        request->body ="";
-    if (request->content_type!=NULL)
-        request->content_type="";
     }
-    
+}
 
-    
+//Separa body del request
+char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, char *doc_root_folder)
+{
+    char *buffer = (char *)req__buff;
+    char *body_start = strstr(buffer, "\r\n\r\n") + 4;
+    size_t status_headers_size = body_start - buffer;
+    char *status_headers = strndup(buffer, status_headers_size);
+    if ((ssize_t)status_headers_size < buff_size)
+    {
+        void *body = req__buff + status_headers_size;
+        ssize_t body_size = buff_size - status_headers_size;
+        request->body = body;
+        request->body_size = body_size;
+    }
+    parse_lines(status_headers, request, doc_root_folder);
+
+    return status_headers;
 }
 
 // Función para manejar una conexión de cliente
-void handle_connection(int client_fd, FILE *log_file, char* doc_root)
+void handle_connection(int client_fd, FILE *log_file, char *doc_root)
 {
-    char request_buffer[MAX_REQUEST_SIZE];
-    ssize_t bytes_received = recv(client_fd, request_buffer, MAX_REQUEST_SIZE - 1, 0);
+
+    void *request__buff = malloc(65535);
+    ssize_t bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE - 1, 0);
     if (bytes_received < 0)
     {
         // FIXME El servidor debería tratar de retornar un BAD REQUEST?
         perror("Error al recibir la solicitud HTTP");
         return;
     }
-    request_buffer[bytes_received] = '\0';
-    logger(request_buffer, log_file);
-    // printf("Solicitud HTTP recibida: %s\n", request_buffer);
 
     // Analizar la línea de solicitud HTTP
-    http_request request = {.method=0, .body="", .content_len=0,.content_type="",.host="",.path="",.status_code=200,.version=""};
-    parse_request_line(request_buffer, &request, doc_root);
+    http_request request = {.method = 0,.body = NULL, .body_size =0,  .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 200, .version = ""};
+    char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root);
+    logger(status_headers, log_file);
+
     prequest(&request);
-    logger(request.path, log_file);
+
+    // request__buff[bytes_received] = '\0';
+
+    // printf("Solicitud HTTP recibida: %s\n", request_buffer);
 
     // Determinar el estado de la solicitud y generar una respuesta HTTP
 
@@ -233,7 +233,7 @@ void handle_connection(int client_fd, FILE *log_file, char* doc_root)
 }
 
 // Función para el hilo que acepta conexiones de clientes
-void *accept_connections(void *server_fd_ptr, char*doc_root_folder)
+void *accept_connections(void *server_fd_ptr, char *doc_root_folder)
 {
     // cambio para consistencia con logger
     connection_info thread_info = *(connection_info *)server_fd_ptr;
@@ -268,6 +268,7 @@ int str_to_uint16(char *str, uint16_t *res)
     *res = (uint16_t)val;
     return 0;
 }
+
 
 int main(int argc, char *argv[])
 {
@@ -328,7 +329,7 @@ int main(int argc, char *argv[])
     }
     printf("Servidor iniciado en el puerto %d...\n", port);
 
-        while (1)
+    while (1)
     {
         // Acepta una nueva conexión entrante
         if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)

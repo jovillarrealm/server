@@ -22,19 +22,20 @@ void saveFile(http_request *request, int client_fd)
     if (request->content_type!=NULL &&request->path!=NULL)
     {
         // POST FILE
-        if (strstr(request->content_type, "application")!=NULL) //
-        {
+        
         fp = fopen(request->path, "wb");
         if (fp == NULL)
         {
             printf("Error opening file\n");
             return;
         }
-        char buf[request->content_len];
-        read(client_fd,buf,request->content_len);
+
+        if (request->body_size != request->content_len)
+            printf("WTF SARA BODY SIZE Y LO OTRO NO SON LO MISMO QUE HAGO");
+        fwrite(request->body,request->body_size,1,fp);
 
         //fwrite(re)
-        }
+        
     }
     else
     {
@@ -49,7 +50,7 @@ void saveFile(http_request *request, int client_fd)
         fprintf(fp, "-----------------------\n");
         fprintf(fp, "Timestamp: %s\n", timestamp);
         fprintf(fp, "File contents:\n");
-        fprintf(fp, "%s\n\n", request->body);
+        //fprintf(fp, "%s\n\n", request->body);
     }
 
     // Cerrar el archivo

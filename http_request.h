@@ -26,7 +26,8 @@ typedef struct http_request
     } method;
     char *host;
     char *path;
-    char *body;
+    void *body;
+    size_t body_size;
     char version[16];
     int status_code;
     int content_len;
