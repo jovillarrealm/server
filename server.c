@@ -222,26 +222,21 @@ void parse_request_line(char *buffer, http_request *request)
             // proceso el body_binary para guardarlo como su propio file con 
             // variables: char *body_binary; 
             size_t binary_len = request->content_len;
-            request->body_binary = malloc(request->content_len);
+            //request->body_binary = malloc(request->content_len);
+
+            printf("body_binary: %p\n", request->body_binary);
+            printf("body_start: %p\n", body_start);
+            printf("content_len: %p\n", request->content_len);
 
             // pinchi copiado de datos en el body_binary
-            //memcpy(request->body_binary, body_start, request->content_len);
-            //memcpy(request->body_binary, request->body, binary_len);
-            //memcpy(request->body_binary, request->body, request->content_len);
-            //memcpy(request->body_binary, body_start, request->content_len);
-
-            printf("body_start address: %p\n", body_start);
-            
-            request->body_binary = malloc(request->content_len);
+            memcpy(request->body_binary, body_start, request->content_len);
+    
             printf("just allocated memory for body_binary \n");
-            
             if (request->body_binary != NULL) {
                 printf("->> Binary body: %.*s\n", (int)request->content_len, request->body_binary);
             } else {
                 printf("->> Binary body is NULL\n");
             }
-
-            memcpy(request->body_binary, body_start, request->content_len);
  
 
             // proceso el body para guardarlo como texto en el log

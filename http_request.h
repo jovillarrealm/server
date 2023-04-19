@@ -14,7 +14,7 @@ typedef struct http_request
     char *host;
     char *path;
     char *body;
-    char *body_binary; 
+    char body_binary[100000]; 
     char *file_ext;
     char version[16];
     int status_code;
