@@ -68,6 +68,7 @@ int showFile(int client, char *ruta)
             }
             fclose(error_page);
             free(http_mime);
+            close(client);
             return 0;
         }
         else
@@ -80,8 +81,8 @@ int showFile(int client, char *ruta)
                 perror("Send error");
             }
         }
-
         free(http_mime);
+        close(client);
         return 0;
     }
 
