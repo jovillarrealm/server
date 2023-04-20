@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
+#include <sys/stat.h>
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <time.h>
@@ -11,7 +12,12 @@
 #include "sendArchivos.h"
 #include "sendArchivos.c"
 
-
+int is_regular_file(const char *path)
+{
+    struct stat path_stat;
+    stat(path, &path_stat);
+    return S_ISREG(path_stat.st_mode);
+}
 
 int showFile(int client, char *ruta)
 {
@@ -24,7 +30,7 @@ int showFile(int client, char *ruta)
 
     // Open file
     file = fopen(ruta, "rb");
-    if (!file)
+    if (!file || !is_regular_file(ruta))
     {
         char header[1024];
         char *now = get_current_time();
@@ -46,7 +52,7 @@ int showFile(int client, char *ruta)
         }
 
         // Open and send 404 error page
-        FILE *error_page = fopen("./404/404page.html", "rb");
+        FILE *error_page = fopen("404/404page.html", "rb");
         if (error_page)
         {
             char buffer[4096];
@@ -61,6 +67,8 @@ int showFile(int client, char *ruta)
                 }
             }
             fclose(error_page);
+            free(http_mime);
+            return 0;
         }
         else
         {

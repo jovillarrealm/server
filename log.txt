@@ -10345,3 +10345,5939 @@ Accept-Language: es-ES,es;q=0.9
 
 [19-04-2023 21:58:18] assets/news/index1.html
 
+[20-04-2023 09:49:26] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:49:26] assets/travel/
+
+[20-04-2023 09:54:43] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:54:43] assets/travel/
+
+[20-04-2023 09:55:39] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:55:39] assets/travel/
+
+[20-04-2023 09:56:06] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:56:06] assets/
+
+[20-04-2023 09:56:27] GET /news/index.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:56:27] assets/news/index.html
+
+[20-04-2023 09:56:27] GET /news/layout/styles/layout.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/news/layout/styles/layout.css
+
+[20-04-2023 09:56:27] GET /news/images/demo/190x80.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/news/images/demo/190x80.gif
+
+[20-04-2023 09:56:27] GET /news/images/demo/80x80.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/news/images/demo/80x80.gif
+
+[20-04-2023 09:56:27] GET /news/images/demo/174x174.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/news/images/demo/174x174.gif
+
+[20-04-2023 09:56:27] GET /news/images/demo/200x150.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/news/images/demo/200x150.gif
+
+[20-04-2023 09:56:27] GET /news/layout/styles/navi.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/news/layout/styles/navi.css
+
+[20-04-2023 09:56:27] GET /news/layout/styles/forms.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/news/layout/styles/forms.css
+
+[20-04-2023 09:56:27] GET /news/layout/styles/tables.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/news/layout/styles/tables.css
+
+[20-04-2023 09:56:27] GET /news/opm.mp4 HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Range: bytes=0-
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: video
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+Accept-Encoding: identity
+
+
+
+[20-04-2023 09:56:27] assets/news/opm.mp4
+
+[20-04-2023 09:56:27] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:27] assets/favicon.ico
+
+[20-04-2023 09:56:38] GET /newss/index.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:56:38] assets/newss/index.html
+
+[20-04-2023 09:56:39] GET /newss/layout/styles/layout.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:39] assets/newss/layout/styles/layout.css
+
+[20-04-2023 09:56:39] GET /newss/images/demo/190x80.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:39] assets/newss/images/demo/190x80.gif
+
+[20-04-2023 09:56:39] GET /newss/images/demo/80x80.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:39] assets/newss/images/demo/80x80.gif
+
+[20-04-2023 09:56:39] GET /newss/images/demo/174x174.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:39] assets/newss/images/demo/174x174.gif
+
+[20-04-2023 09:56:39] GET /newss/images/demo/200x150.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:39] assets/newss/images/demo/200x150.gif
+
+[20-04-2023 09:56:39] GET /newss/opm.mp4 HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Range: bytes=0-
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: video
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+Accept-Encoding: identity
+
+
+
+[20-04-2023 09:56:39] assets/newss/opm.mp4
+
+[20-04-2023 09:56:39] GET /newss/layout/styles/forms.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:39] assets/newss/layout/styles/forms.css
+
+[20-04-2023 09:56:39] GET /newss/layout/styles/navi.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:39] assets/newss/layout/styles/navi.css
+
+[20-04-2023 09:56:39] GET /newss/layout/styles/tables.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/newss/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:39] assets/newss/layout/styles/tables.css
+
+[20-04-2023 09:56:46] GET /news/index.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:56:46] assets/news/index.html
+
+[20-04-2023 09:56:46] GET /news/layout/styles/layout.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/news/layout/styles/layout.css
+
+[20-04-2023 09:56:46] GET /news/images/demo/190x80.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/news/images/demo/190x80.gif
+
+[20-04-2023 09:56:46] GET /news/images/demo/80x80.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/news/images/demo/80x80.gif
+
+[20-04-2023 09:56:46] GET /news/images/demo/174x174.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/news/images/demo/174x174.gif
+
+[20-04-2023 09:56:46] GET /news/images/demo/200x150.gif HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/news/images/demo/200x150.gif
+
+[20-04-2023 09:56:46] GET /news/layout/styles/forms.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/news/layout/styles/forms.css
+
+[20-04-2023 09:56:46] GET /news/layout/styles/navi.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/news/layout/styles/navi.css
+
+[20-04-2023 09:56:46] GET /news/layout/styles/tables.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/news/layout/styles/tables.css
+
+[20-04-2023 09:56:46] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/news/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 09:56:46] assets/favicon.ico
+
+[20-04-2023 09:56:57] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:56:57] assets/
+
+[20-04-2023 09:57:44] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 09:57:44] assets/
+
+[20-04-2023 10:00:39] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:00:39] assets/
+
+[20-04-2023 10:00:54] GET /travel/service.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:00:54] assets/travel/service.html
+
+[20-04-2023 10:00:54] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/animate/animate.min.css
+
+[20-04-2023 10:00:54] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/img/testimonial-2.jpg
+
+[20-04-2023 10:00:54] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/img/testimonial-3.jpg
+
+[20-04-2023 10:00:54] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/img/testimonial-4.jpg
+
+[20-04-2023 10:00:54] GET /travel/img/package-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/img/package-1.jpg
+
+[20-04-2023 10:00:54] GET /travel/img/package-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/img/package-2.jpg
+
+[20-04-2023 10:00:54] GET /travel/img/package-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/img/package-3.jpg
+
+[20-04-2023 10:00:54] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/wow/wow.min.js
+
+[20-04-2023 10:00:54] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/easing/easing.min.js
+
+[20-04-2023 10:00:54] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/waypoints/waypoints.min.js
+
+[20-04-2023 10:00:54] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/owlcarousel/owl.carousel.min.js
+
+[20-04-2023 10:00:54] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/owlcarousel/assets/owl.carousel.min.css
+
+[20-04-2023 10:00:54] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+
+[20-04-2023 10:00:54] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/css/bootstrap.min.css
+
+[20-04-2023 10:00:54] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/tempusdominus/js/moment-timezone.min.js
+
+[20-04-2023 10:00:54] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+
+[20-04-2023 10:00:54] GET /travel/js/main.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/js/main.js
+
+[20-04-2023 10:00:54] GET /travel/css/style.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/css/style.css
+
+[20-04-2023 10:00:54] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/img/testimonial-1.jpg
+
+[20-04-2023 10:00:54] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/css/style.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/img/bg-hero.jpg
+
+[20-04-2023 10:00:54] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:54] assets/travel/lib/tempusdominus/js/moment.min.js
+
+[20-04-2023 10:00:55] GET /travel/img/favicon.ico HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/service.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:00:55] assets/travel/img/favicon.ico
+
+[20-04-2023 10:00:59] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:00:59] assets/travel/
+
+[20-04-2023 10:01:17] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:01:17] assets/travel/
+
+[20-04-2023 10:02:36] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:02:36] assets/travel/
+
+[20-04-2023 10:03:17] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:03:17] assets/travel/
+
+[20-04-2023 10:03:30] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:03:30] assets/travel/
+
+[20-04-2023 10:03:57] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:03:57] assets/
+
+[20-04-2023 10:04:03] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:04:03] assets/
+
+[20-04-2023 10:04:15] GET /travel/contact.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:04:15] assets/travel/contact.html
+
+[20-04-2023 10:04:15] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/animate/animate.min.css
+
+[20-04-2023 10:04:15] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/wow/wow.min.js
+
+[20-04-2023 10:04:15] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/easing/easing.min.js
+
+[20-04-2023 10:04:15] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/waypoints/waypoints.min.js
+
+[20-04-2023 10:04:15] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/owlcarousel/owl.carousel.min.js
+
+[20-04-2023 10:04:15] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/tempusdominus/js/moment-timezone.min.js
+
+[20-04-2023 10:04:15] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+
+[20-04-2023 10:04:15] GET /travel/js/main.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/js/main.js
+
+[20-04-2023 10:04:15] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/owlcarousel/assets/owl.carousel.min.css
+
+[20-04-2023 10:04:15] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+
+[20-04-2023 10:04:15] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/css/bootstrap.min.css
+
+[20-04-2023 10:04:15] GET /travel/css/style.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/css/style.css
+
+[20-04-2023 10:04:15] GET /travel/img/package-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/img/package-1.jpg
+
+[20-04-2023 10:04:15] GET /travel/img/package-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/img/package-2.jpg
+
+[20-04-2023 10:04:15] GET /travel/img/package-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/img/package-3.jpg
+
+[20-04-2023 10:04:15] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/css/style.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/img/bg-hero.jpg
+
+[20-04-2023 10:04:15] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:15] assets/travel/lib/tempusdominus/js/moment.min.js
+
+[20-04-2023 10:04:16] GET /travel/img/favicon.ico HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/contact.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:04:16] assets/travel/img/favicon.ico
+
+[20-04-2023 10:04:21] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:04:21] assets/travel/
+
+[20-04-2023 10:04:30] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:04:30] assets/travel/
+
+[20-04-2023 10:05:18] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:05:18] assets/travel/
+
+[20-04-2023 10:05:43] GET /travel/index.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:05:43] assets/travel/index.html
+
+[20-04-2023 10:05:44] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/animate/animate.min.css
+
+[20-04-2023 10:05:44] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/owlcarousel/assets/owl.carousel.min.css
+
+[20-04-2023 10:05:44] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+
+[20-04-2023 10:05:44] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/css/bootstrap.min.css
+
+[20-04-2023 10:05:44] GET /travel/css/style.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/css/style.css
+
+[20-04-2023 10:05:44] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/wow/wow.min.js
+
+[20-04-2023 10:05:44] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/easing/easing.min.js
+
+[20-04-2023 10:05:44] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/waypoints/waypoints.min.js
+
+[20-04-2023 10:05:44] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/owlcarousel/owl.carousel.min.js
+
+[20-04-2023 10:05:44] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/tempusdominus/js/moment-timezone.min.js
+
+[20-04-2023 10:05:44] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+
+[20-04-2023 10:05:44] GET /travel/js/main.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/js/main.js
+
+[20-04-2023 10:05:44] GET /travel/img/about.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/about.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/destination-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/destination-1.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/destination-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/destination-2.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/destination-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/destination-3.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/destination-4.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/destination-4.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/package-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/package-1.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/package-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/package-2.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/package-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/package-3.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/team-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/team-1.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/team-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/team-2.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/team-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/team-3.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/team-4.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/team-4.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/testimonial-1.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/testimonial-2.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/testimonial-3.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/testimonial-4.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/booking.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/css/style.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/booking.jpg
+
+[20-04-2023 10:05:44] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/css/style.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/img/bg-hero.jpg
+
+[20-04-2023 10:05:44] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:44] assets/travel/lib/tempusdominus/js/moment.min.js
+
+[20-04-2023 10:05:45] GET /travel/img/favicon.ico HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/index.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:05:45] assets/travel/img/favicon.ico
+
+[20-04-2023 10:05:53] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:05:53] assets/travel/
+
+[20-04-2023 10:07:46] GET /travel/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:07:46] assets/travel/
+
+[20-04-2023 10:07:57] GET /travel/about.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:07:57] assets/travel/about.html
+
+[20-04-2023 10:07:57] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/animate/animate.min.css
+
+[20-04-2023 10:07:57] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/owlcarousel/assets/owl.carousel.min.css
+
+[20-04-2023 10:07:57] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+
+[20-04-2023 10:07:57] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/css/bootstrap.min.css
+
+[20-04-2023 10:07:57] GET /travel/css/style.css HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/css/style.css
+
+[20-04-2023 10:07:57] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/wow/wow.min.js
+
+[20-04-2023 10:07:57] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/easing/easing.min.js
+
+[20-04-2023 10:07:57] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/waypoints/waypoints.min.js
+
+[20-04-2023 10:07:57] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/owlcarousel/owl.carousel.min.js
+
+[20-04-2023 10:07:57] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/tempusdominus/js/moment-timezone.min.js
+
+[20-04-2023 10:07:57] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+
+[20-04-2023 10:07:57] GET /travel/js/main.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/js/main.js
+
+[20-04-2023 10:07:57] GET /travel/img/about.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/about.jpg
+
+[20-04-2023 10:07:57] GET /travel/img/team-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/team-1.jpg
+
+[20-04-2023 10:07:57] GET /travel/img/team-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/team-2.jpg
+
+[20-04-2023 10:07:57] GET /travel/img/team-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/team-3.jpg
+
+[20-04-2023 10:07:57] GET /travel/img/team-4.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/team-4.jpg
+
+[20-04-2023 10:07:57] GET /travel/img/package-1.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/package-1.jpg
+
+[20-04-2023 10:07:57] GET /travel/img/package-2.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/package-2.jpg
+
+[20-04-2023 10:07:57] GET /travel/img/package-3.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/package-3.jpg
+
+[20-04-2023 10:07:57] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/css/style.css
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:57] assets/travel/img/bg-hero.jpg
+
+[20-04-2023 10:07:58] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:58] assets/travel/lib/tempusdominus/js/moment.min.js
+
+[20-04-2023 10:07:58] GET /travel/img/favicon.ico HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: http://localhost:8080/travel/about.html
+Cookie: secret=1v3CQy3R
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+
+[20-04-2023 10:07:58] assets/travel/img/favicon.ico
+
+[20-04-2023 10:08:14] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:08:14] assets/
+
+[20-04-2023 10:10:35] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:35] assets/travel/lib/animate/animate.min.css
+
+[20-04-2023 10:10:35] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:35] assets/travel/lib/owlcarousel/assets/owl.carousel.min.css
+
+[20-04-2023 10:10:35] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:35] assets/travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+
+[20-04-2023 10:10:35] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:35] assets/travel/css/bootstrap.min.css
+
+[20-04-2023 10:10:35] GET /travel/css/style.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:35] assets/travel/css/style.css
+
+[20-04-2023 10:10:35] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:35] assets/travel/lib/wow/wow.min.js
+
+[20-04-2023 10:10:35] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:35] assets/travel/lib/easing/easing.min.js
+
+[20-04-2023 10:10:36] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/lib/waypoints/waypoints.min.js
+
+[20-04-2023 10:10:36] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/lib/owlcarousel/owl.carousel.min.js
+
+[20-04-2023 10:10:36] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/lib/tempusdominus/js/moment.min.js
+
+[20-04-2023 10:10:36] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/lib/tempusdominus/js/moment-timezone.min.js
+
+[20-04-2023 10:10:36] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+
+[20-04-2023 10:10:36] GET /travel/js/main.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/js/main.js
+
+[20-04-2023 10:10:36] GET /travel/img/about.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/img/about.jpg
+
+[20-04-2023 10:10:36] GET /travel/img/destination-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/img/destination-1.jpg
+
+[20-04-2023 10:10:36] GET /travel/img/destination-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/img/destination-2.jpg
+
+[20-04-2023 10:10:36] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:36] assets/travel/img/bg-hero.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/destination-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/destination-3.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/destination-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/destination-4.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/package-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/package-1.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/package-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/package-2.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/package-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/package-3.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/team-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/team-1.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/team-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/team-2.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/team-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/team-3.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/team-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/team-4.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/testimonial-1.jpg
+
+[20-04-2023 10:10:37] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:37] assets/travel/img/testimonial-2.jpg
+
+[20-04-2023 10:10:38] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:38] assets/travel/img/testimonial-3.jpg
+
+[20-04-2023 10:10:38] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:38] assets/favicon.ico
+
+[20-04-2023 10:10:38] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:38] assets/travel/img/testimonial-4.jpg
+
+[20-04-2023 10:10:38] GET /travel/img/booking.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:38] assets/travel/img/booking.jpg
+
+[20-04-2023 10:10:38] GET /travel/img/favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:10:38] assets/travel/img/favicon.ico
+
+[20-04-2023 10:11:26] GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:11:26] assets/
+
+[20-04-2023 10:12:05] GET /travel/index.html HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:05] assets/travel/index.html
+
+[20-04-2023 10:12:06] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/animate/animate.min.css
+
+[20-04-2023 10:12:06] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/owlcarousel/assets/owl.carousel.min.css
+
+[20-04-2023 10:12:06] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+
+[20-04-2023 10:12:06] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/css/bootstrap.min.css
+
+[20-04-2023 10:12:06] GET /travel/css/style.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/css/style.css
+
+[20-04-2023 10:12:06] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/wow/wow.min.js
+
+[20-04-2023 10:12:06] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/easing/easing.min.js
+
+[20-04-2023 10:12:06] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/waypoints/waypoints.min.js
+
+[20-04-2023 10:12:06] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/owlcarousel/owl.carousel.min.js
+
+[20-04-2023 10:12:06] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/tempusdominus/js/moment.min.js
+
+[20-04-2023 10:12:06] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/tempusdominus/js/moment-timezone.min.js
+
+[20-04-2023 10:12:06] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+
+[20-04-2023 10:12:06] GET /travel/js/main.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/js/main.js
+
+[20-04-2023 10:12:06] GET /travel/img/about.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/img/about.jpg
+
+[20-04-2023 10:12:06] GET /travel/img/destination-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/img/destination-1.jpg
+
+[20-04-2023 10:12:06] GET /travel/img/destination-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/img/destination-2.jpg
+
+[20-04-2023 10:12:06] GET /travel/img/destination-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/img/destination-3.jpg
+
+[20-04-2023 10:12:06] GET /travel/img/destination-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:06] assets/travel/img/destination-4.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/package-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/package-1.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/package-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/package-2.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/package-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/package-3.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/team-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/team-1.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/team-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/team-2.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/team-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/team-3.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/team-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/team-4.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/testimonial-1.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/testimonial-2.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/testimonial-3.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/testimonial-4.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/bg-hero.jpg
+
+[20-04-2023 10:12:07] GET /travel/img/booking.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:07] assets/travel/img/booking.jpg
+
+[20-04-2023 10:12:08] GET /travel/img/favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:08] assets/travel/img/favicon.ico
+
+[20-04-2023 10:12:12] GET /travel/ HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:12:12] assets/travel/
+
+[20-04-2023 10:15:01] GET /travel/ HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:01] assets/travel/
+
+[20-04-2023 10:15:09] GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:09] assets/
+
+[20-04-2023 10:15:18] GET /news/index.html HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:18] assets/news/index.html
+
+[20-04-2023 10:15:19] GET /news/layout/styles/layout.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/news/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/news/layout/styles/layout.css
+
+[20-04-2023 10:15:19] GET /news/images/demo/190x80.gif HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/news/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/news/images/demo/190x80.gif
+
+[20-04-2023 10:15:19] GET /news/images/demo/80x80.gif HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/news/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/news/images/demo/80x80.gif
+
+[20-04-2023 10:15:19] GET /news/images/demo/174x174.gif HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/news/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/news/images/demo/174x174.gif
+
+[20-04-2023 10:15:19] GET /news/images/demo/200x150.gif HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/news/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/news/images/demo/200x150.gif
+
+[20-04-2023 10:15:19] GET /news/layout/styles/navi.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/news/layout/styles/navi.css
+
+[20-04-2023 10:15:19] GET /news/layout/styles/forms.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/news/layout/styles/forms.css
+
+[20-04-2023 10:15:19] GET /news/layout/styles/tables.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/news/layout/styles/layout.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/news/layout/styles/tables.css
+
+[20-04-2023 10:15:19] GET /news/opm.mp4 HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+Accept-Encoding: identity;q=1, *;q=0
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: video
+Referer: http://localhost:8080/news/index.html
+Accept-Language: es-ES,es;q=0.9
+Range: bytes=0-
+
+
+
+[20-04-2023 10:15:19] assets/news/opm.mp4
+
+[20-04-2023 10:15:19] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/news/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:19] assets/favicon.ico
+
+[20-04-2023 10:15:25] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/news/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:25] assets/favicon.ico
+
+[20-04-2023 10:15:41] GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:15:41] assets/
+
+[20-04-2023 10:16:14] GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:16:14] assets/
+
+[20-04-2023 10:17:39] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:39] assets/travel/lib/animate/animate.min.css
+
+[20-04-2023 10:17:39] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:39] assets/travel/lib/owlcarousel/assets/owl.carousel.min.css
+
+[20-04-2023 10:17:39] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:39] assets/travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+
+[20-04-2023 10:17:39] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:39] assets/travel/css/bootstrap.min.css
+
+[20-04-2023 10:17:39] GET /travel/css/style.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:39] assets/travel/css/style.css
+
+[20-04-2023 10:17:39] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:39] assets/travel/lib/wow/wow.min.js
+
+[20-04-2023 10:17:40] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/lib/easing/easing.min.js
+
+[20-04-2023 10:17:40] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/lib/waypoints/waypoints.min.js
+
+[20-04-2023 10:17:40] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/lib/owlcarousel/owl.carousel.min.js
+
+[20-04-2023 10:17:40] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/lib/tempusdominus/js/moment.min.js
+
+[20-04-2023 10:17:40] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/lib/tempusdominus/js/moment-timezone.min.js
+
+[20-04-2023 10:17:40] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+
+[20-04-2023 10:17:40] GET /travel/js/main.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/js/main.js
+
+[20-04-2023 10:17:40] GET /travel/img/about.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/about.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/destination-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/destination-1.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/destination-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/destination-2.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/destination-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/destination-3.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/destination-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/destination-4.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/package-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/package-1.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/package-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/package-2.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/package-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/package-3.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/team-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/team-1.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/team-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/team-2.jpg
+
+[20-04-2023 10:17:40] GET /travel/img/team-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:40] assets/travel/img/team-3.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/team-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/team-4.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/testimonial-1.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/testimonial-2.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/testimonial-3.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/testimonial-4.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/bg-hero.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/booking.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/booking.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/testimonial-1.jpg
+
+[20-04-2023 10:17:41] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:41] assets/travel/img/testimonial-2.jpg
+
+[20-04-2023 10:17:42] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:42] assets/travel/img/testimonial-3.jpg
+
+[20-04-2023 10:17:42] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:42] assets/travel/img/testimonial-4.jpg
+
+[20-04-2023 10:17:43] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:43] assets/favicon.ico
+
+[20-04-2023 10:17:49] GET /newss/index.html HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:49] assets/newss/index.html
+
+[20-04-2023 10:17:50] GET /newss/layout/styles/layout.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/newss/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/newss/layout/styles/layout.css
+
+[20-04-2023 10:17:50] GET /newss/layout/styles/navi.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/newss/layout/styles/layout.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/newss/layout/styles/navi.css
+
+[20-04-2023 10:17:50] GET /newss/layout/styles/forms.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/newss/layout/styles/layout.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/newss/layout/styles/forms.css
+
+[20-04-2023 10:17:50] GET /newss/layout/styles/tables.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/newss/layout/styles/layout.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/newss/layout/styles/tables.css
+
+[20-04-2023 10:17:50] GET /newss/images/demo/190x80.gif HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/newss/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/newss/images/demo/190x80.gif
+
+[20-04-2023 10:17:50] GET /newss/images/demo/80x80.gif HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/newss/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/newss/images/demo/80x80.gif
+
+[20-04-2023 10:17:50] GET /newss/images/demo/174x174.gif HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/newss/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/newss/images/demo/174x174.gif
+
+[20-04-2023 10:17:50] GET /newss/images/demo/200x150.gif HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/newss/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/newss/images/demo/200x150.gif
+
+[20-04-2023 10:17:50] GET /newss/opm.mp4 HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+Accept-Encoding: identity;q=1, *;q=0
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: video
+Referer: http://localhost:8080/newss/index.html
+Accept-Language: es-ES,es;q=0.9
+Range: bytes=0-
+
+
+
+[20-04-2023 10:17:50] assets/newss/opm.mp4
+
+[20-04-2023 10:17:50] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/newss/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:50] assets/favicon.ico
+
+[20-04-2023 10:17:54] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/newss/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:17:54] assets/favicon.ico
+
+[20-04-2023 10:18:21] GET /newss/index.htm HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:18:21] assets/newss/index.htm
+
+[20-04-2023 10:19:59] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+
+[20-04-2023 10:19:59] assets/
+
+[20-04-2023 10:20:14] GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:14] assets/
+
+[20-04-2023 10:20:23] GET /travel/index.html HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:23] assets/travel/index.html
+
+[20-04-2023 10:20:23] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:23] assets/travel/lib/animate/animate.min.css
+
+[20-04-2023 10:20:23] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:23] assets/travel/lib/owlcarousel/assets/owl.carousel.min.css
+
+[20-04-2023 10:20:23] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:23] assets/travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+
+[20-04-2023 10:20:23] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:23] assets/travel/css/bootstrap.min.css
+
+[20-04-2023 10:20:23] GET /travel/css/style.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:23] assets/travel/css/style.css
+
+[20-04-2023 10:20:25] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:25] assets/travel/lib/wow/wow.min.js
+
+[20-04-2023 10:20:26] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/bg-hero.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/about.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/about.jpg
+
+[20-04-2023 10:20:26] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/lib/easing/easing.min.js
+
+[20-04-2023 10:20:26] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/lib/waypoints/waypoints.min.js
+
+[20-04-2023 10:20:26] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/lib/owlcarousel/owl.carousel.min.js
+
+[20-04-2023 10:20:26] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/lib/tempusdominus/js/moment.min.js
+
+[20-04-2023 10:20:26] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/lib/tempusdominus/js/moment-timezone.min.js
+
+[20-04-2023 10:20:26] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+
+[20-04-2023 10:20:26] GET /travel/js/main.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/js/main.js
+
+[20-04-2023 10:20:26] GET /travel/img/destination-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/destination-1.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/destination-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/destination-2.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/destination-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/destination-3.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/destination-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/destination-4.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/package-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/package-1.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/package-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/package-2.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/package-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/package-3.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/team-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/team-1.jpg
+
+[20-04-2023 10:20:26] GET /travel/img/team-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:26] assets/travel/img/team-2.jpg
+
+[20-04-2023 10:20:27] GET /travel/img/team-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:27] assets/travel/img/team-3.jpg
+
+[20-04-2023 10:20:27] GET /travel/img/team-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:27] assets/travel/img/team-4.jpg
+
+[20-04-2023 10:20:27] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:27] assets/travel/img/testimonial-1.jpg
+
+[20-04-2023 10:20:27] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:27] assets/travel/img/testimonial-2.jpg
+
+[20-04-2023 10:20:27] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:27] assets/travel/img/testimonial-3.jpg
+
+[20-04-2023 10:20:27] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:27] assets/travel/img/testimonial-4.jpg
+
+[20-04-2023 10:20:27] GET /travel/img/booking.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:27] assets/travel/img/booking.jpg
+
+[20-04-2023 10:20:32] GET /travel/img/favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/travel/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-ES,es;q=0.9
+
+
+
+[20-04-2023 10:20:32] assets/travel/img/favicon.ico
+
