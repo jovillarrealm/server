@@ -4,21 +4,29 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <time.h>
 #include "sendArchivos.h"
+#include "showArchivos.h"
 
-int sendFile(int client)
-{
+int sendFile(int client, char *ruta) {
     FILE *file;
     char *buffer;
-    long fileLen;
+    char *http_mime = (char *)malloc(50 * sizeof(char));
+    int fileLen=0;
+
+
+    
 
     // Open file
-    file = fopen("opm.mp4", "rb");
+    file = fopen(ruta, "rb");
     if (!file)
     {
-        perror("File error");
-        return EXIT_FAILURE;
+        perror("File could not be opened");
+        free(http_mime);
+
+        return 0;
     }
+
 
     // Get file length
     fseek(file, 0, SEEK_END);
@@ -30,36 +38,33 @@ int sendFile(int client)
     if (!buffer)
     {
         perror("Memory error");
+        free(http_mime);
         fclose(file);
-        return EXIT_FAILURE;
+        return 0;
     }
 
     // Read file contents into buffer
     fread(buffer, fileLen, 1, file);
     fclose(file);
 
-    char header[1024];
-    sprintf(header,
-            "HTTP/1.1 200 OK\r\n"
-            "Date: Thu, 19 Feb 2023 12:27:04 GMT\r\n"
-            "Server: SaranaiServer/2.2.3\r\n"
-            "Last-Modified: Wed, 18 Jun 2020 16:05:58 GMT\r\n"
-            "ETag: \"56d-9989200-1132c580\"\r\n"
-            "Content-Type: application/octet-stream\n"
-            "Content-Disposition: attachment; filename=\"opm.mp4\"\r\n"
-            "Content-Length: %ld\r\n"
-            "Accept-Ranges: bytes\r\n"
-            "Connection: keep-alive\r\n"
-            "Keep-Alive: timeout=5, max=100\r\n"
-            "\r\n",
-            fileLen);
 
-    // Send HTTP response header
-    int sent = send(client, header, strlen(header), 0);
-    if ((size_t)sent != strlen(header))
-    {
-        perror("Send error");
-    }
+    char header[1024];
+    char *now = get_current_time();
+    sprintf(header,
+        "HTTP/1.1 200 OK\r\n"
+        "Date: %s\r\n"
+        "Server: SaranaiServer/1.0\r\n"
+        "Content-Type: application/octet-stream\n"
+        "Content-Disposition: attachment; filename=\"%s\"\r\n"
+        "Content-Length: %d\r\n"
+        "Accept-Ranges: bytes\r\n"
+        "Connection: keep-alive\r\n"
+        "Keep-Alive: timeout=5, max=100\r\n"
+        "\r\n",
+        now, ruta, fileLen);
+        free(now);
+
+
 
     // Send file data in chunks until the entire file is sent
     int bytes_sent = 0;
@@ -78,11 +83,13 @@ int sendFile(int client)
     }
 
     // Receive and discard incoming data until the connection is closed
-    while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0)
-    {
-    }
+    while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0) {}
 
+
+
+    free(http_mime);
     free(buffer);
+    close(client);
 
     return EXIT_SUCCESS;
 }

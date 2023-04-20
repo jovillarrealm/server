@@ -8,13 +8,15 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #include "http_request.h"
-#include "http_request.c"
+#include "http_request.c"//f
 #include "showArchivos.h"
-#include "showArchivos.c"
+#include "showArchivos.c"//l
 #include "saveArchivos.h"
-#include "saveArchivos.c"
+#include "saveArchivos.c"//a
 #include "showHeaders.h"
-#include "showHeaders.c"
+#include "showHeaders.c"//t
+
+
 
 // git clone --branch testPost3 --single-branch https://github.com/jovillarrealm/server.git
 
