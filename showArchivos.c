@@ -8,10 +8,12 @@
 #include <string.h>
 #include "http_request.h"
 #include "showArchivos.h"
+#include "sendArchivos.h"
+#include "sendArchivos.c"
 
 
 
-void showFile(int client, char *ruta)
+int showFile(int client, char *ruta)
 {
     FILE *file;
     char *buffer;
@@ -28,14 +30,17 @@ void showFile(int client, char *ruta)
         perror("File could not be opened");
         free(http_mime);
 
-        return ;
+        return 0;
     }
 
 
-    
-
-
     get_mime_from_path(ruta, http_mime);
+
+    if (http_mime == "na"){
+        sendFile(client, ruta);
+        return 0;
+    }
+
 
 
 
@@ -51,7 +56,7 @@ void showFile(int client, char *ruta)
         perror("Memory error");
         free(http_mime);
         fclose(file);
-        return ;
+        return 0;
     }
 
     // Read file contents into buffer
@@ -101,4 +106,5 @@ void showFile(int client, char *ruta)
     free(http_mime);
     free(buffer);
     close(client);
+    return EXIT_SUCCESS;
 }

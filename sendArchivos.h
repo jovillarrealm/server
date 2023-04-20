@@ -9,10 +9,11 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include <time.h>
 
 // Functions
 
-int sendFile();
+int sendFile(int client, char * ruta);
 
 // End of header file
 #endif
