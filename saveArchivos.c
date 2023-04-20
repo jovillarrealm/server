@@ -18,7 +18,7 @@ void saveFile(http_request *request, int client_fd)
     strftime(timestamp, sizeof(timestamp), "%c", tm);
     FILE *fp;
 
-    if (request->content_type != NULL && request->path != NULL)
+    if (request->content_type != NULL && request->path != NULL &&request->body!=NULL)
     {
         // POST FILE
 
@@ -29,16 +29,7 @@ void saveFile(http_request *request, int client_fd)
             return;
         }
 
-        if (request->body_size + request->header_size == MAX_REQUEST_SIZE)
-        {
-            //EVIL?? realloc habla de aliasing, body size crece en montos discretos indepedientemente de los datos
-            
-            request->body=realloc(request->body, request->body_size + MAX_REQUEST_SIZE);
-            request->body_size += MAX_REQUEST_SIZE; 
-
-            size_t new_chunk = read(client_fd, request->body, MAX_REQUEST_SIZE);
-        }
-        fwrite(request->body, request->body_size, 1, fp);
+        fwrite(request->body, request->content_len, 1, fp);
 
         // fwrite(re)
     }

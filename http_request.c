@@ -18,7 +18,7 @@ void prequest(http_request *req)
     if (req->status_code != 200)
         printf("Status Code: %d\n", req->status_code);
     if (req->content_len != 0)
-        printf("Content Length: %d\n", req->content_len);
+        printf("Content Length: %ld\n", req->content_len);
     if (req->content_type != NULL)
         printf("Content Type: %s\n", req->content_type);
 }

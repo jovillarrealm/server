@@ -31,7 +31,7 @@ typedef struct http_request
     size_t header_size;
     char version[16];
     int status_code;
-    int content_len;
+    size_t content_len;
     char *content_type;
 } http_request;
 

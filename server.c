@@ -8,15 +8,13 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #include "http_request.h"
-#include "http_request.c"//f
+#include "http_request.c" //f
 #include "showArchivos.h"
-#include "showArchivos.c"//l
+#include "showArchivos.c" //l
 #include "saveArchivos.h"
-#include "saveArchivos.c"//a
+#include "saveArchivos.c" //a
 #include "showHeaders.h"
-#include "showHeaders.c"//t
-
-
+#include "showHeaders.c" //t
 
 // git clone --branch testPost3 --single-branch https://github.com/jovillarrealm/server.git
 
@@ -169,21 +167,35 @@ void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
     }
 }
 
-// Separa body del request
-char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, char *doc_root_folder)
+// Parser de HTTP/1.1 requests, y obtiene body si lo necesita
+char *parse_request(void *req__buff, ssize_t buff_size, http_request *req, char *doc_root_folder, int client_fd)
 {
     char *buffer = (char *)req__buff;
     char *body_start = strstr(buffer, "\r\n\r\n") + 4;
     size_t status_headers_size = body_start - buffer;
+    req->header_size = status_headers_size;
     char *status_headers = strndup(buffer, status_headers_size);
-    if ((ssize_t)status_headers_size < buff_size)
+
+    // FIXME que modifique req->status si hay joda
+
+    parse_lines(status_headers, req, doc_root_folder);
+
+    // Splitting es alfgo que podría pasar y PUT si algo tambien va a tener body
+
+    if ((((ssize_t)status_headers_size < buff_size) || req->method == POST) && (req->status_code < 400))
     {
-        void *body = req__buff + status_headers_size;
-        ssize_t body_size = buff_size - status_headers_size;
-        request->body = body;
-        request->body_size = body_size;
+        req->body = malloc(req->content_len);
+
+        size_t body_size = buff_size - status_headers_size;
+        memcpy(req->body, req__buff, body_size);
+
+        while (body_size < req->content_len)
+        {
+            size_t new_bytes = read(client_fd, req->body + body_size, MAX_REQUEST_SIZE);
+            body_size += new_bytes;
+        }
+        req->body_size = body_size;
     }
-    parse_lines(status_headers, request, doc_root_folder);
 
     return status_headers;
 }
@@ -193,7 +205,7 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
 {
 
     void *request__buff = malloc(MAX_REQUEST_SIZE); // max TCP size 65535
-    ssize_t bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE , 0);
+    ssize_t bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE, 0);
     if (bytes_received < 0)
     {
         // FIXME El servidor debería tratar de retornar un BAD REQUEST?
@@ -202,8 +214,8 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
     }
 
     // Analizar la línea de solicitud HTTP
-    http_request request = {.method = 0, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 200, .version = "", .header_size=0};
-    char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root);
+    http_request request = {.method = 0, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 200, .version = "", .header_size = 0};
+    char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root, client_fd);
     logger(status_headers, log_file);
 
     prequest(&request);
@@ -230,6 +242,7 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
         break;
     default:
         printf("Oh no, bad request! \n");
+        free(request.body);
         break;
     }
 }
@@ -312,8 +325,8 @@ int main(int argc, char *argv[])
     address.sin_port = htons(port);
 
     // Fix de "address already in use"
-    int _ = 1;
-    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &_, sizeof(_));
+    int y = 1;
+    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &y, sizeof(y));
 
     // Vincula el socket al puerto y la dirección especificados
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0)

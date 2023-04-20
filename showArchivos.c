@@ -38,6 +38,7 @@ int showFile(int client, char *ruta)
 
     if (http_mime == "na"){
         sendFile(client, ruta);
+        fclose(file);
         return 0;
     }
 
