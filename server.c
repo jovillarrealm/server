@@ -15,7 +15,8 @@
 #include "saveArchivos.c"//a
 #include "showHeaders.h"
 #include "showHeaders.c"//t
-
+#include "deleteArchivos.h"
+#include "deleteArchivos.c"//s
 
 
 // git clone --branch testPost3 --single-branch https://github.com/jovillarrealm/server.git
@@ -228,6 +229,10 @@ void handle_connection(int client_fd, FILE *log_file, char* doc_root)
     case HEAD:
         printf("lets return a HEAD! \n");
         showHeaders(client_fd, request.path);
+        break;
+    case DELETE:
+        printf("lets delete a thing! \n");
+        deleteFile(client_fd, request.path);
         break;
     default:
         printf("Oh no, bad request! \n");
