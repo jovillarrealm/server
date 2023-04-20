@@ -8,13 +8,13 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #include "http_request.h"
-#include "http_request.c" //f
+#include "http_request.c"
 #include "showArchivos.h"
-#include "showArchivos.c" //l
+#include "showArchivos.c"
 #include "saveArchivos.h"
-#include "saveArchivos.c" //a
+#include "saveArchivos.c"
 #include "showHeaders.h"
-#include "showHeaders.c" //t
+#include "showHeaders.c"
 
 // git clone --branch testPost3 --single-branch https://github.com/jovillarrealm/server.git
 
@@ -165,6 +165,9 @@ void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
             request->content_len = atoi(strndup(content_length_start, content_length_len));
         }
     }
+    //If reached here, headers are validated
+
+    request->status_code=200;
 }
 
 // Parser de HTTP/1.1 requests, y obtiene body si lo necesita
@@ -184,19 +187,21 @@ char *parse_request(void *req__buff, ssize_t buff_size, http_request *req, char 
 
     if ((((ssize_t)status_headers_size < buff_size) || req->method == POST) && (req->status_code < 400))
     {
-        req->body = malloc(req->content_len);
+        void *peabody = malloc(req->content_len);
 
         size_t body_size = buff_size - status_headers_size;
-        memcpy(req->body, req__buff, body_size);
+        memcpy(peabody, req__buff, body_size);
 
         while (body_size < req->content_len)
         {
-            size_t new_bytes = read(client_fd, req->body + body_size, MAX_REQUEST_SIZE);
+            size_t new_bytes = read(client_fd, peabody + body_size, MAX_REQUEST_SIZE);
             body_size += new_bytes;
         }
         req->body_size = body_size;
+        if (body_size >= req->content_len)
+            printf("WRONG BODY?\n");
+        req->body = peabody;
     }
-
     return status_headers;
 }
 
@@ -214,7 +219,7 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
     }
 
     // Analizar la línea de solicitud HTTP
-    http_request request = {.method = 0, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 200, .version = "", .header_size = 0};
+    http_request request = {.method = 5, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 400, .version = NULL, .header_size = 0};
     char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root, client_fd);
     logger(status_headers, log_file);
 
