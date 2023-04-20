@@ -20,16 +20,60 @@ int showFile(int client, char *ruta)
     char *http_mime = (char *)malloc(50 * sizeof(char));
     int fileLen=0;
 
-
     
 
     // Open file
     file = fopen(ruta, "rb");
     if (!file)
     {
-        perror("File could not be opened");
-        free(http_mime);
+        char header[1024];
+        char *now = get_current_time();
+        sprintf(header,
+            "HTTP/1.1 404 Not Found\r\n"
+            "Date: %s\r\n"
+            "Server: SaranaiServer/1.0\r\n"
+            "Content-Type: text/html\r\n"
+            "Connection: close\r\n"
+            "\r\n",
+            now);
+        free(now);
 
+        // Send HTTP response header
+        ssize_t sent = send(client, header, strlen(header), 0);
+        if (sent != (ssize_t) strlen(header))
+        {
+            perror("Send error");
+        }
+
+        // Open and send 404 error page
+        FILE *error_page = fopen("./404/404page.html", "rb");
+        if (error_page)
+        {
+            char buffer[4096];
+            size_t read_size;
+            while ((read_size = fread(buffer, 1, sizeof(buffer), error_page)) > 0)
+            {
+                ssize_t sent = send(client, buffer, read_size, 0);
+                if (sent == -1)
+                {
+                    perror("Send error");
+                    break;
+                }
+            }
+            fclose(error_page);
+        }
+        else
+        {
+            // If the 404 error page could not be opened, send a simple error message instead
+            const char *error_message = "<html><head><title>404 Not Found</title></head><body><h1>404 Not Found</h1><p>The requested resource could not be found.</p></body></html>";
+            ssize_t sent = send(client, error_message, strlen(error_message), 0);
+            if (sent == -1)
+            {
+                perror("Send error");
+            }
+        }
+
+        free(http_mime);
         return 0;
     }
 
