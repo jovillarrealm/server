@@ -167,7 +167,7 @@ void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
     }
 }
 
-//Separa body del request
+// Separa body del request
 char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, char *doc_root_folder)
 {
     char *buffer = (char *)req__buff;
@@ -190,8 +190,8 @@ char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, c
 void handle_connection(int client_fd, FILE *log_file, char *doc_root)
 {
 
-    void *request__buff = malloc(65535);
-    ssize_t bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE - 1, 0);
+    void *request__buff = malloc(MAX_REQUEST_SIZE); // max TCP size 65535
+    ssize_t bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE , 0);
     if (bytes_received < 0)
     {
         // FIXME El servidor debería tratar de retornar un BAD REQUEST?
@@ -200,7 +200,7 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
     }
 
     // Analizar la línea de solicitud HTTP
-    http_request request = {.method = 0,.body = NULL, .body_size =0,  .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 200, .version = ""};
+    http_request request = {.method = 0, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 200, .version = "", .header_size=0};
     char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root);
     logger(status_headers, log_file);
 
@@ -268,7 +268,6 @@ int str_to_uint16(char *str, uint16_t *res)
     *res = (uint16_t)val;
     return 0;
 }
-
 
 int main(int argc, char *argv[])
 {

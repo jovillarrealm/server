@@ -16,13 +16,12 @@ void saveFile(http_request *request, int client_fd)
     struct tm *tm = localtime(&t);
     char timestamp[64];
     strftime(timestamp, sizeof(timestamp), "%c", tm);
-    FILE * fp;
+    FILE *fp;
 
-    
-    if (request->content_type!=NULL &&request->path!=NULL)
+    if (request->content_type != NULL && request->path != NULL)
     {
         // POST FILE
-        
+
         fp = fopen(request->path, "wb");
         if (fp == NULL)
         {
@@ -30,12 +29,18 @@ void saveFile(http_request *request, int client_fd)
             return;
         }
 
-        if (request->body_size != request->content_len)
-            printf("WTF SARA BODY SIZE Y LO OTRO NO SON LO MISMO QUE HAGO");
-        fwrite(request->body,request->body_size,1,fp);
+        if (request->body_size + request->header_size == MAX_REQUEST_SIZE)
+        {
+            //EVIL?? realloc habla de aliasing, body size crece en montos discretos indepedientemente de los datos
+            
+            request->body=realloc(request->body, request->body_size + MAX_REQUEST_SIZE);
+            request->body_size += MAX_REQUEST_SIZE; 
 
-        //fwrite(re)
-        
+            size_t new_chunk = read(client_fd, request->body, MAX_REQUEST_SIZE);
+        }
+        fwrite(request->body, request->body_size, 1, fp);
+
+        // fwrite(re)
     }
     else
     {
@@ -50,7 +55,7 @@ void saveFile(http_request *request, int client_fd)
         fprintf(fp, "-----------------------\n");
         fprintf(fp, "Timestamp: %s\n", timestamp);
         fprintf(fp, "File contents:\n");
-        //fprintf(fp, "%s\n\n", request->body);
+        // fprintf(fp, "%s\n\n", request->body);
     }
 
     // Cerrar el archivo

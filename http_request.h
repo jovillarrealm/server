@@ -7,8 +7,8 @@
 
 #define BUFFER_SIZE 1024
 #define MAX_CONNECTIONS 15
-#define MAX_REQUEST_SIZE 4096
-#define MAX_RESPONSE_SIZE 4096
+#define MAX_REQUEST_SIZE 65535
+#define MAX_RESPONSE_SIZE 65535
 #define OK 200
 #define BAD_REQUEST 400
 #define NOT_FOUND 404
@@ -28,6 +28,7 @@ typedef struct http_request
     char *path;
     void *body;
     size_t body_size;
+    size_t header_size;
     char version[16];
     int status_code;
     int content_len;
