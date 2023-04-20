@@ -122,6 +122,10 @@ int get_mime_from_path(char *ruta, char *http_mime)
     {
         strcpy(http_mime, "application/vnd.ms-powerpoint");
     }
+    else if (strcmp(file_type, ".md") == 0)
+    {
+        strcpy(http_mime, "text/markdown");
+    }
     else
     {
         strcpy(http_mime, "na");
