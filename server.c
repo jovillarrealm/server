@@ -9,9 +9,12 @@
 #include <pthread.h>
 #include "http_request.h"
 #include "http_request.c"
+#include "http_request.c"
 #include "showArchivos.h"
 #include "showArchivos.c"
+#include "showArchivos.c"
 #include "saveArchivos.h"
+#include "saveArchivos.c"
 #include "saveArchivos.c"
 #include "showHeaders.h"
 #include "showHeaders.c"
