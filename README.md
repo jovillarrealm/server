@@ -39,19 +39,19 @@ En términos generales la función principal de un servidor web es la entrega de
 web browser). Para esto, tanto el cliente como el servidor se comunican a través de un
 mismo protocolo que es HTTP.
 
-De esta forma el objetivo final es desarrollar e implementar un servidor web denominado
-Telematics Web Server – (TWS)) que soporte la versión HTTP/1.1
+De esta forma el objetivo final que se trabaja en este laboratorio es desarrollar e implementar un servidor web denominado
+Telematics Web Server – (TWS)) que soporte la versión HTTP/1.1. 
 
 ******
 # **Desarrollo**
 
 ## Descripción del código:
 
-Actualmente se tiene un códifo de servidor web en C que acepta solicitudes HTTP. Recibe solicitudes HTTP de clientes y devuelve una respuesta HTTP en función de la solicitud. El servidor es un programa de consola que se ejecuta en un bucle infinito y espera nuevas conexiones de clientes. Se utiliza el protocolo de socket para establecer conexiones entre el cliente y el servidor. Se utiliza la biblioteca pthread.h para crear un hilo para cada conexión cliente. El servidor es capaz de manejar hasta un máximo de 15 conexiones simultáneas.
+Actualmente se tiene un códifo de servidor web en C que acepta solicitudes HTTP. Recibe solicitudes HTTP de clientes y devuelve una respuesta HTTP en función de la solicitud. El servidor es un programa de consola que se ejecuta en un bucle infinito y espera nuevas conexiones de clientes. Se utiliza el protocolo de socket para establecer conexiones entre el cliente y el servidor. Se utiliza la biblioteca pthread.h para crear un hilo para cada conexión cliente. El servidor es capaz de manejar varias conexiones de manera simultánea.
 
-La solicitud HTTP se analiza utilizando la función parse_request_line que analiza la línea de solicitud HTTP para determinar el método, la ruta y el host. El servidor solo admite los métodos GET, POST, HEAD. Si se recibe una solicitud con un método diferente, se devuelve un código de respuesta HTTP 400 Bad Request.
+La solicitud HTTP se analiza utilizando la función parse_request_line que analiza la línea de solicitud HTTP para determinar el método, la ruta y el host. El servidor admite los métodos GET, POST y HEAD. Si se recibe una solicitud con un método diferente o una solicitud mal escrita, se devuelve un código de respuesta HTTP 400 Bad Request.
 
-El servidor tiene un registro (logger) que se guarda en un archivo que se especifica en el argumento de línea de comando. La función logger registra cada solicitud, posteo y respuesta HTTP en el archivo de registro con la marca de tiempo.
+El servidor tiene un registro (logger) que se guarda en un archivo de texto formato txt, este se especifica en el argumento de línea de comando. La función logger registra cada solicitud, posteo y respuesta HTTP en el archivo de registro con la marca de tiempo correspondiente.
 
 ## **Setup**
 
@@ -183,3 +183,12 @@ Video Tutorial "I made a web server in C like a true sigma". Imran Rahman. Dispo
 Ejemplo de un servidor sencillo en C. Comunidad de programadores. Disponible en: https://www.lawebdelprogramador.com/foros/C-Visual-C/1565635-Servidor-web-en-C.html 
 
 Ejemplo de proyecto de servidor en C. Blooming Institute of Technology. Repositorio en Github. Disponible en: https://github.com/bloominstituteoftechnology/C-Web-Server 
+
+Información impartida por el docente en clase. Curso de telemática, Universidad EAFIT 2023-1. 
+
+
+#### Fuentes de recursos web:
+
+Formato de la página 404. Por Piotr Galor. Codepen. Disponible en: https://codepen.io/pgalor/pen/OeRWJQ 
+
+Formato de páginas web de Elegant Themes. Disponibles en: https://www.elegantthemes.com/ 
