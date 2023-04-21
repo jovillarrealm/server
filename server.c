@@ -187,7 +187,12 @@ char *parse_request(void *req__buff, ssize_t buff_size, http_request *req, char 
 
     if ((((ssize_t)status_headers_size < buff_size) || req->method == POST) && (req->status_code < 400))
     {
-        void *peabody = malloc(req->content_len);
+        size_t peabody_size;
+        if (req->content_len > MAX_REQUEST_SIZE)
+            peabody_size = req->content_len + MAX_REQUEST_SIZE;
+        else
+            peabody_size = MAX_REQUEST_SIZE;
+        void *peabody = malloc(peabody_size);
 
         size_t body_size = buff_size - status_headers_size;
         memcpy(peabody, req__buff, body_size);
@@ -198,8 +203,11 @@ char *parse_request(void *req__buff, ssize_t buff_size, http_request *req, char 
             body_size += new_bytes;
         }
         req->body_size = body_size;
-        if (body_size >= req->content_len)
+        if (body_size > req->content_len)
+        {
+            body_size = req->content_len;
             printf("WRONG BODY?\n");
+        }
         req->body = peabody;
     }
     return status_headers;
