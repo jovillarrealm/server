@@ -180,15 +180,15 @@ Video Tutorial "I made a web server in C like a true sigma". Imran Rahman. Dispo
 
 #### Referentes:
 
-Ejemplo de un servidor sencillo en C. Comunidad de programadores. Disponible en: https://www.lawebdelprogramador.com/foros/C-Visual-C/1565635-Servidor-web-en-C.html 
+- Ejemplo de un servidor sencillo en C. Comunidad de programadores. Disponible en: https://www.lawebdelprogramador.com/foros/C-Visual-C/1565635-Servidor-web-en-C.html 
 
-Ejemplo de proyecto de servidor en C. Blooming Institute of Technology. Repositorio en Github. Disponible en: https://github.com/bloominstituteoftechnology/C-Web-Server 
+- Ejemplo de proyecto de servidor en C. Blooming Institute of Technology. Repositorio en Github. Disponible en: https://github.com/bloominstituteoftechnology/C-Web-Server 
 
-Información impartida por el docente en clase. Curso de telemática, Universidad EAFIT 2023-1. 
+- Información impartida por el docente en clase. Curso de telemática, Universidad EAFIT 2023-1. 
 
 
 #### Fuentes de recursos web:
 
-Formato de la página 404. Por Piotr Galor. Codepen. Disponible en: https://codepen.io/pgalor/pen/OeRWJQ 
+- Formato de la página 404. Por Piotr Galor. Codepen. Disponible en: https://codepen.io/pgalor/pen/OeRWJQ 
 
-Formato de páginas web de Elegant Themes. Disponibles en: https://www.elegantthemes.com/ 
+- Formato de páginas web de Elegant Themes. Disponibles en: https://www.elegantthemes.com/ 
