@@ -22609,3 +22609,580 @@ Sec-Fetch-User: ?1
 
 
 
+[21-04-2023 21:06:56] POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 371c25e4-3f46-4531-aba1-c322f268b54b
+Host: 54.82.44.143:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+
+
+
+[21-04-2023 21:07:04] POST /mk HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: c108b5e5-9128-4972-8371-5d0cd3ab340c
+Host: 54.82.44.143:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+
+
+
+[21-04-2023 21:07:58] POST /mk HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 0a72d87d-f7d0-4daa-8841-b03bad697934
+Host: 54.82.44.143:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+
+
+
+[21-04-2023 21:12:27] POST /mk HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: fcab2091-7a92-4a33-a12a-cca66c82b4aa
+Host: 54.82.44.143:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+
+
+
+[21-04-2023 21:15:19] 
+
+[21-04-2023 21:15:21] GET /Bowser_peaches.mp4 HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 21:15:36] GET /favicon.ico HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/Bowser_peaches.mp4
+
+
+
+[21-04-2023 21:17:07] GET /news/index.htm HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 21:17:10] GET /news/index.html HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 21:17:10] GET /news/layout/styles/layout.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/index.html
+
+
+
+[21-04-2023 21:17:11] GET /news/images/demo/80x80.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/index.html
+
+
+
+[21-04-2023 21:17:11] GET /news/images/demo/190x80.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/index.html
+
+
+
+[21-04-2023 21:17:15] GET /news/images/demo/174x174.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/index.html
+
+
+
+[21-04-2023 21:17:16] GET /news/opm.mp4 HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Range: bytes=0-
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/index.html
+Accept-Encoding: identity
+
+
+
+[21-04-2023 21:18:10] GET /news/layout/styles/navi.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:18:10] GET /news/images/demo/200x150.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/index.html
+
+
+
+[21-04-2023 21:18:13] GET /news/layout/styles/forms.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:18:13] GET /news/layout/styles/tables.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:18:13] GET /news/pages/style-demo.html HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/index.html
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 21:18:13] GET /news/layout/styles/layout.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:18:13] GET /news/images/demo/avatar.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:18:13] GET /news/images/demo/imgl.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:18:14] GET /news/images/demo/60x60.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:18:14] GET /news/images/demo/imgr.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:18:16] GET /news/images/demo/200x150.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:18:20] GET /news/images/demo/80x80.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:18:20] GET /news/layout/styles/navi.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:18:20] GET /news/layout/styles/forms.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:18:20] GET /news/layout/styles/tables.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:18:20] GET /news/images/demo/240x90.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:18:21] GET /news/layout/styles/images/green_file.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/navi.css
+
+
+
+[21-04-2023 21:18:21] GET /news/layout/styles/images/white_file.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/navi.css
+
+
+
+[21-04-2023 21:18:38] POST /news/pages/style-demo.html HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 120
+Origin: http://54.82.44.143:8080
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 21:18:50] POST /news/pages/style-demo.html HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 120
+Origin: http://54.82.44.143:8080
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 21:19:00] GET /news/pages/style-demo.html HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://54.82.44.143:8080/news/index.html
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 21:19:01] GET /news/layout/styles/layout.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:19:01] GET /news/images/demo/imgl.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:19:16] GET /news/images/demo/avatar.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:19:16] GET /news/images/demo/200x150.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:19:21] GET /news/images/demo/imgr.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:19:21] GET /news/images/demo/80x80.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:19:21] GET /news/images/demo/60x60.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:19:21] GET /news/layout/styles/navi.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:19:21] GET /news/layout/styles/forms.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:19:22] GET /news/layout/styles/tables.css HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 21:19:22] GET /news/images/demo/240x90.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/pages/style-demo.html
+
+
+
+[21-04-2023 21:19:24] GET /news/layout/styles/images/green_file.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/navi.css
+
+
+
+[21-04-2023 21:19:24] GET /news/layout/styles/images/white_file.gif HTTP/1.1
+Host: 54.82.44.143:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.82.44.143:8080/news/layout/styles/navi.css
+
+
+

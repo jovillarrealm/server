@@ -25,16 +25,13 @@ void saveFile(http_request *request, int client_fd)
             char path[250];
             if (strncmp(request->content_type, "application/form-data", 21))
             {
-                strncat(path, request->doc_root_folder, strlen(request->doc_root_folder)+1);
-                strncat(path, "/post_files/postform_data.txt", 29+1);
-
+                sprintf(path, "%s/post_files/postform_data.txt", request->doc_root_folder);
                 fp = fopen(path, "a+");
             }
             else if (strncmp(request->content_type, "application/x-www-form-urlencoded", 33))
             {
-                strncat(path, request->doc_root_folder, strlen(request->doc_root_folder) + 1);
-                strncat(path, "/post_files/postform_url.txt", 28+1);
-                fp = fopen(path+6, "a+");
+                sprintf(path, "%s/post_files/postform_url.txt", request->doc_root_folder);
+                fp = fopen(path, "a+");
             }
             if (fp == NULL)
             {
