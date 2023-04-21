@@ -24,9 +24,7 @@ int showFile(int client, char *ruta)
     FILE *file;
     char *buffer;
     char *http_mime = (char *)malloc(50 * sizeof(char));
-    int fileLen=0;
-
-    
+    int fileLen = 0;
 
     // Open file
     file = fopen(ruta, "rb");
@@ -35,18 +33,18 @@ int showFile(int client, char *ruta)
         char header[1024];
         char *now = get_current_time();
         sprintf(header,
-            "HTTP/1.1 404 Not Found\r\n"
-            "Date: %s\r\n"
-            "Server: SaranaiServer/1.0\r\n"
-            "Content-Type: text/html\r\n"
-            "Connection: close\r\n"
-            "\r\n",
-            now);
+                "HTTP/1.1 404 Not Found\r\n"
+                "Date: %s\r\n"
+                "Server: SaranaiServer/1.0\r\n"
+                "Content-Type: text/html\r\n"
+                "Connection: close\r\n"
+                "\r\n",
+                now);
         free(now);
 
         // Send HTTP response header
         ssize_t sent = send(client, header, strlen(header), 0);
-        if (sent != (ssize_t) strlen(header))
+        if (sent != (ssize_t)strlen(header))
         {
             perror("Send error");
         }
@@ -68,7 +66,6 @@ int showFile(int client, char *ruta)
             }
             fclose(error_page);
             free(http_mime);
-            close(client);
             return 0;
         }
         else
@@ -82,21 +79,17 @@ int showFile(int client, char *ruta)
             }
         }
         free(http_mime);
-        close(client);
         return 0;
     }
 
-
     get_mime_from_path(ruta, http_mime);
 
-    if (http_mime == "na"){
+    if (http_mime == "na")
+    {
         sendFile(client, ruta);
         fclose(file);
         return 0;
     }
-
-
-
 
     // Get file length
     fseek(file, 0, SEEK_END);
@@ -120,21 +113,20 @@ int showFile(int client, char *ruta)
     char header[1024];
     char *now = get_current_time();
     sprintf(header,
-        "HTTP/1.1 200 OK\r\n"
-        "Date: %s\r\n"
-        "Server: SaranaiServer/1.0\r\n"
-        "Content-Type: %s\r\n"
-        "Content-Length: %d\r\n"
-        "Connection: keep-alive\r\n"
-        "Keep-Alive: timeout=5, max=100\r\n"
-        "\r\n",
-        now, http_mime, fileLen);
-        free(now);
-
+            "HTTP/1.1 200 OK\r\n"
+            "Date: %s\r\n"
+            "Server: SaranaiServer/1.0\r\n"
+            "Content-Type: %s\r\n"
+            "Content-Length: %d\r\n"
+            "Connection: keep-alive\r\n"
+            "Keep-Alive: timeout=5, max=100\r\n"
+            "\r\n",
+            now, http_mime, fileLen);
+    free(now);
 
     // Send HTTP response header
     ssize_t sent = send(client, header, strlen(header), 0);
-    if (sent != (ssize_t) strlen(header))
+    if (sent != (ssize_t)strlen(header))
     {
         perror("Send error");
     }
@@ -155,10 +147,108 @@ int showFile(int client, char *ruta)
         bytes_sent += sent;
     }
 
-        while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0) {}
+    while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0)
+    {
+    }
 
     free(http_mime);
     free(buffer);
-    close(client);
+    
     return EXIT_SUCCESS;
 }
+
+// requiere un path y un http_mime que ya tenga memoria malloc-eada
+int get_mime_from_path(char *ruta, char *http_mime)
+{
+    char *file_type;
+    file_type = strrchr(ruta, '.'); // Checks file extension
+
+    if (strcmp(file_type, ".html") == 0)
+    {
+        strcpy(http_mime, "text/html");
+    }
+    else if (strcmp(file_type, ".txt") == 0)
+    {
+        strcpy(http_mime, "text/plain");
+    }
+    else if (strcmp(file_type, ".css") == 0)
+    {
+        strcpy(http_mime, "text/css");
+    }
+    else if (strcmp(file_type, ".js") == 0)
+    {
+        strcpy(http_mime, "application/javascript");
+    }
+    else if (strcmp(file_type, ".json") == 0)
+    {
+        strcpy(http_mime, "application/json");
+    }
+    else if (strcmp(file_type, ".xml") == 0)
+    {
+        strcpy(http_mime, "application/xml");
+    }
+    else if (strcmp(file_type, ".pdf") == 0)
+    {
+        strcpy(http_mime, "application/pdf");
+    }
+    else if (strcmp(file_type, ".jpg") == 0 || strcmp(file_type, ".jpeg") == 0)
+    {
+        strcpy(http_mime, "image/jpeg");
+    }
+    else if (strcmp(file_type, ".png") == 0)
+    {
+        strcpy(http_mime, "image/png");
+    }
+    else if (strcmp(file_type, ".gif") == 0)
+    {
+        strcpy(http_mime, "image/gif");
+    }
+    else if (strcmp(file_type, ".svg") == 0)
+    {
+        strcpy(http_mime, "image/svg+xml");
+    }
+    else if (strcmp(file_type, ".ico") == 0)
+    {
+        strcpy(http_mime, "image/x-icon");
+    }
+    else if (strcmp(file_type, ".mp3") == 0)
+    {
+        strcpy(http_mime, "audio/mpeg");
+    }
+    else if (strcmp(file_type, ".wav") == 0)
+    {
+        strcpy(http_mime, "audio/wav");
+    }
+    else if (strcmp(file_type, ".mp4") == 0)
+    {
+        strcpy(http_mime, "video/mp4");
+    }
+    else if (strcmp(file_type, ".avi") == 0)
+    {
+        strcpy(http_mime, "video/x-msvideo");
+    }
+    else if (strcmp(file_type, ".doc") == 0)
+    {
+        strcpy(http_mime, "application/msword");
+    }
+    else if (strcmp(file_type, ".xls") == 0)
+    {
+        strcpy(http_mime, "application/vnd.ms-excel");
+    }
+    else if (strcmp(file_type, ".ppt") == 0)
+    {
+        strcpy(http_mime, "application/vnd.ms-powerpoint");
+    }
+    else if (strcmp(file_type, ".md") == 0)
+    {
+        strcpy(http_mime, "text/markdown");
+    }
+    else
+    {
+        strcpy(http_mime, "na");
+    }
+    return 0;
+}
+
+
+

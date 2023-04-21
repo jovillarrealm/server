@@ -64,7 +64,7 @@ void saveFile(http_request *request, int client_fd)
             }
             bytes_sent += sent;
         }
-        close(client_fd);
+
     }
     else
     {

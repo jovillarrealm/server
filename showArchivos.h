@@ -16,6 +16,8 @@
 // Functions
 
 //GET
+int get_mime_from_path(char *ruta, char *http_mime);
+
 int showFile(int client, char * ruta);
 
 // End of header file

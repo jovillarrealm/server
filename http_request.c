@@ -40,95 +40,20 @@ void error(const char *msg)
     exit(1);
 }
 
-// requiere un path y un http_mime que ya tenga memoria malloc-eada
-int get_mime_from_path(char *ruta, char *http_mime)
-{
-    char *file_type;
-    file_type = strrchr(ruta, '.'); // Checks file extension
 
-    if (strcmp(file_type, ".html") == 0)
-    {
-        strcpy(http_mime, "text/html");
-    }
-    else if (strcmp(file_type, ".txt") == 0)
-    {
-        strcpy(http_mime, "text/plain");
-    }
-    else if (strcmp(file_type, ".css") == 0)
-    {
-        strcpy(http_mime, "text/css");
-    }
-    else if (strcmp(file_type, ".js") == 0)
-    {
-        strcpy(http_mime, "application/javascript");
-    }
-    else if (strcmp(file_type, ".json") == 0)
-    {
-        strcpy(http_mime, "application/json");
-    }
-    else if (strcmp(file_type, ".xml") == 0)
-    {
-        strcpy(http_mime, "application/xml");
-    }
-    else if (strcmp(file_type, ".pdf") == 0)
-    {
-        strcpy(http_mime, "application/pdf");
-    }
-    else if (strcmp(file_type, ".jpg") == 0 || strcmp(file_type, ".jpeg") == 0)
-    {
-        strcpy(http_mime, "image/jpeg");
-    }
-    else if (strcmp(file_type, ".png") == 0)
-    {
-        strcpy(http_mime, "image/png");
-    }
-    else if (strcmp(file_type, ".gif") == 0)
-    {
-        strcpy(http_mime, "image/gif");
-    }
-    else if (strcmp(file_type, ".svg") == 0)
-    {
-        strcpy(http_mime, "image/svg+xml");
-    }
-    else if (strcmp(file_type, ".ico") == 0)
-    {
-        strcpy(http_mime, "image/x-icon");
-    }
-    else if (strcmp(file_type, ".mp3") == 0)
-    {
-        strcpy(http_mime, "audio/mpeg");
-    }
-    else if (strcmp(file_type, ".wav") == 0)
-    {
-        strcpy(http_mime, "audio/wav");
-    }
-    else if (strcmp(file_type, ".mp4") == 0)
-    {
-        strcpy(http_mime, "video/mp4");
-    }
-    else if (strcmp(file_type, ".avi") == 0)
-    {
-        strcpy(http_mime, "video/x-msvideo");
-    }
-    else if (strcmp(file_type, ".doc") == 0)
-    {
-        strcpy(http_mime, "application/msword");
-    }
-    else if (strcmp(file_type, ".xls") == 0)
-    {
-        strcpy(http_mime, "application/vnd.ms-excel");
-    }
-    else if (strcmp(file_type, ".ppt") == 0)
-    {
-        strcpy(http_mime, "application/vnd.ms-powerpoint");
-    }
-    else if (strcmp(file_type, ".md") == 0)
-    {
-        strcpy(http_mime, "text/markdown");
-    }
+
+char *pretty_method(int method)
+{
+    if (method == GET)
+        return "GET";
+    else if (method == POST)
+        return "POST";
+    else if (method == PUT)
+        return "PUT";
+    else if (method == DELETE)
+        return "DELETE";
+    else if (method == HEAD)
+        return "HEAD";
     else
-    {
-        strcpy(http_mime, "na");
-    }
-    return 0;
+        return "UNSUPPORTED";
 }

@@ -51,7 +51,7 @@ char *get_current_time(void);
 // Muestra un mensaje de error y sale del programa
 void error(const char *msg);
 
-int get_mime_from_path(char *ruta, char *http_mime);
 
 
+char *pretty_method(int method);
 #endif

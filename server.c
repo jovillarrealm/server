@@ -16,8 +16,6 @@
 #include "showHeaders.h"
 #include "showHeaders.c"
 
-
-
 // Logger
 void logger(const char *message, FILE *log_file)
 {
@@ -64,7 +62,7 @@ void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
     {
         request->method = UNSUPPORTED;
     }
-    printf("--> Método HTTP: %d\n", request->method);
+    printf("--> Método HTTP: %s\n", pretty_method(request->method));
 
     char *uri_start = method_end + 1;
     char *uri_end = strchr(uri_start, ' ');
@@ -154,6 +152,10 @@ void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
             size_t content_type_len = content_type_end - content_type_start;
             request->content_type = strndup(content_type_start, content_type_len);
         }
+        else
+        {
+            request->method = UNSUPPORTED;
+        }
 
         char *content_length_start = strstr(method_end, "Content-Length: ");
 
@@ -164,10 +166,14 @@ void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
             size_t content_length_len = content_length_end - content_length_start;
             request->content_len = atoi(strndup(content_length_start, content_length_len));
         }
+        else
+        {
+            request->method = UNSUPPORTED;
+        }
     }
-    //If reached here, headers are validated
 
-    request->status_code=200;
+    // If we reached here, there were no early returns
+    request->status_code = 200;
 }
 
 // Parser de HTTP/1.1 requests, y obtiene body si lo necesita
@@ -179,12 +185,13 @@ char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, c
     request->header_size = status_headers_size;
     char *status_headers = strndup(buffer, status_headers_size);
 
-
     parse_lines(status_headers, request, doc_root_folder);
+    if (request->method == UNSUPPORTED)
+        request->status_code = 400;
+    //  PUT si algo tambien va a tener body
 
-    // Splitting es algo que podría pasar y PUT si algo tambien va a tener body
 
-    if ((((ssize_t)status_headers_size < buff_size) || request->method == POST) && (request->status_code < 400))
+    if ((((ssize_t)status_headers_size < buff_size) || request->method == POST || request->method == PUT) && (request->status_code < 400))
     {
         size_t peabody_size;
         if (request->content_len > MAX_REQUEST_SIZE)
@@ -194,7 +201,7 @@ char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, c
         void *peabody = malloc(peabody_size);
 
         size_t body_size = buff_size - status_headers_size;
-        memcpy(peabody, req__buff+status_headers_size, body_size);
+        memcpy(peabody, req__buff + status_headers_size, body_size);
 
         while (body_size < request->content_len)
         {
@@ -221,18 +228,12 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
     }
 
     // Analizar la línea de solicitud HTTP
-    http_request request = {.method = 5, .body = NULL, 
-    .body_size = 0, .content_len = 0, 
-    .content_type = NULL, .host = NULL, .path = NULL, 
-    .status_code = 400, .version = "               ", .header_size = 0};
+    http_request request = {.method = 5, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 400, .version = "               ", .header_size = 0};
     char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root, client_fd);
     logger(status_headers, log_file);
 
     prequest(&request);
 
-    // request__buff[bytes_received] = '\0';
-
-    // printf("Solicitud HTTP recibida: %s\n", request_buffer);
 
     // Determinar el estado de la solicitud y generar una respuesta HTTP
 
@@ -255,6 +256,8 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
         free(request.body);
         break;
     }
+
+    close(client_fd);
 }
 
 // Función para el hilo que acepta conexiones de clientes
