@@ -58,3 +58,174 @@ Content-Type: image/jpeg
 
 
 
+[21-04-2023 08:51:14] POST /log.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 791fd5c7-a2fb-45cc-a468-2098fd60868a
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 91
+Content-Type: text/plain
+
+
+
+[21-04-2023 08:55:23] POST /log.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: d9e8f126-8d41-471e-926f-8b8c93bb77c4
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 91
+Content-Type: text/plain
+
+
+
+[21-04-2023 08:57:09] POST /log.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 5766ee3a-9b4e-49bf-8ef6-7b2418de7d78
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 91
+Content-Type: text/plain
+
+
+
+[21-04-2023 09:04:00] POST /log.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 87fde894-5608-47f3-80d9-f983a2f36936
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 91
+Content-Type: text/plain
+
+
+
+[21-04-2023 09:07:40] POST /log.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: fbc64b75-3182-4f59-a556-fc61e4b46a82
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 91
+Content-Type: text/plain
+
+
+
+[21-04-2023 09:13:30] POST /log.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: e1106923-3145-4bdc-8011-2b5fad2e4521
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 91
+Content-Type: text/plain
+
+
+
+[21-04-2023 09:14:05] POST /log.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 5d303c1e-a1db-498c-80fd-51d91bd6de35
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 91
+Content-Type: text/plain
+
+
+
+[21-04-2023 09:18:19] POST /log.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: dee7caec-d71d-4708-ab04-2468e164291d
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 63704
+Content-Type: text/plain
+
+
+
+[21-04-2023 09:21:26] POST /anime.jpg HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 58cdfb16-df98-48fa-8983-e72f1eae39bf
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 122068
+Content-Type: image/jpeg
+
+
+
+[21-04-2023 09:25:13] POST /Bowser_peaches.mp4 HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 566c770f-df91-4a1f-a541-e0e2d448661f
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 12517037
+Content-Type: video/mp4
+
+
+
+[21-04-2023 09:50:53] POST /log.md HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: e70294e3-5f4d-45a9-8fe8-d4be405aa649
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 824
+Content-Type: text/markdown
+
+
+
+[21-04-2023 10:25:40] POST /Bowser_peaches.mp4 HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: bdb076c5-3c93-4532-acca-c01621ca3f3d
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 12517037
+Content-Type: video/mp4
+
+
+
+[21-04-2023 11:19:33] GET /travel/index.html HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: c62b51af-60d5-4603-835a-bd4c43da6fcd
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+[21-04-2023 11:19:45] GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Cookie: secret=1v3CQy3R
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+

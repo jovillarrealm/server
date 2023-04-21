@@ -16,7 +16,7 @@
 #include "showHeaders.h"
 #include "showHeaders.c"
 
-// git clone --branch testPost3 --single-branch https://github.com/jovillarrealm/server.git
+
 
 // Logger
 void logger(const char *message, FILE *log_file)
@@ -159,7 +159,7 @@ void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
 
         if (content_length_start != NULL)
         {
-            content_length_start += 17;
+            content_length_start += 16;
             char *content_length_end = strstr(content_length_start, "\r\n");
             size_t content_length_len = content_length_end - content_length_start;
             request->content_len = atoi(strndup(content_length_start, content_length_len));
@@ -171,44 +171,38 @@ void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
 }
 
 // Parser de HTTP/1.1 requests, y obtiene body si lo necesita
-char *parse_request(void *req__buff, ssize_t buff_size, http_request *req, char *doc_root_folder, int client_fd)
+char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, char *doc_root_folder, int client_fd)
 {
     char *buffer = (char *)req__buff;
     char *body_start = strstr(buffer, "\r\n\r\n") + 4;
     size_t status_headers_size = body_start - buffer;
-    req->header_size = status_headers_size;
+    request->header_size = status_headers_size;
     char *status_headers = strndup(buffer, status_headers_size);
 
-    // FIXME que modifique req->status si hay joda
 
-    parse_lines(status_headers, req, doc_root_folder);
+    parse_lines(status_headers, request, doc_root_folder);
 
-    // Splitting es alfgo que podría pasar y PUT si algo tambien va a tener body
+    // Splitting es algo que podría pasar y PUT si algo tambien va a tener body
 
-    if ((((ssize_t)status_headers_size < buff_size) || req->method == POST) && (req->status_code < 400))
+    if ((((ssize_t)status_headers_size < buff_size) || request->method == POST) && (request->status_code < 400))
     {
         size_t peabody_size;
-        if (req->content_len > MAX_REQUEST_SIZE)
-            peabody_size = req->content_len + MAX_REQUEST_SIZE;
+        if (request->content_len > MAX_REQUEST_SIZE)
+            peabody_size = request->content_len + MAX_REQUEST_SIZE;
         else
             peabody_size = MAX_REQUEST_SIZE;
         void *peabody = malloc(peabody_size);
 
         size_t body_size = buff_size - status_headers_size;
-        memcpy(peabody, req__buff, body_size);
+        memcpy(peabody, req__buff+status_headers_size, body_size);
 
-        while (body_size < req->content_len)
+        while (body_size < request->content_len)
         {
             size_t new_bytes = read(client_fd, peabody + body_size, MAX_REQUEST_SIZE);
             body_size += new_bytes;
         }
-        req->body_size = body_size;
-        if (body_size > req->content_len)
-        {
-            body_size = req->content_len;
-            printf("WRONG BODY?\n");
-        }
-        req->body = peabody;
+        request->body_size = body_size;
+        request->body = peabody;
     }
     return status_headers;
 }
@@ -227,7 +221,10 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
     }
 
     // Analizar la línea de solicitud HTTP
-    http_request request = {.method = 5, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 400, .version = NULL, .header_size = 0};
+    http_request request = {.method = 5, .body = NULL, 
+    .body_size = 0, .content_len = 0, 
+    .content_type = NULL, .host = NULL, .path = NULL, 
+    .status_code = 400, .version = "               ", .header_size = 0};
     char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root, client_fd);
     logger(status_headers, log_file);
 
