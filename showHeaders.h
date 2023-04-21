@@ -14,8 +14,9 @@
 
 // Functions
 
-//GET
-void showHeaders(int client, char * ruta);
+// GET
+
+void showHeaders(int client, char *ruta);
 
 // End of header file
 #endif

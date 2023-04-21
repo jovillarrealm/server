@@ -228,7 +228,7 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
     }
 
     // Analizar la línea de solicitud HTTP
-    http_request request = {.method = 5, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 400, .version = "               ", .header_size = 0};
+    http_request request = {.method = 5, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 400, .version = "               ", .header_size = 0, .doc_root_folder=doc_root};
     char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root, client_fd);
     logger(status_headers, log_file);
 
@@ -316,6 +316,7 @@ int main(int argc, char *argv[])
     }
     else
     {
+        perror("uso: ./server <PORT> <LOG_FILE> <DOC_ROOT_FOLDER>\n");
         port = 8080;
         log_file = fopen("log.txt", "a+");
         doc_root_folder = "assets";
@@ -369,3 +370,4 @@ int main(int argc, char *argv[])
     fclose(log_file); // Unreachable en este momento
     return 0;
 }
+
