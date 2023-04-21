@@ -18887,3 +18887,674 @@ Connection: keep-alive
 
 
 
+[21-04-2023 16:59:27] 
+
+[21-04-2023 16:59:30] GET / HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+
+[21-04-2023 16:59:32] GET / HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 16:59:33] GET /favicon.ico HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/
+
+
+
+[21-04-2023 16:59:51] GET /travel/index.html HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 16:59:51] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:51] GET /travel/css/style.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:51] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:51] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:51] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:51] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/js/main.js HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/img/team-1.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/img/destination-1.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/img/destination-2.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:52] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/css/style.css
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/about.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/destination-4.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/destination-3.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/package-1.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/package-2.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/package-3.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/team-2.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/team-3.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:54] GET /travel/img/team-4.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:55] GET /travel/img/booking.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/css/style.css
+
+
+
+[21-04-2023 16:59:55] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:55] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:55] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:55] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 16:59:55] GET /travel/img/favicon.ico HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/travel/index.html
+
+
+
+[21-04-2023 17:00:08] GET /opm.mp4 HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 17:00:45] GET /Bowser_peaches.mp4 HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 17:01:29] GET /bow.mp4 HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 17:04:44] GET / HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 17:06:56] POST /Bowser_peaches.mp4 HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 9477c1d2-2896-44c4-a448-7c0b5d487d8c
+Host: 54.242.174.135:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 12517037
+Content-Type: video/mp4
+
+
+
+[21-04-2023 17:08:41] GET /Bowser_peaches.mp4 HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 17:10:46] GET / HTTP/1.0
+Host: localhost:8080
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0
+
+
+
+[21-04-2023 17:11:54] GET /news/index.mp4 HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 17:11:59] GET /news/index.html HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+[21-04-2023 17:12:00] GET /news/layout/styles/layout.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/index.html
+
+
+
+[21-04-2023 17:12:00] GET /news/opm.mp4 HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Range: bytes=0-
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/index.html
+Accept-Encoding: identity
+
+
+
+[21-04-2023 17:12:11] GET /news/images/demo/200x150.gif HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/index.html
+
+
+
+[21-04-2023 17:12:11] GET /news/images/demo/174x174.gif HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/index.html
+
+
+
+[21-04-2023 17:12:12] GET /news/images/demo/80x80.gif HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/index.html
+
+
+
+[21-04-2023 17:12:12] GET /news/images/demo/190x80.gif HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/index.html
+
+
+
+[21-04-2023 17:12:13] GET /news/layout/styles/navi.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 17:12:13] GET /news/layout/styles/forms.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 17:12:13] GET /news/layout/styles/tables.css HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://54.242.174.135:8080/news/layout/styles/layout.css
+
+
+
+[21-04-2023 17:15:26] POST /readme.md HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 006d3882-dee4-49af-8916-3830f97d8d80
+Host: 54.242.174.135:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 824
+Content-Type: text/markdown
+
+
+
+[21-04-2023 17:15:38] GET /readme.md HTTP/1.1
+Host: 54.242.174.135:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
