@@ -26,6 +26,7 @@ int showFile(int client, char *ruta)
     char *http_mime = (char *)malloc(50 * sizeof(char));
     int fileLen = 0;
 
+    
     // Open file
     file = fopen(ruta, "rb");
     if (!file || !is_regular_file(ruta))

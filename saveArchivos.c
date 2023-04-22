@@ -20,8 +20,9 @@ void saveFile(http_request *request, int client_fd)
 
     if (request->content_type != NULL && request->path != NULL && request->body != NULL)
     {
-        if (strncmp(request->content_type, "application/form-data", 21) || strncmp(request->content_type, "application/x-www-form-urlencoded", 33))
+        if (strcmp(request->content_type, "application/form-data") ==0|| strcmp(request->content_type, "application/x-www-form-urlencoded")==0)
         {
+            printf("%s\n", request->content_type );
             char path[250];
             if (strncmp(request->content_type, "application/form-data", 21))
             {

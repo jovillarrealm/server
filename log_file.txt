@@ -1,0 +1,2127 @@
+[22-04-2023 03:14:15] GET /bow.mp4 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:15] GET /bow.mp4 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: */*
+Referer: http://54.89.8.84:8080/bow.mp4
+Accept-Language: es-419,es;q=0.9
+Range: bytes=0-
+
+
+
+[22-04-2023 03:14:15] GET /bow.mp4 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: */*
+Referer: http://54.89.8.84:8080/bow.mp4
+Accept-Language: es-419,es;q=0.9
+Range: bytes=13926400-
+
+
+
+[22-04-2023 03:14:21] GET /bow.mp4 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: */*
+Referer: http://54.89.8.84:8080/bow.mp4
+Accept-Language: es-419,es;q=0.9
+Range: bytes=32768-
+
+
+
+[22-04-2023 03:14:48] GET /travel/index.html HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/css/style.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/img/about.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/img/destination-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:49] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/js/main.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/destination-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/destination-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/destination-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/package-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/package-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/package-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/team-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/team-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/team-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/team-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:50] GET /travel/img/booking.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:51] GET /travel/img/favicon.ico HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:52] GET /travel/about.html HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+DNT: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/css/style.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/img/about.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/js/main.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/img/team-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:53] GET /travel/img/team-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:54] GET /travel/img/team-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:54] GET /travel/img/team-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:54] GET /travel/img/package-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:54] GET /travel/img/package-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:54] GET /travel/img/package-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:54] GET /travel/img/favicon.ico HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:55] GET /travel/service.html HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+DNT: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:55] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:55] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:55] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:56] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:56] GET /travel/css/style.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:56] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:56] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:56] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:56] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:56] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:56] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/js/main.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/img/package-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/img/package-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/img/package-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:14:57] GET /travel/img/favicon.ico HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:15:00] DELETE /anime.jpg HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 365ec94c-0b6f-48e4-a898-573af781c3cd
+Host: 54.89.8.84:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+[22-04-2023 03:15:08] GET /Musica.mp3 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:15:08] GET /Musica.mp3 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: */*
+Referer: http://54.89.8.84:8080/Musica.mp3
+Accept-Language: es-419,es;q=0.9
+Range: bytes=0-
+
+
+
+[22-04-2023 03:15:40] POST /anime.jpg HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 10ad88ac-ac5f-49c7-950b-ce7fb62651dc
+Host: 54.89.8.84:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 122068
+Content-Type: image/jpeg
+
+
+
+[22-04-2023 03:15:58] POST /anime.jpg HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: a868dcf0-0c5e-4e4e-880b-bafe7a582f2b
+Host: 54.89.8.84:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 122068
+Content-Type: image/jpeg
+
+
+
+[22-04-2023 03:18:59] DELETE /musicadejorge.mp3 HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 019f5286-1d0d-425b-8369-6804bfbefabe
+Host: 54.89.8.84:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+[22-04-2023 03:20:06] POST /anime.jpg HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 49c64654-1e5b-4a19-a810-4b5176f8850d
+Host: 54.89.8.84:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 91
+Content-Type: text/plain
+
+
+
+[22-04-2023 03:35:32] DELETE /musicadejorge.mp3 HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: cc391285-8251-4a3f-bd5a-5ce70de70bdb
+Host: 54.89.8.84:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+[22-04-2023 03:35:46] GET /bow.mp4 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:35:46] GET /bow.mp4 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: */*
+Referer: http://54.89.8.84:8080/bow.mp4
+Accept-Language: es-419,es;q=0.9
+Range: bytes=0-
+
+
+
+[22-04-2023 03:35:46] GET /bow.mp4 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: */*
+Referer: http://54.89.8.84:8080/bow.mp4
+Accept-Language: es-419,es;q=0.9
+Range: bytes=13926400-
+
+
+
+[22-04-2023 03:35:50] GET /bow.mp4 HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: */*
+Referer: http://54.89.8.84:8080/bow.mp4
+Accept-Language: es-419,es;q=0.9
+Range: bytes=32768-
+
+
+
+[22-04-2023 03:36:03] GET /travel/index.html HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:03] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:03] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:03] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/css/style.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/img/about.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/js/main.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/img/destination-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/img/destination-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/img/destination-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/img/destination-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:04] GET /travel/img/package-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/package-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/package-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/team-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/team-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/team-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/team-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:05] GET /travel/img/booking.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/about.html HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+DNT: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://54.89.8.84:8080/travel/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/css/style.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/img/about.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:06] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/js/main.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/img/team-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/img/team-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/img/team-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/img/team-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:07] GET /travel/img/package-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:08] GET /travel/img/package-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:08] GET /travel/img/package-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:08] GET /travel/img/favicon.ico HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:09] GET /travel/service.html HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+DNT: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://54.89.8.84:8080/travel/about.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:09] GET /travel/lib/animate/animate.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:09] GET /travel/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:09] GET /travel/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:09] GET /travel/css/style.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:09] GET /travel/css/bootstrap.min.css HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/img/testimonial-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/lib/wow/wow.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/lib/easing/easing.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/lib/waypoints/waypoints.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/lib/owlcarousel/owl.carousel.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/lib/tempusdominus/js/moment.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/img/bg-hero.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/css/style.css
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/js/main.js HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: */*
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/img/testimonial-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/img/testimonial-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/img/testimonial-4.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/img/package-2.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/img/package-1.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:10] GET /travel/img/package-3.jpg HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:11] DELETE /anime.jpg HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: 8192bb15-7a88-408a-b6ba-b874161cc89f
+Host: 54.89.8.84:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+[22-04-2023 03:36:11] GET /travel/img/favicon.ico HTTP/1.1
+Host: 54.89.8.84:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48
+DNT: 1
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://54.89.8.84:8080/travel/service.html
+Accept-Encoding: gzip, deflate
+Accept-Language: es-419,es;q=0.9
+
+
+
+[22-04-2023 03:36:29] POST /anime.jpg HTTP/1.1
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+Postman-Token: c341d76c-79f5-4c6a-a5fa-6c1ba662e0e9
+Host: 54.89.8.84:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 122068
+Content-Type: image/jpeg
+
+
+
