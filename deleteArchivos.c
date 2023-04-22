@@ -10,12 +10,7 @@
 #include "deleteArchivos.h"
 
 int deleteFile(int client, char *ruta)
-{
-    if (strncmp(ruta, "./assets/", 9) != 0) {
-        printf("Error deleting file, only files on 'assets' can be deleted %s\n", ruta);
-        return -1;
-    }
-    
+{    
     int ret = remove(ruta);
     if (ret != 0) {
         printf("Error deleting file: %s\n", ruta);
