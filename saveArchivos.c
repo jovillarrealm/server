@@ -61,7 +61,7 @@ void saveFile(http_request *request, int client_fd)
             char header[1024];
             char *now = get_current_time();
             sprintf(header,
-                    "HTTP/1.1 200 OK\r\n"
+                    "HTTP/1.1 201 Created\r\n"
                     "Date: %s\r\n"
                     "Server: SaranaiServer/1.0\r\n"
                     "Connection: keep-alive\r\n"
@@ -76,6 +76,7 @@ void saveFile(http_request *request, int client_fd)
             {
                 perror("Send error");
             }
+            /*
             // Send file data in chunks until the entire file is sent
             int bytes_sent = 0;
             int chunk_size = 1024;
@@ -91,6 +92,7 @@ void saveFile(http_request *request, int client_fd)
                 }
                 bytes_sent += sent;
             }
+            */
         }
         // Cerrar el archivo
         fclose(fp);
