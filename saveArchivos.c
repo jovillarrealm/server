@@ -44,6 +44,25 @@ void saveFile(http_request *request, int client_fd)
             fprintf(fp, "Timestamp: %s\n", timestamp);
             fprintf(fp, "File contents:\n");
             fprintf(fp, "%s\n\n", (char *)request->body);
+
+            char header[1024];
+            char *now = get_current_time();
+            sprintf(header,
+                    "HTTP/1.1 200 OK\r\n"
+                    "Date: %s\r\n"
+                    "Server: SaranaiServer/1.0\r\n"
+                    "Connection: keep-alive\r\n"
+                    "Keep-Alive: timeout=5, max=100\r\n"
+                    "\r\n",
+                    now);
+            free(now);
+
+            // Send HTTP response header
+            ssize_t sent = send(client_fd, header, strlen(header), 0);
+            if (sent != (ssize_t)strlen(header))
+            {
+                perror("Send error");
+            }
         }
         else
         {
