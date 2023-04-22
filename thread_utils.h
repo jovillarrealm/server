@@ -1,9 +1,10 @@
 #ifndef THREAD_UTILS
 #define THREAD_UTILS
 #include <sys/types.h>
+#include <pthread.h>
 // Evil
 #define MAX_EVENTS 128
-#define MAX_THREADS 2
+#define MAX_THREADS 1
 #define QUEUE_SIZE 256
 
 
@@ -20,7 +21,6 @@ typedef struct ServerState
     char *doc_root;
 } ServerState;
 
-// EVIL bitchcraft Do nOt eaT
 void *worker_thread(void *arg);
 
 #endif

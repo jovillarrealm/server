@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <time.h>
 #include <string.h>
+#include <errno.h>
 #include "http_request.h"
 #include "showArchivos.h"
 #include "sendArchivos.h"
@@ -132,8 +133,10 @@ int showFile(int client, char *ruta)
     }
 
     // Send file data in chunks until the entire file is sent
+    int max_retry = 5;
+    int retry_count = 0;
     int bytes_sent = 0;
-    int chunk_size = 1024;
+    int chunk_size = MAX_RESPONSE_SIZE; //o 1024
     while (bytes_sent < fileLen)
     {
         int remaining = fileLen - bytes_sent;
@@ -141,8 +144,15 @@ int showFile(int client, char *ruta)
         int sent = send(client, buffer + bytes_sent, send_size, 0);
         if (sent == -1)
         {
-            perror("Send error");
-            break;
+            if (retry_count<max_retry)
+            {
+                perror("Send error");
+                retry_count++;
+                continue;
+            }
+            else
+                break;
+
         }
         bytes_sent += sent;
     }

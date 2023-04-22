@@ -20,7 +20,7 @@
 #include "showHeaders.h"
 #include "showHeaders.c"
 
-// Logger
+
 
 // Funcion para manejar conexiones de varios clientes
 
@@ -245,6 +245,8 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
     {
         // FIXME El servidor debería tratar de retornar un BAD REQUEST?
         perror("Error al recibir la solicitud HTTP");
+        send(client_fd,"HTTP/1.1 400 Bad Request", 24, 0);
+        free(request__buff);
         return;
     }
 
