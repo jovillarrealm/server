@@ -7,8 +7,12 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+#include <sys/epoll.h>
+#include <fcntl.h>
+#include <errno.h>
 #include "http_request.h"
 #include "http_request.c"
+#include "thread_utils.h"
 #include "showArchivos.h"
 #include "showArchivos.c"
 #include "saveArchivos.h"
@@ -17,269 +21,6 @@
 #include "showHeaders.c"
 
 // Logger
-void logger(const char *message, FILE *log_file)
-{
-    time_t rawtime;
-    struct tm *timeinfo;
-    char time_str[80];
-    time(&rawtime);
-    timeinfo = localtime(&rawtime);
-    strftime(time_str, sizeof(time_str), "%d-%m-%Y %H:%M:%S", timeinfo);
-
-    fprintf(log_file, "[%s] %s\n\n", time_str, message);
-    fflush(log_file);
-}
-
-// Analiza la línea de solicitud HTTP para determinar el método, la ruta y el host
-void parse_lines(char *buffer, http_request *request, char *doc_root_folder)
-{
-    // Innit request
-
-    char *method_end = strchr(buffer, ' ');
-    if (method_end == NULL)
-    {
-        request->method = UNSUPPORTED;
-        return;
-    }
-    size_t method_len = method_end - buffer;
-    if (strncmp(buffer, "GET", method_len) == 0)
-    {
-        request->method = GET;
-    }
-    else if (strncmp(buffer, "POST", method_len) == 0)
-    {
-        request->method = POST;
-    }
-    else if (strncmp(buffer, "HEAD", method_len) == 0)
-    {
-        request->method = HEAD;
-    }
-    else if (strncmp(buffer, "DELETE", method_len) == 0)
-    {
-        request->method = DELETE;
-    }
-    else
-    {
-        request->method = UNSUPPORTED;
-    }
-    printf("--> Método HTTP: %s\n", pretty_method(request->method));
-
-    char *uri_start = method_end + 1;
-    char *uri_end = strchr(uri_start, ' ');
-    if (uri_end == NULL)
-    {
-        request->method = UNSUPPORTED;
-        return;
-    }
-    size_t uri_len = uri_end - uri_start;
-    char *http_version_start = uri_end + 1;
-    if (http_version_start[0] != 'H' || http_version_start[1] != 'T' || http_version_start[2] != 'T' || http_version_start[3] != 'P' || http_version_start[4] != '/')
-    {
-        request->method = UNSUPPORTED;
-        printf("-->http_version_start no comenza con HTTP/. ");
-        return;
-    }
-    if (http_version_start[5] == '0')
-    {
-        strcpy(request->version, "HTTP/1.0");
-        printf("-->HTTP version 1.0 detectado. \n");
-    }
-    else if (http_version_start[5] == '1')
-    {
-        strcpy(request->version, "HTTP/1.1 ");
-        printf("-->HTTP version 1.1 detectado. \n");
-    }
-    else
-    {
-        request->method = UNSUPPORTED;
-        printf("--> No se puede detectar la version de HTTP o no esta soportado. \n");
-        return;
-    }
-    request->version[7] = '\0';
-    char *uri = strndup(uri_start, uri_len);
-    char *host_start = strstr(uri, "://");
-    if (host_start)
-    {
-        host_start += 3;
-        char *path_start = strchr(host_start, '/');
-        if (path_start)
-        {
-            *path_start = '\0';
-            path_start++;
-            request->host = strdup(host_start);
-            request->path = strdup(path_start);
-        }
-        else
-        {
-            request->host = strdup(host_start);
-            request->path = strdup("");
-        }
-    }
-    else
-    {
-        // Trata de obtener host desde antes
-
-        char *host_start = strstr(method_end, "Host: ");
-        if (host_start)
-        {
-            host_start += 6;
-            char *host_end = strstr(host_start, "\r\n");
-            size_t host_len = host_end - host_start;
-            request->host = strndup(host_start, host_len);
-        }
-        else
-        {
-            request->host = strdup("");
-        }
-        size_t pathlen = strlen(doc_root_folder) + uri_len;
-
-        char path[pathlen];
-        sprintf(path, "%s%s", doc_root_folder, uri);
-
-        request->path = strdup(path);
-    }
-    printf("->> Host: %s\n", request->host);
-    printf("->> Ruta: %s\n", request->path);
-    free(uri);
-
-    if (request->method == POST)
-    {
-        char *content_type_start = strstr(method_end, "Content-Type: ");
-        if (content_type_start != NULL)
-        {
-            content_type_start += 14;
-            char *content_type_end = strstr(content_type_start, "\r\n");
-            size_t content_type_len = content_type_end - content_type_start;
-            request->content_type = strndup(content_type_start, content_type_len);
-        }
-        else
-        {
-            request->method = UNSUPPORTED;
-        }
-
-        char *content_length_start = strstr(method_end, "Content-Length: ");
-
-        if (content_length_start != NULL)
-        {
-            content_length_start += 16;
-            char *content_length_end = strstr(content_length_start, "\r\n");
-            size_t content_length_len = content_length_end - content_length_start;
-            request->content_len = atoi(strndup(content_length_start, content_length_len));
-        }
-        else
-        {
-            request->method = UNSUPPORTED;
-        }
-    }
-
-    // If we reached here, there were no early returns
-    request->status_code = 200;
-}
-
-// Parser de HTTP/1.1 requests, y obtiene body si lo necesita
-char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, char *doc_root_folder, int client_fd)
-{
-    char *buffer = (char *)req__buff;
-    char *body_start = strstr(buffer, "\r\n\r\n") + 4;
-    size_t status_headers_size = body_start - buffer;
-    request->header_size = status_headers_size;
-    char *status_headers = strndup(buffer, status_headers_size);
-
-    parse_lines(status_headers, request, doc_root_folder);
-    if (request->method == UNSUPPORTED)
-        request->status_code = 400;
-    //  PUT si algo tambien va a tener body
-
-
-    if ((((ssize_t)status_headers_size < buff_size) || request->method == POST || request->method == PUT) && (request->status_code < 400))
-    {
-        size_t peabody_size;
-        if (request->content_len > MAX_REQUEST_SIZE)
-            peabody_size = request->content_len + MAX_REQUEST_SIZE;
-        else
-            peabody_size = MAX_REQUEST_SIZE;
-        void *peabody = malloc(peabody_size);
-
-        size_t body_size = buff_size - status_headers_size;
-        memcpy(peabody, req__buff + status_headers_size, body_size);
-
-        while (body_size < request->content_len)
-        {
-            size_t new_bytes = read(client_fd, peabody + body_size, MAX_REQUEST_SIZE);
-            body_size += new_bytes;
-        }
-        request->body_size = body_size;
-        request->body = peabody;
-    }
-    return status_headers;
-}
-
-// Función para manejar una conexión de cliente
-void handle_connection(int client_fd, FILE *log_file, char *doc_root)
-{
-
-    void *request__buff = malloc(MAX_REQUEST_SIZE); // max TCP size 65535
-    ssize_t bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE, 0);
-    if (bytes_received < 0)
-    {
-        // FIXME El servidor debería tratar de retornar un BAD REQUEST?
-        perror("Error al recibir la solicitud HTTP");
-        return;
-    }
-
-    // Analizar la línea de solicitud HTTP
-    http_request request = {.method = 5, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 400, .version = "               ", .header_size = 0, .doc_root_folder=doc_root};
-    char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root, client_fd);
-    logger(status_headers, log_file);
-
-    prequest(&request);
-
-
-    // Determinar el estado de la solicitud y generar una respuesta HTTP
-
-    switch (request.method)
-    {
-    case GET:
-        printf("lets do a GET! \n");
-        showFile(client_fd, request.path);
-        break;
-    case POST:
-        printf("lets do a POST! \n");
-        saveFile(&request, client_fd);
-        break;
-    case HEAD:
-        printf("lets return a HEAD! \n");
-        showHeaders(client_fd, request.path);
-        break;
-    default:
-        printf("Oh no, bad request! \n");
-        free(request.body);
-        break;
-    }
-
-    close(client_fd);
-}
-
-// Función para el hilo que acepta conexiones de clientes
-void *accept_connections(void *server_fd_ptr, char *doc_root_folder)
-{
-    // cambio para consistencia con logger
-    connection_info thread_info = *(connection_info *)server_fd_ptr;
-    int server_fd = *(int *)server_fd_ptr;
-    FILE *log_file = thread_info.log_file;
-    while (1)
-    {
-        struct sockaddr_in client_addr;
-        socklen_t client_addr_len = sizeof(client_addr);
-        int client_fd = accept(server_fd, (struct sockaddr *)&client_addr, &client_addr_len);
-        if (client_fd < 0)
-        {
-            error("Error al aceptar la conexión del cliente");
-        }
-        handle_connection(client_fd, log_file, doc_root_folder);
-    }
-    return NULL;
-}
 
 // Funcion para manejar conexiones de varios clientes
 
@@ -287,9 +28,8 @@ void *accept_connections(void *server_fd_ptr, char *doc_root_folder)
 int str_to_uint16(char *str, uint16_t *res)
 {
     char *end;
-    int errno = 0;
     long val = strtol(str, &end, 10);
-    if (errno || end == str || *end != '\0' || val < 0 || val >= 0x10000)
+    if (end == str || *end != '\0' || val < 0 || val >= 0x10000)
     {
         return -1;
     }
@@ -322,44 +62,167 @@ int main(int argc, char *argv[])
         doc_root_folder = "assets";
     }
 
-    int server_fd, client_fd;
-    struct sockaddr_in address;
-    int addrlen = sizeof(address);
-
-    // Crea el socket
-    if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
-    {
-        perror("Error al crear el socket \n");
-        exit(EXIT_FAILURE);
-    }
-
+    int client_fd;
     // Configura la dirección y el puerto para el socket
-    address.sin_family = AF_INET;
-    address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(port);
 
-    // Fix de "address already in use"
-    int y = 1;
-    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &y, sizeof(y));
+    struct sockaddr_in address =
+        {
+            .sin_family = AF_INET,
+            .sin_addr.s_addr = INADDR_ANY,
+            .sin_port = htons(port),
+        };
+    int addrlen = sizeof(address);
+    int server_fd = listening_socket(port, address);
 
-    // Vincula el socket al puerto y la dirección especificados
-    if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0)
+    // Se instancia un epoll para el manejo óptimo de conexiones
+
+    int epoll_fd;
+    if ((epoll_fd = epoll_create1(0)) == -1)
     {
-        perror("Error al vincular el socket \n");
+        perror("epoll_create1");
+        exit(EXIT_FAILURE);
+    }
+    // Se configura el epoll
+
+    // Evento asociado al fd del server
+    // No se va a definir EPOLLET por lo que estaremos trabajando en Level-
+
+    struct epoll_event event = {
+        .events = EPOLLIN,
+        .data.fd = server_fd,
+    };
+
+    if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, server_fd, &event) == -1)
+    {
+        perror("epoll_ctl");
         exit(EXIT_FAILURE);
     }
 
-    // Escucha las conexiones entrantes
-    if (listen(server_fd, MAX_CONNECTIONS) < 0)
+    // El estado del servidor, para evitar el uso de globales
+    ServerState state = {
+        .epoll_fd = epoll_fd,
+        .listen_fd = server_fd,
+        .queue_front = 0,
+        .queue_rear = 0,
+        .mutex = PTHREAD_MUTEX_INITIALIZER,
+        .cond = PTHREAD_COND_INITIALIZER,
+        .log = log_file,
+        .doc_root = doc_root_folder,
+    };
+
+    // Threadpool Deadpool para I/O Multiplex multiflex. A cada hilo se le va a pasar el estado del servidor
+    pthread_t client_threads[MAX_THREADS];
+    for (int thread_id = 0; thread_id < MAX_THREADS; thread_id++)
     {
-        perror("Error al escuchar en el socket \n");
-        exit(EXIT_FAILURE);
+        if (pthread_create(&client_threads[thread_id], NULL, worker_thread, &state) != 0)
+        {
+            perror("pthread_create");
+            exit(EXIT_FAILURE);
+        }
     }
+
     printf("Servidor iniciado en el puerto %d...\n", port);
-
+    struct epoll_event events[MAX_EVENTS];
     while (1)
     {
+        // Numero de eventos que tuvieron actividad hasta ahora
+        int triggered_event_number = epoll_wait(epoll_fd, events, MAX_EVENTS, -1);
+        if (triggered_event_number == -1)
+        {
+            if (errno == EINTR)
+            {
+                continue;
+            }
+            else
+            {
+                perror("epoll_wait");
+                exit(EXIT_FAILURE);
+            }
+        }
+        // Por cada evento que haya pasado, se le acepta conexión y se agrega al estado del servidor
+
+        for (int event_i = 0; event_i < triggered_event_number; event_i++)
+        {
+            if (events[event_i].data.fd == server_fd)
+            {
+                // accept() con mas error handling
+                // FIXME: posiblemente error de accept si era  if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
+                // FIXME: posiblemente error de accept si era  if ((client_fd = accept(server_fd, NULL, NULL)) < 0)
+                while (1)
+                {
+                    // Se acepta conexion
+                    int client_fd = -1;
+                    if ((client_fd = accept(server_fd, NULL, NULL)) < 0)
+                    {
+                        // manejo para que cuando esté non blocking no se explote
+                        if (errno == EAGAIN || errno == EWOULDBLOCK)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            perror("accept");
+                            exit(EXIT_FAILURE);
+                        }
+                    }
+
+                    // Para agregar la conexion al estado, la debe meter primero a epoll
+
+                    // Para meterla, la conexion se configura el fd como no block-eante
+
+                    int flags = fcntl(client_fd, F_GETFL, 0);
+                    fcntl(client_fd, F_SETFL, flags | O_NONBLOCK);
+
+                    // ...y se reconfigura epoll a traves de un evento asociado a la conexion
+                    struct epoll_event client_event = {
+                        .events = EPOLLIN | EPOLLET,
+                        .data.fd = client_fd,
+                    };
+                    if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, client_fd, &client_event) == -1)
+                    {
+                        perror("epoll_ctl");
+                        exit(EXIT_FAILURE);
+                    }
+
+                    // Encola al cliente para ser manejado por uno de los pthread_t
+                    // FIXME: Este código exacto esta repetido mas abajo, aún esta por determinar por que
+                    // de pronto esto solo ocurre la primera vez pero no se alteran los events[i].data.fd
+
+                    pthread_mutex_lock(&state.mutex);
+                    // Mientras los hilos estan ocupados, main thread espera
+                    while ((state.queue_rear + 1) % QUEUE_SIZE == state.queue_front)
+                    {
+                        pthread_cond_wait(&state.cond, &state.mutex);
+                    }
+
+                    state.queue[state.queue_rear] = client_fd;
+                    state.queue_rear = (state.queue_rear + 1) % QUEUE_SIZE;
+
+                    pthread_mutex_unlock(&state.mutex);
+                    pthread_cond_signal(&state.cond);
+                }
+            }
+            else
+            {
+                // Encola al cliente para ser manejado por uno de los pthread_t
+                pthread_mutex_lock(&state.mutex);
+
+                while ((state.queue_rear + 1) % QUEUE_SIZE == state.queue_front)
+                {
+                    pthread_cond_wait(&state.cond, &state.mutex);
+                }
+
+                state.queue[state.queue_rear] = events[event_i].data.fd;
+                state.queue_rear = (state.queue_rear + 1) % QUEUE_SIZE;
+
+                pthread_mutex_unlock(&state.mutex);
+                pthread_cond_signal(&state.cond);
+            }
+        }
+    }
+    /*
         // Acepta una nueva conexión entrante
+
         if ((client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0)
         {
             perror("Error al aceptar la conexión entrante \n");
@@ -368,6 +231,82 @@ int main(int argc, char *argv[])
         handle_connection(client_fd, log_file, doc_root_folder);
     }
     fclose(log_file); // Unreachable en este momento
+    */
     return 0;
 }
+
+// Función para manejar una conexión de cliente
+void handle_connection(int client_fd, FILE *log_file, char *doc_root)
+{
+
+    void *request__buff = malloc(MAX_REQUEST_SIZE); // max TCP size 65535
+    ssize_t bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE, 0);
+    if (bytes_received < 0)
+    {
+        // FIXME El servidor debería tratar de retornar un BAD REQUEST?
+        perror("Error al recibir la solicitud HTTP");
+        return;
+    }
+
+    // Analizar la línea de solicitud HTTP
+    http_request request = {.method = 5, .body = NULL, .body_size = 0, .content_len = 0, .content_type = NULL, .host = NULL, .path = NULL, .status_code = 400, .version = "               ", .header_size = 0, .doc_root_folder = doc_root};
+    char *status_headers = parse_request(request__buff, bytes_received, &request, doc_root, client_fd);
+    logger(status_headers, log_file);
+
+    prequest(&request);
+
+    // Determinar el estado de la solicitud y generar una respuesta HTTP
+
+    switch (request.method)
+    {
+    case GET:
+        printf("lets do a GET! \n");
+        showFile(client_fd, request.path);
+        break;
+    case POST:
+        printf("lets do a POST! \n");
+        saveFile(&request, client_fd);
+        break;
+    case HEAD:
+        printf("lets return a HEAD! \n");
+        showHeaders(client_fd, request.path);
+        break;
+    default:
+        printf("Oh no, bad request! \n");
+        free(request.body);
+        break;
+    }
+
+    close(client_fd);
+}
+
+// EVIL bitchcraft Do nOt eaT
+void *worker_thread(void *arg)
+{
+    ServerState *state = (ServerState *)arg;
+
+    while (1)
+    {
+        // Espera disponibilidad
+        pthread_mutex_lock(&state->mutex);
+
+        while (state->queue_front == state->queue_rear)
+        {
+            pthread_cond_wait(&state->cond, &state->mutex);
+        }
+
+        // Se agrega a la cola del estado y actualiza
+        int client_fd = state->queue[state->queue_front];
+        state->queue_front = (state->queue_front + 1) % QUEUE_SIZE; // esto es lo que revisa el main thread
+
+        pthread_mutex_unlock(&state->mutex);
+
+        // Ahora se maneja la conexion
+
+        handle_connection(client_fd, state->log, state->doc_root);
+    }
+
+    return NULL;
+}
+
 

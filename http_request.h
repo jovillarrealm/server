@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <pthread.h>
 
 #define BUFFER_SIZE 1024
 #define MAX_CONNECTIONS 15
@@ -12,6 +13,8 @@
 #define OK 200
 #define BAD_REQUEST 400
 #define NOT_FOUND 404
+
+
 
 typedef struct http_request
 {
@@ -37,11 +40,9 @@ typedef struct http_request
 } http_request;
 
 // Define la estructura para pasar a los hilos de cada conexión
-typedef struct connection_info
-{
-    int client_fd;
-    FILE *log_file;
-} connection_info;
+
+//Loggea en el archivo especificado
+void logger(const char *message, FILE *log_file);
 
 void prequest(http_request *req);
 
@@ -54,4 +55,8 @@ void error(const char *msg);
 char *pretty_method(int method);
 
 int get_mime_from_path(char *ruta, char *http_mime);
+
+int listening_socket(u_int16_t port, struct sockaddr_in address);
+
+
 #endif
