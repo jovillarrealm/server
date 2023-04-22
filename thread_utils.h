@@ -4,7 +4,7 @@
 #include <pthread.h>
 // Evil
 #define MAX_EVENTS 128
-#define MAX_THREADS 1
+#define MAX_THREADS 4
 #define QUEUE_SIZE 256
 
 

@@ -126,8 +126,20 @@ int showFile(int client, char *ruta)
     free(now);
 
     // Send HTTP response header
-    ssize_t sent = send(client, header, strlen(header), 0);
-    if (sent != (ssize_t)strlen(header))
+    size_t sent = 0;
+
+    while ((sent = send(client, header, strlen(header), 0)) < 0)
+    {
+        if (errno == EAGAIN || errno == EWOULDBLOCK)
+        {
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
+    if (sent != strlen(header))
     {
         perror("Send error");
     }
@@ -136,38 +148,48 @@ int showFile(int client, char *ruta)
     int max_retry = 5;
     int retry_count = 0;
     int bytes_sent = 0;
-    int chunk_size = MAX_RESPONSE_SIZE; //o 1024
+    int chunk_size = 1024;
     while (bytes_sent < fileLen)
     {
         int remaining = fileLen - bytes_sent;
         int send_size = remaining > chunk_size ? chunk_size : remaining;
-        int sent = send(client, buffer + bytes_sent, send_size, 0);
-        if (sent == -1)
+        int sent = 0;
+        printf("sent: %d\n", bytes_sent);
+        while ((sent = send(client, buffer + bytes_sent, send_size, 0)) < 0)
         {
-            if (retry_count<max_retry)
+
+            if (errno == EAGAIN || errno == EWOULDBLOCK)
             {
-                perror("Send error");
-                retry_count++;
                 continue;
             }
             else
+            {
+                if (retry_count < max_retry)
+                {
+                    perror("Send error");
+                    retry_count++;
+                    continue;
+                }
+                else
+                    break;
+            }
+            if (retry_count < max_retry)
+            {
+                perror("Send error");
                 break;
-
+            }
+            printf("sent: %d\n", sent);
+            bytes_sent += sent;
         }
-        bytes_sent += sent;
-    }
 
-    while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0)
-    {
-    }
+        while (recv(client, buffer, fileLen, MSG_DONTWAIT) > 0)
+        {
+        }
 
-    free(http_mime);
-    free(buffer);
-    
-    return EXIT_SUCCESS;
+        free(http_mime);
+        free(buffer);
+        close(client);
+
+        return EXIT_SUCCESS;
+    }
 }
-
-
-
-
-

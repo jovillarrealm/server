@@ -378,7 +378,16 @@ char *parse_request(void *req__buff, ssize_t buff_size, http_request *request, c
 
         while (body_size < request->content_len)
         {
-            size_t new_bytes = read(client_fd, peabody + body_size, MAX_REQUEST_SIZE);
+            size_t new_bytes = 0;
+            while((new_bytes=read(client_fd, peabody + body_size, MAX_REQUEST_SIZE))<0)
+                if (errno == EAGAIN || errno == EWOULDBLOCK)
+                {
+                    continue;
+                }
+                else
+                {
+                    break;
+                }
             body_size += new_bytes;
         }
         request->body_size = body_size;

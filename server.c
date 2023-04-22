@@ -20,8 +20,6 @@
 #include "showHeaders.h"
 #include "showHeaders.c"
 
-
-
 // Funcion para manejar conexiones de varios clientes
 
 // De: https://stackoverflow.com/questions/20019786/safe-and-portable-way-to-convert-a-char-to-uint16-t
@@ -154,17 +152,23 @@ int main(int argc, char *argv[])
                     int client_fd = -1;
                     if ((client_fd = accept(server_fd, NULL, NULL)) < 0)
                     {
+                        printf("acepta conexion\n");
                         // manejo para que cuando esté non blocking no se explote
                         if (errno == EAGAIN || errno == EWOULDBLOCK)
                         {
                             break;
                         }
                         else
-                        {
+                        { 
+
                             perror("accept");
                             exit(EXIT_FAILURE);
                         }
-                    }
+                    } else
+                    {
+                        
+                    
+                    
 
                     // Para agregar la conexion al estado, la debe meter primero a epoll
 
@@ -200,6 +204,7 @@ int main(int argc, char *argv[])
 
                     pthread_mutex_unlock(&state.mutex);
                     pthread_cond_signal(&state.cond);
+                    }
                 }
             }
             else
@@ -240,14 +245,22 @@ void handle_connection(int client_fd, FILE *log_file, char *doc_root)
 {
 
     void *request__buff = malloc(MAX_REQUEST_SIZE); // max TCP size 65535
-    ssize_t bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE, 0);
-    if (bytes_received < 0)
+    ssize_t bytes_received = 0;
+    while (bytes_received = recv(client_fd, request__buff, MAX_REQUEST_SIZE, 0) < 0)
     {
-        // FIXME El servidor debería tratar de retornar un BAD REQUEST?
-        perror("Error al recibir la solicitud HTTP");
-        send(client_fd,"HTTP/1.1 400 Bad Request", 24, 0);
-        free(request__buff);
-        return;
+        if (errno == EAGAIN || errno == EWOULDBLOCK)
+        {
+            continue;
+        }
+        else
+        {
+            if (bytes_received < 0)
+            {
+                perror("Error al recibir la solicitud HTTP");
+                free(request__buff);
+                return;
+            }
+        }
     }
 
     // Analizar la línea de solicitud HTTP
@@ -310,5 +323,3 @@ void *worker_thread(void *arg)
 
     return NULL;
 }
-
-

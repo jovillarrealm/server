@@ -55,6 +55,7 @@ void showHeaders(int client, char *ruta)
             "Server: SaranaiServer/1.0\r\n"
             "Content-Type: %s\r\n"
             "Content-Length: %d\r\n"
+            "Accept-Ranges: bytes\r\n"
             "Connection: keep-alive\r\n"
             "Keep-Alive: timeout=5, max=100\r\n"
             "\r\n",
