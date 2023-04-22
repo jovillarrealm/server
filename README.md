@@ -179,6 +179,11 @@ Se leyeron varios articulos y se visitaron varios archivos como referentes para 
 Video Tutorial "I made a web server in C like a true sigma". Imran Rahman. Disponible en youtube: https://www.youtube.com/watch?v=cEH_ipqHbUw&ab_channel=ImranRahman 
 
 #### Referentes:
+- HTTP Semantics. Disponible en: https://www.rfc-editor.org/rfc/rfc9110.html
+
+- Hypertext Transfer Protocol -- HTTP/1.1 . Dispoible en: https://datatracker.ietf.org/doc/rfc2616/
+
+- Beej's Guide to Network Programming | System Calls or Bust. Disponible en: https://beej.us/guide/bgnet/html/split/system-calls-or-bust.html
 
 - Ejemplo de un servidor sencillo en C. Comunidad de programadores. Disponible en: https://www.lawebdelprogramador.com/foros/C-Visual-C/1565635-Servidor-web-en-C.html 
 
