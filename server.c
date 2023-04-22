@@ -8,11 +8,11 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #include "http_request.h"
-#include "http_request.c"//f
+#include "http_request.c"
 #include "showArchivos.h"
-#include "showArchivos.c"//l
+#include "showArchivos.c"
 #include "saveArchivos.h"
-#include "saveArchivos.c"//a
+#include "saveArchivos.c"
 #include "showHeaders.h"
 #include "showHeaders.c"//t
 #include "deleteArchivos.h"
