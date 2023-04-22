@@ -118,6 +118,7 @@ int showFile(int client, char *ruta)
             "Server: SaranaiServer/1.0\r\n"
             "Content-Type: %s\r\n"
             "Content-Length: %d\r\n"
+            "Accept-Ranges: bytes\r\n"
             "Connection: keep-alive\r\n"
             "Keep-Alive: timeout=5, max=100\r\n"
             "\r\n",
@@ -141,7 +142,7 @@ int showFile(int client, char *ruta)
         int sent = send(client, buffer + bytes_sent, send_size, 0);
         if (sent == -1)
         {
-            perror("Send error");
+            //perror("Send error");
             break;
         }
         bytes_sent += sent;
